@@ -1,0 +1,132 @@
+/*
+#FFDD00 yellow
+#9E005D purple
+#0B646B d.blue
+#0CDAEA l.blue
+*/
+
+.box {
+    background-color: #000;
+    height: 100px;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+p.text {
+    color: #0B646B;
+}
+
+.navbar-fixed-top {
+    background-color: #000;
+    padding: 0px 10px;
+    color: #fff;
+}
+
+.navbar-brand a:hover {
+    color: #1CAF9A;
+}
+
+ul.nav {
+    float: right;
+    color: #fff;
+}
+
+.navbar-nav .active .a{
+    background-color: #1CAF9A;
+    color: #fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #fff;
+}
+
+.image:hover {
+    background-color: #000;
+    border-radius: 20%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0CDAEA;
+    text-decoration: none;
+}
+
+.navbar-default {
+    border: none;
+    padding: 0 2.5%;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #1CAF9A;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.links {
+    line-height: 2em;
+}
+
+#container {
+    margin-top: 50px;
+}
+
+#about, #web, #graphics, #resume {
+    border-bottom: 1px solid #000;
+}
+
+#about {
+    background-color: #f4f4f4;
+}
+
+#web {
+   background-color: #f4f4f4;
+}
+
+#graphics {
+    background-color: #f4f4f4;
+}
+
+#resume {
+    background-color: #f4f4f4;
+}
+
+h2.h2-title {
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.about-row, .graphics-row {
+    padding: 0 5%;
+}
+
+.web-row, .resume-row {
+    color: #1D2939;
+    padding: 0 5%;
+}
+
+.web-images {
+    border: #fff 2px solid;
+    border-radius: 5px;
+    max-height: 250px;
+}
+
+.web-link:hover {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
