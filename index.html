@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Katie Marriner | UNC visual journalist</title>
+    
+    <!--jQUERY-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    
+    <!--BOOTSTRAP CSS-->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/app.css" rel="stylesheet" media="screen">
+    
+    <!--BOOTSTRAP JS-->
+    <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
+    
+    <!--FONT-->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+    
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    
+    <!--CAPTIONS-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/caption.css" />
+    <script src="js/caption.custom.js"></script>
+    <script src="js/toucheffects.js"></script>
+    
+    <base target="_blank">
+    
+<script>
+    //full divs and nav hide
+    var width = $(window).width();
+    var height = $(window).height();
+    
+    $(document).ready(function divSize() {
+        $('.full').height(height);
+	$('nav').hide();
+    }); //end function divSize
+
+    
+    //show nav on scroll
+    $(window).scroll(function(){
+	var pagePosition = window.pageYOffset;
+        var windowHeight = window.innerHeight;
+	
+	
+	
+	if (pagePosition > windowHeight - 10) {
+	    $("nav").fadeIn("slow");
+	} else {
+	    $("nav").fadeOut(100);
+	};
+	
+    });
+    
+    //smooth scroll to anchor links
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      }); //end smooth scroll
+
+	//FANCYBOX
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: true,
+		width		: '100%',
+		height		: '100%',
+		autoSize	: false,
+		closeClick	: true,
+		openEffect	: 'none',
+		closeEffect	: 'fade',
+		scrolling	: 'yes',
+		helpers: {
+		    overlay: {
+		      locked: false
+		    }
+		  }
+	});
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'fade',
+		height		: '100%',
+		width		: '100%',
+		scrolling	: 'yes',
+		iframe : {
+		  preload: false  
+		},
+		helpers: {
+		    overlay: {
+			locked: false
+		    }
+		}
+	});
+    
+</script>    
+
+    
+</head>
+
+<body>
+    <div id="nav" class="hidden-sm hidden-xs sticky">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	    
+            <div class="navbar-brand formcontainer header-text">
+		<a href="#top">
+		    Katie Marriner
+		</a>
+	    </div>
+            <ul class="nav navbar-nav">
+		<!--<li><a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" width="16px" alt="GitHub"/></a></li>
+		<li><a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" width="16px" alt="Twitter"/></a></li>
+		<li><a href="http://www.vimeo.com/katiemarriner"><img src="images/social/vimeo.png" width="16px" alt="Vimeo"/></a></li>
+		<li><a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" width="16px" alt="LinkedIn"/></a></li>-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a class="various" data-fancybox-type="iframe" href="images/katiemarriner_resume.pdf">Resume</a></li>
+            </ul>	      
+        </nav>
+    </div><!--end-nav-->
+    
+    <!--<ul class="nav navbar-nav" style="float: left;">
+		<li><a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a></li>
+		<li><a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"/></a></li>
+		<li><a href="http://www.vimeo.com/katiemarriner"><img src="images/social/vimeo.png" alt="Vimeo" class="social-icon"/></a></li>
+		<li><a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a></li>
+    </ul>-->
+
+    <!--MOBILE NAV-->
+    <div id="nav-mobile" class="hidden-md hidden-lg">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<li class="dropdown">
+	    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-align-justify" style="z-index: 10; color: #f4f4f4; font-size: 2em; padding: 20% 0;"></span></b></a>
+	    <ul class="dropdown-menu">
+                <li class="underline"><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+		    <li class="sub-cats"><a href="#web">Web Development</a></li>
+		    <li class="sub-cats"><a href="#info">Infographics</a></li>
+		    <li class="sub-cats"><a href="#logos">Logos</a></li>
+		    <li class="sub-cats"><a href="#gen">General Design</a></li>
+                <li class="underline overline"><a class="fancybox" data-fancybox-type="iframe" href="images/katiemarriner_resume.pdf">Resume</a></li>
+	    </ul>
+	    </li>
+        </nav>
+    </div><!--end-nav-mobile-->
+
+    
+    <div id="container">
+    <a name="top"></a>
+    <div id="intro" class="about-row full">
+        <a name="intro" class="links"></a>
+        <div class="col-md-12" style="display: table-cell; vertical-align: middle;">
+          <center>
+	    <img src="images/logo.svg" class="hidden-sm hidden-xs">
+	  <!--<hr class="hidden-sm hidden-xs">-->
+	    <div class="katie"><h2 class="name-title">
+		Katie Marriner
+            </h2></div>
+	    
+	    <h5 class="tagline">
+		Designer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Journalist
+	    </h5>
+		
+	    <div>
+		<a href="#web"><div class="circle sub-cats" style="background-color: #EBB763">Web</div></a>
+		<a href="#info"><div class="circle sub-cats" style="background-color: #E75A46">Infographics</div></a>
+		<a href="#logos"><div class="circle sub-cats" style="background-color: #5D9F9C">Logos</div></a>
+		<a href="#gen"><div class="circle sub-cats" style="background-color: #96B5CE;">Design</div></a>
+	    </div>
+	    <div>
+		<a href="#portfolio"><span class="glyphicon glyphicon-chevron-down" style="z-index: 10; color: #9ED9B0; font-size: 3em;"></span></a>
+	    </div>
+	    <p class="intro-text">
+		    Hi, nice to meet you.
+		</p>
+	    </center>
+	  </div>
+	</div>
+
+    </div><!--end-about-id-->
+   
+    <a name="portfolio"></a>
+    <div id="portfolio" class="web-row">
+	<a name="web"></a>
+	    <div class="demo-3">
+		<ul class="grid cs-style-3">
+		    <h5 style="color: #EBB763">Web Design and Development</h5>
+		    <li>
+			<figure>
+			    <a href="http://www.katiemarriner.com/586_project3">
+				<img src="images/mental-health-nc.png" alt="Mental Health in NC">
+			    </a>
+			    <figcaption>
+				<h3>Mental Health Treatment Facilities in North Carolina</h3>
+				<div class="methods">Highcharts, DataTables, Tabletop.js, GoogleMaps</div>
+				<a class="various" data-fancybox-type="iframe" href="fancybox/mental.html" title="Mental Health Treatment Facilities in North Carolina">
+				    Method
+				</a> | <a href="http://www.katiemarriner.com/586_project3">Visit</a>
+				
+			    </figcaption>
+			</figure>
+		    </li>
+		    <li>
+			<figure>
+			    <img src="images/comedy-nyc.png" alt="Comedy in NYC">
+			    <figcaption>
+				<h3>Comedy in NYC</h3>
+				<div class="methods">APIs: Twitter, GoogleMaps, Instagram, Yelp</div>
+				<a class="various" data-fancybox-type="iframe" href="fancybox/comedy.html" title="Mental Health Treatment Facilities in North Carolina">
+				    Method
+				</a> | <a href="http://katiemarriner.com/static/586_project4">Visit</a>
+			    </figcaption>
+			</figure>
+		    </li>
+		    <li>
+			<figure>
+			    <img src="images/homefront.png" alt="Homefront">
+			    <figcaption>
+				<h3>Homefront Website</h3>
+				<div class="methods">Wordpress, Twitter Bootstrap</div>
+				<a class="various" data-fancybox-type="iframe" href="fancybox/homefront.html" title="Homefront Magazine Website">
+				    Method
+				</a> | <a href="http://katiemarriner.com/homefront">Visit</a>
+			    </figcaption>
+			</figure>
+		    </li>
+		    <li>
+			<figure>
+			    <img src="images/esbslider.png" alt="Empire State Building Lights jQuery Slider">
+			    <figcaption>
+				<h3>Lights of the Empire State Building</h3>
+				<div class="methods">Slider</div>
+				<a class="various" data-fancybox-type="iframe" href="fancybox/slider.html" title="jQuery Slider">
+				    Method
+				</a> | <a href="http://katiemarriner.com/static/jqueryslider2">Visit</a>
+			    </figcaption>
+			</figure>
+		    </li>
+		    <li>
+			<figure>
+			    <img src="images/cssbootcamp.png" alt="CSS Bootcamp">
+			    <figcaption>
+				<h3>Comedy in NYC</h3>
+				<div class="methods">Twitter Bootstrap</div>
+				<a href="http://www.katiemarriner.com/static/cssbootcamp.html" title="CSS Bootcamp">
+				    Visit
+				</a>
+			    </figcaption>
+			</figure>
+		    </li>
+		    
+		    <a name="info">
+		    <h5 style="color: #E75A46">Infographics</h5></a>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery1" href="images/espresso.png" title="Pulling the Perfect Espresso Shot">
+				<img src="images/espressothumb.png" alt="Pulling the Perfect Espresso Shot">
+			    </a>
+			    <figcaption>
+				<h3>Pulling the Perfect Espresso Shot</h3>
+				<div class="methods">Infographic</div>
+				
+			    </figcaption>
+			</figure>
+		    </li>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery1" href="images/runningthepoint.png" title="Running the Point">
+				<img src="images/pointthumb.png" alt="Running the Point">
+			    </a>
+			    <figcaption>
+				<h3>Running the Point</h3>
+				<div class="methods">Infographic</div>
+				
+			    </figcaption>
+			</figure>
+		    </li>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery1" href="images/esbinfo.png" title="The Empire State Building Glows Green">
+				<img src="images/esbthumb.png" alt="Running the Point">
+			    </a>
+			    <figcaption>
+				<h3>The Empire State Building Glows Green</h3>
+				<div class="methods">Infographic</div>
+				
+			    </figcaption>
+			</figure>
+		    </li>
+		    <a name="logos">
+		    <h5 style="color: #5D9F9C">Logos</h5></a>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery5" href="images/logos/ConnorInt1.png" title="Connor Community International Festival">
+				<img src="images/logos/ConnorInt3.png" alt="Running the Point" width="100%">
+			    </a>
+			    <figcaption>
+				<h3>Connor Community International Festival</h3>
+				<div class="methods">Logo</div>
+			    </figcaption>
+			</figure>
+			<div class="hidden">
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt2.png" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt3.png" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt4.png" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt5.png" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt6.png" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			</div>
+		    </li>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery6" href="images/logos/grow1.png" title="GROW">
+				<img src="images/logos/grow5.png" alt="Running the Point" style="width: 100%">
+			    </a>
+			    <figcaption>
+				<h3>GROW: Gaining Resources and Opportunities Workshop</h3>
+				<div class="methods">Logo</div>
+			    </figcaption>
+			</figure>
+			<div class="hidden">
+			<a class="fancybox" rel="gallery6" href="images/logos/grow2.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow3.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow4.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow5.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow6.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow7.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow8.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			</div>
+		    </li>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery7" href="images/logos/change1.png" title="Change">
+				<img src="images/logos/change8.png" alt="Change">
+			    </a>
+			    <figcaption>
+				<h3>Change: Reflection to Action</h3>
+				<div class="methods">Logo</div>
+			    </figcaption>
+			</figure>
+			<div class="hidden">
+			<a class="fancybox" rel="gallery7" href="images/logos/change2.png" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery7" href="images/logos/change3.png" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery7" href="images/logos/change4.png" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery7" href="images/logos/change5.png" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery7" href="images/logos/change6.png" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery7" href="images/logos/change7.png" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			<a class="fancybox" rel="gallery7" href="images/logos/change8.png" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			</a>
+			</div>
+		    </li>
+		    <a name="gen">
+		    <h5 style="color: #96B5CE;">General Design</h5></a>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery8" href="images/lesmiz2.png" title="Les Miz">
+				<img src="images/lesmizthumb.png" alt="Running the Point">
+			    </a>
+			    <figcaption>
+				<h3>Les Miserable Spread</h3>
+				<div class="methods">Magazine Design</div>
+			    </figcaption>
+			</figure>
+			<div class="hidden">
+			<a class="fancybox" rel="gallery8" href="images/lesmiz1.png">
+			    <img src="images/lesmizthumb.png" alt=""/>
+			</a>
+			</div>
+		    </li>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery2" href="images/holidaytag.png" title="Holiday Gift Tag">
+				<img src="images/holidaytagthumb.png" alt="Holiday Gift Tag">
+			    </a>
+			    <figcaption>
+				<h3>Holiday Gift Tag</h3>
+				<div class="methods">General Design</div>
+			    </figcaption>
+			</figure>
+			<div class="hidden">
+			<a class="fancybox" rel="gallery2" href="images/holidaytag2.png">
+			    <img src="images/holidaytagthumb.png" alt=""/>
+			</a>
+			</div>
+		    </li>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery3" href="images/mipso1.png" title="Mipso Poster">
+				<img src="images/mipsothumb.png" alt="Running the Point">
+			    </a>
+			    <figcaption>
+				<h3>Mipso Poster</h3>
+				<div class="methods">Poster Design</div>
+			    </figcaption>
+			</figure>
+			<div class="hidden">
+			<a class="fancybox" rel="gallery3" href="images/mipso2.png">
+			    <img src="images/mipsothumb.png" alt=""/>
+			</a>
+			</div>
+		    </li>
+		    <li>
+			<figure>
+			    <a class="fancybox" rel="gallery4" href="images/galapagos1.png" title="Living Galapagos">
+				<img src="images/galapagosthumb.png" alt="Running the Point">
+			    </a>
+			    <figcaption>
+				<h3>Living Galapagos</h3>
+				<div class="methods">Web Design</div>
+			    </figcaption>
+			</figure>
+			<div class="hidden">
+			<a class="fancybox" rel="gallery4" href="images/galapagos2.png">
+			    <img src="images/galapagosthumb.png" alt=""/>
+			</a>
+			<a class="fancybox" rel="gallery4" href="images/galapagos3.png">
+			    <img src="images/galapagosthumb.png" alt=""/>
+			</a>
+			</div>
+		    </li>
+		</ul>
+	    </div><!-- /container -->
+	    
+	    
+        </div><!--end-portfolio-row-->
+    
+    
+    <div id="about" class="resume-row full">
+	<a name="about" class="links"></a>
+	<div class="col-md-6 col-md-offset-3">
+	    <h5 class="sub-header">About Me</h5>
+            <p class="text">It was written in the stars that I would become a journalist one day - I am named after
+	    Katie Couric after all. Although it was a bumpy path before I found my way into the field.
+	    I study visual journalism at the University of North Carolina at Chapel Hill.
+            I am a graphic designer by nature but a coder by practice. I am an advocate for "hacker journalism"
+	    and hope to become part of the dynamic world of journalism after graduating in May of 2014.
+	    During the summer of 2013, I interned as a web producer and page designer at the Milwaukee Journal
+	    Sentinel. This year I serve as treasurer for the newly established chapter of the Online News Association
+            at UNC and hone my skills as a designer by creating graphics for the Carolina Union Marketing and Design department.</p>
+        </div>
+   </div><!--about-id-->
+
+</div><!--container-->
+
+<div id="footer">
+    <a class="various" data-fancybox-type="iframe" href="fancybox/credits.html" title="Credits">
+	Credits
+    </a>
+</div>
+
+<script src="js/toucheffects.js"></script>
+</body>
+</html>
+
