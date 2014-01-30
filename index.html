@@ -2,7 +2,12 @@
 
 <html>
 <head>
-    <title>Katie Marriner | UNC visual journalist</title>
+    <title>Katie Marriner</title>
+    <meta name="description" content="Katie Marriner, UNC journalism student, web designer, graphic designer and web developer">
+    <meta name="keywords" content="Katie, Marriner, UNC, journalism, North Carolina">
+    <meta name="author" content="Katie Marriner">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--jQUERY-->
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -33,25 +38,52 @@
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     
     <!--CAPTIONS-->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Codrops" />
     <link rel="shortcut icon" href="../favicon.ico"> 
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/caption.css" />
     <script src="js/caption.custom.js"></script>
     <script src="js/toucheffects.js"></script>
     
+    <script type="text/javascript" src="js/lazyload.js"></script>
+    
     <base target="_blank">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!--TRACKING-->	
+    <script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-37362223-3', 'katiemarriner.com');
+	ga('send', 'pageview');
+    </script>
+	
+    <style>
+	#dvLoading
+	    {
+	       background: url(images/logo.svg) center 40% no-repeat,
+			    url(images/load.gif) center center no-repeat;
+	       background-color: #f4f4f4;
+	       height: 100%;
+	       width: 100%;
+	       position: fixed;
+	       z-index: 1000;
+	    }
+    </style>
     
 <script>
     //full divs and nav hide
     var width = $(window).width();
     var height = $(window).height();
     
+    
+    $(window).load(function(){
+      $('#dvLoading').fadeOut(2000);
+    });
+
     $(document).ready(function divSize() {
         $('.full').height(height);
 	$('nav').hide();
@@ -74,27 +106,27 @@
     });
     
     //smooth scroll to anchor links
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      }); //end smooth scroll
+   $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+}); //end smooth scroll
 
 	//FANCYBOX
 	$(".various").fancybox({
 		maxWidth	: 800,
 		maxHeight	: 600,
 		fitToView	: true,
-		width		: '100%',
+		width		: '95%',
 		height		: '100%',
 		autoSize	: false,
 		closeClick	: true,
@@ -111,7 +143,7 @@
 		openEffect	: 'none',
 		closeEffect	: 'fade',
 		height		: '100%',
-		width		: '100%',
+		width		: '95%',
 		scrolling	: 'yes',
 		iframe : {
 		  preload: false  
@@ -122,13 +154,17 @@
 		    }
 		}
 	});
+	
+	$("img.lazy").lazyload({
+	    threshold : 200
+	});
     
-</script>    
+</script>
 
     
 </head>
-
-<body>
+<div id="dvLoading">
+</div>
     <div id="nav" class="hidden-sm hidden-xs sticky">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	    
@@ -138,23 +174,19 @@
 		</a>
 	    </div>
             <ul class="nav navbar-nav">
-		<!--<li><a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" width="16px" alt="GitHub"/></a></li>
-		<li><a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" width="16px" alt="Twitter"/></a></li>
-		<li><a href="http://www.vimeo.com/katiemarriner"><img src="images/social/vimeo.png" width="16px" alt="Vimeo"/></a></li>
-		<li><a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" width="16px" alt="LinkedIn"/></a></li>-->
-                <li><a href="#about">About</a></li>
+		<!--<li class="inline-block"><a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a>
+		<a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"/></a>
+		<a href="http://www.vimeo.com/katiemarriner"><img src="images/social/vimeo.png" alt="Vimeo" class="social-icon"/></a>
+		<a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
+	    </li>-->
+                <li><a href="index.html#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a class="various" data-fancybox-type="iframe" href="images/katiemarriner_resume.pdf">Resume</a></li>
+                <li><a href="images/katiemarriner_resume.pdf">Resume</a></li>
             </ul>	      
         </nav>
     </div><!--end-nav-->
     
-    <!--<ul class="nav navbar-nav" style="float: left;">
-		<li><a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a></li>
-		<li><a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"/></a></li>
-		<li><a href="http://www.vimeo.com/katiemarriner"><img src="images/social/vimeo.png" alt="Vimeo" class="social-icon"/></a></li>
-		<li><a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a></li>
-    </ul>-->
+    
 
     <!--MOBILE NAV-->
     <div id="nav-mobile" class="hidden-md hidden-lg">
@@ -168,29 +200,28 @@
 		    <li class="sub-cats"><a href="#info">Infographics</a></li>
 		    <li class="sub-cats"><a href="#logos">Logos</a></li>
 		    <li class="sub-cats"><a href="#gen">General Design</a></li>
-                <li class="underline overline"><a class="fancybox" data-fancybox-type="iframe" href="images/katiemarriner_resume.pdf">Resume</a></li>
+                <li class="underline overline"><a href="images/katiemarriner_resume.pdf">Resume</a></li>
+		<!--<li class="inline-block" style="float:right;">
+		    <a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a>
+		    <a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"/></a>
+		    <a href="http://www.vimeo.com/katiemarriner"><img src="images/social/vimeo.png" alt="Vimeo" class="social-icon"/></a>
+		    <a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
+		</li>-->
 	    </ul>
 	    </li>
         </nav>
     </div><!--end-nav-mobile-->
 
-    
+    <div id="sprite"></div>    
     <div id="container">
     <a name="top"></a>
     <div id="intro" class="about-row full">
         <a name="intro" class="links"></a>
         <div class="col-md-12" style="display: table-cell; vertical-align: middle;">
           <center>
-	    <img src="images/logo.svg" class="hidden-sm hidden-xs">
-	  <!--<hr class="hidden-sm hidden-xs">-->
 	    <div class="katie"><h2 class="name-title">
 		Katie Marriner
             </h2></div>
-	    
-	    <h5 class="tagline">
-		Designer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Developer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Journalist
-	    </h5>
-		
 	    <div>
 		<a href="#web"><div class="circle sub-cats" style="background-color: #EBB763">Web</div></a>
 		<a href="#info"><div class="circle sub-cats" style="background-color: #E75A46">Infographics</div></a>
@@ -198,14 +229,18 @@
 		<a href="#gen"><div class="circle sub-cats" style="background-color: #96B5CE;">Design</div></a>
 	    </div>
 	    <div>
-		<a href="#portfolio"><span class="glyphicon glyphicon-chevron-down" style="z-index: 10; color: #9ED9B0; font-size: 3em;"></span></a>
+		<a href="#portfolio"><span class="glyphicon glyphicon-chevron-down" style="z-index: 10; color: #9ED9B0; font-size: 3em; text-decoration: blink;"></span></a>
 	    </div>
 	    <p class="intro-text">
-		    Hi, nice to meet you.
+		    Designer // Developer // Journalist
 		</p>
+	    <div class="row right"><a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a>
+		<a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"/></a>
+		<a href="http://www.vimeo.com/katiemarriner"><img src="images/social/vimeo.png" alt="Vimeo" class="social-icon"/></a>
+		<a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
+	    </div>
 	    </center>
 	  </div>
-	</div>
 
     </div><!--end-about-id-->
    
@@ -217,36 +252,34 @@
 		    <h5 style="color: #EBB763">Web Design and Development</h5>
 		    <li>
 			<figure>
-			    <a href="http://www.katiemarriner.com/586_project3">
-				<img src="images/mental-health-nc.png" alt="Mental Health in NC">
-			    </a>
+			    <img src="images/mental-health-nc.png" alt="Mental Health NC">
 			    <figcaption>
-				<h3>Mental Health Treatment Facilities in North Carolina</h3>
-				<div class="methods">Highcharts, DataTables, Tabletop.js, GoogleMaps</div>
+				<a href="http://katiemarriner.com/static/mentalhealth"><h3>Mental Health Treatment Facilities in North Carolina</h3></a>
+				<div class="methods">HighCharts, DataTables, Tabletop.js, GoogleMaps</div>
 				<a class="various" data-fancybox-type="iframe" href="fancybox/mental.html" title="Mental Health Treatment Facilities in North Carolina">
 				    Method
-				</a> | <a href="http://www.katiemarriner.com/586_project3">Visit</a>
+				</a> | <a href="http://www.katiemarriner.com/static/mentalhealth">Visit</a> | <a href="https://github.com/katiemarriner/mental-health-nc-data">Source</a>
 				
 			    </figcaption>
 			</figure>
 		    </li>
 		    <li>
 			<figure>
-			    <img src="images/comedy-nyc.png" alt="Comedy in NYC">
+				<img src="images/comedy-nyc.png" alt="Comedy in NYC">
 			    <figcaption>
-				<h3>Comedy in NYC</h3>
+				<a href="http://katiemarriner.com/static/comedynyc"><h3>Comedy in NYC</h3></a>
 				<div class="methods">APIs: Twitter, GoogleMaps, Instagram, Yelp</div>
-				<a class="various" data-fancybox-type="iframe" href="fancybox/comedy.html" title="Mental Health Treatment Facilities in North Carolina">
+				<a class="various" data-fancybox-type="iframe" href="fancybox/comedy.html" title="Comedy in New York City">
 				    Method
-				</a> | <a href="http://katiemarriner.com/static/586_project4">Visit</a>
+				</a> | <a href="http://katiemarriner.com/static/comedynyc">Visit</a> | <a href="https://github.com/katiemarriner/nycf">Source</a>
 			    </figcaption>
 			</figure>
 		    </li>
 		    <li>
 			<figure>
-			    <img src="images/homefront.png" alt="Homefront">
+				<img src="images/homefront.png" alt="Homefront">
 			    <figcaption>
-				<h3>Homefront Website</h3>
+				<a href="http://katiemarriner.com/homefront"><h3>Homefront Website</h3></a>
 				<div class="methods">Wordpress, Twitter Bootstrap</div>
 				<a class="various" data-fancybox-type="iframe" href="fancybox/homefront.html" title="Homefront Magazine Website">
 				    Method
@@ -256,10 +289,10 @@
 		    </li>
 		    <li>
 			<figure>
-			    <img src="images/esbslider.png" alt="Empire State Building Lights jQuery Slider">
+				<img src="images/esbslider.png" alt="Empire State Building Lights jQuery Slider">
 			    <figcaption>
-				<h3>Lights of the Empire State Building</h3>
-				<div class="methods">Slider</div>
+				<a href="http://katiemarriner.com/static/jqueryslider2"><h3>Lights of the Empire State Building</h3></a>
+				<div class="methods">jQuery Plugin</div>
 				<a class="various" data-fancybox-type="iframe" href="fancybox/slider.html" title="jQuery Slider">
 				    Method
 				</a> | <a href="http://katiemarriner.com/static/jqueryslider2">Visit</a>
@@ -268,15 +301,22 @@
 		    </li>
 		    <li>
 			<figure>
-			    <img src="images/cssbootcamp.png" alt="CSS Bootcamp">
+			    <a class="fancybox" rel="gallery4" href="images/galapagos1.png" title="Living Galapagos">
+				<img src="images/galapagosthumb.png" alt="Running the Point">
+			    </a>
 			    <figcaption>
-				<h3>Comedy in NYC</h3>
-				<div class="methods">Twitter Bootstrap</div>
-				<a href="http://www.katiemarriner.com/static/cssbootcamp.html" title="CSS Bootcamp">
-				    Visit
-				</a>
+				<h3>Living Galapagos</h3>
+				<div class="methods">Web Design</div>
 			    </figcaption>
 			</figure>
+			<div class="hidden">
+			<a class="fancybox" rel="gallery4" href="images/galapagos2.png">
+			    <img src="images/galapagosthumb.png" alt=""/>
+			</a>
+			<a class="fancybox" rel="gallery4" href="images/galapagos3.png">
+			    <img src="images/galapagosthumb.png" alt=""/>
+			</a>
+			</div>
 		    </li>
 		    
 		    <a name="info">
@@ -295,7 +335,7 @@
 		    </li>
 		    <li>
 			<figure>
-			    <a class="fancybox" rel="gallery1" href="images/runningthepoint.png" title="Running the Point">
+			    <a class="fancybox" rel="gallery1" href="images/runningthepoint.png" title="Running the Point" alt="caption">
 				<img src="images/pointthumb.png" alt="Running the Point">
 			    </a>
 			    <figcaption>
@@ -321,8 +361,8 @@
 		    <h5 style="color: #5D9F9C">Logos</h5></a>
 		    <li>
 			<figure>
-			    <a class="fancybox" rel="gallery5" href="images/logos/ConnorInt1.png" title="Connor Community International Festival">
-				<img src="images/logos/ConnorInt3.png" alt="Running the Point" width="100%">
+			    <a class="fancybox" rel="gallery5" href="images/logos/ConnorInt1.jpeg" title="Connor Community International Festival">
+				<img src="images/logos/ConnorInt3.jpeg" alt="ConnorInt" width="100%">
 			    </a>
 			    <figcaption>
 				<h3>Connor Community International Festival</h3>
@@ -330,27 +370,27 @@
 			    </figcaption>
 			</figure>
 			<div class="hidden">
-			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt2.png" title="Connor Community International Festival">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt2.jpeg" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt3.png" title="Connor Community International Festival">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt3.jpeg" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt4.png" title="Connor Community International Festival">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt4.jpeg" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt5.png" title="Connor Community International Festival">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt5.jpeg" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt6.png" title="Connor Community International Festival">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery5" href="images/logos/ConnorInt6.jpeg" title="Connor Community International Festival">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="" width="100%" class="web-images img-responsive"/>
 			</a>
 			</div>
 		    </li>
 		    <li>
 			<figure>
-			    <a class="fancybox" rel="gallery6" href="images/logos/grow1.png" title="GROW">
-				<img src="images/logos/grow5.png" alt="Running the Point" style="width: 100%">
+			    <a class="fancybox" rel="gallery6" href="images/logos/grow1.jpeg" title="GROW">
+				<img src="images/logos/grow5.jpeg" alt="GROW" style="width: 100%">
 			    </a>
 			    <figcaption>
 				<h3>GROW: Gaining Resources and Opportunities Workshop</h3>
@@ -358,33 +398,33 @@
 			    </figcaption>
 			</figure>
 			<div class="hidden">
-			<a class="fancybox" rel="gallery6" href="images/logos/grow2.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow2.jpeg" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="GROW logo 2" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery6" href="images/logos/grow3.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow3.jpeg" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="GROW logo 3" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery6" href="images/logos/grow4.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow4.jpeg" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="GROW logo 4" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery6" href="images/logos/grow5.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow5.jpeg" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="GROW logo 5" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery6" href="images/logos/grow6.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow6.jpeg" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="GROW logo 6" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery6" href="images/logos/grow7.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow7.jpeg" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="GROW logo 7" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery6" href="images/logos/grow8.png" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery6" href="images/logos/grow8.jpeg" title="G.R.O.W: Gaining Resources & Opportunities Workshops">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="GROW logo 8" width="100%" class="web-images img-responsive"/>
 			</a>
 			</div>
 		    </li>
 		    <li>
 			<figure>
-			    <a class="fancybox" rel="gallery7" href="images/logos/change1.png" title="Change">
-				<img src="images/logos/change8.png" alt="Change">
+			    <a class="fancybox" rel="gallery7" href="images/logos/change1.jpeg" title="Change">
+				<img src="images/logos/change8.jpeg" width="100%" alt="Change">
 			    </a>
 			    <figcaption>
 				<h3>Change: Reflection to Action</h3>
@@ -392,26 +432,26 @@
 			    </figcaption>
 			</figure>
 			<div class="hidden">
-			<a class="fancybox" rel="gallery7" href="images/logos/change2.png" title="Change: Reflection to Action">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery7" href="images/logos/change2.jpeg" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="Change logo 2" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery7" href="images/logos/change3.png" title="Change: Reflection to Action">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery7" href="images/logos/change3.jpeg" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="Change logo 3" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery7" href="images/logos/change4.png" title="Change: Reflection to Action">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery7" href="images/logos/change4.jpeg" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="Change logo 4" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery7" href="images/logos/change5.png" title="Change: Reflection to Action">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery7" href="images/logos/change5.jpeg" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="Change logo 5" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery7" href="images/logos/change6.png" title="Change: Reflection to Action">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery7" href="images/logos/change6.jpeg" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="Change logo 6" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery7" href="images/logos/change7.png" title="Change: Reflection to Action">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery7" href="images/logos/change7.jpeg" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="Change logo 7" width="100%" class="web-images img-responsive"/>
 			</a>
-			<a class="fancybox" rel="gallery7" href="images/logos/change8.png" title="Change: Reflection to Action">
-			    <img src="images/logos/ConnorInt1.png" alt="" width="100%" class="web-images img-responsive"/>
+			<a class="fancybox" rel="gallery7" href="images/logos/change8.jpeg" title="Change: Reflection to Action">
+			    <img src="images/logos/ConnorInt1.jpeg" alt="Change logo 8" width="100%" class="web-images img-responsive"/>
 			</a>
 			</div>
 		    </li>
@@ -429,7 +469,7 @@
 			</figure>
 			<div class="hidden">
 			<a class="fancybox" rel="gallery8" href="images/lesmiz1.png">
-			    <img src="images/lesmizthumb.png" alt=""/>
+			    <img src="images/lesmizthumb.png" alt="Les Miz thumb"/>
 			</a>
 			</div>
 		    </li>
@@ -445,7 +485,7 @@
 			</figure>
 			<div class="hidden">
 			<a class="fancybox" rel="gallery2" href="images/holidaytag2.png">
-			    <img src="images/holidaytagthumb.png" alt=""/>
+			    <img src="images/holidaytagthumb.png" alt="Holiday tag 2"/>
 			</a>
 			</div>
 		    </li>
@@ -461,29 +501,11 @@
 			</figure>
 			<div class="hidden">
 			<a class="fancybox" rel="gallery3" href="images/mipso2.png">
-			    <img src="images/mipsothumb.png" alt=""/>
+			    <img src="images/mipsothumb.png" alt="Mipso 2"/>
 			</a>
 			</div>
 		    </li>
-		    <li>
-			<figure>
-			    <a class="fancybox" rel="gallery4" href="images/galapagos1.png" title="Living Galapagos">
-				<img src="images/galapagosthumb.png" alt="Running the Point">
-			    </a>
-			    <figcaption>
-				<h3>Living Galapagos</h3>
-				<div class="methods">Web Design</div>
-			    </figcaption>
-			</figure>
-			<div class="hidden">
-			<a class="fancybox" rel="gallery4" href="images/galapagos2.png">
-			    <img src="images/galapagosthumb.png" alt=""/>
-			</a>
-			<a class="fancybox" rel="gallery4" href="images/galapagos3.png">
-			    <img src="images/galapagosthumb.png" alt=""/>
-			</a>
-			</div>
-		    </li>
+		    
 		</ul>
 	    </div><!-- /container -->
 	    
@@ -495,24 +517,26 @@
 	<a name="about" class="links"></a>
 	<div class="col-md-6 col-md-offset-3">
 	    <h5 class="sub-header">About Me</h5>
-            <p class="text">It was written in the stars that I would become a journalist one day - I am named after
-	    Katie Couric after all. Although it was a bumpy path before I found my way into the field.
-	    I study visual journalism at the University of North Carolina at Chapel Hill.
-            I am a graphic designer by nature but a coder by practice. I am an advocate for "hacker journalism"
-	    and hope to become part of the dynamic world of journalism after graduating in May of 2014.
+            <p class="text">
+	    It is fitting that I would discover my love for journalism - I am named after Katie
+	    Couric after all. But instead of a traditional journalist, I see myself as part of the "new era" of journalism focused on
+	    innovation and technology. I am a graphic designer by nature but a coder by practice and use every opportunity I can to combine
+	    my creative and analytical sides. I study visual journalism at the University of North Carolina at Chapel Hill.
 	    During the summer of 2013, I interned as a web producer and page designer at the Milwaukee Journal
-	    Sentinel. This year I serve as treasurer for the newly established chapter of the Online News Association
-            at UNC and hone my skills as a designer by creating graphics for the Carolina Union Marketing and Design department.</p>
+	    Sentinel. This semester, I am a on staff at <a href="http://www.reesenewslab.org">Reese News Lab</a> at UNC, where new
+	    ideas for the media industry are generated, developed and tested.
+	    </p>
+	    
+	    <p class="text">kemarriner@gmail.com</p>
+	    <a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a>
+		<a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"/></a>
+		<a href="http://www.vimeo.com/katiemarriner"><img src="images/social/vimeo.png" alt="Vimeo" class="social-icon"/></a>
+		<a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
         </div>
+	
    </div><!--about-id-->
 
 </div><!--container-->
-
-<div id="footer">
-    <a class="various" data-fancybox-type="iframe" href="fancybox/credits.html" title="Credits">
-	Credits
-    </a>
-</div>
 
 <script src="js/toucheffects.js"></script>
 </body>

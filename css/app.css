@@ -7,6 +7,17 @@
 
 /*GENERAL CLASSES*/
 
+#dvLoading
+   {
+   background: url(images/logo.svg) center 40% no-repeat,
+   url(images/load.gif) center center no-repeat;
+   background-color: #f4f4f4;
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   z-index: 1000;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -30,6 +41,10 @@ hr.inline {
     display: inline-block;
     width: 10%;
     vertical-align: middle;
+}
+
+li.inline-block {
+    display: inline-flex;
 }
 
 .box {
@@ -80,10 +95,24 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Lato', sans-serif;
 }
 
-h3 {
-    font-size: 0.9em;
+
+
+a h3 {
+    font-size: 16px !important;
     font-weight: 700;
     padding: 10px;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+h3 {
+    font-size: 16px !important;
+    font-weight: 700;
+    padding: 10px;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: left;
 }
 
 h4 {
@@ -99,16 +128,7 @@ h5 {
     font-size: 3em;
     padding: 20px 0 0 0;
     margin: 30px 0 0 0;
-}
-
-@media only screen and (max-width: 450px) {
-   html {
-    padding: 0;
-    margin: 0;
-   }
-   h5 { font-size: 1.5em; }
-   .tagline { font-size: 0.1em; }
-   h2 { font-size: 3em; }
+    text-shadow: 4px 1px #888;
 }
 
 h5.tagline {
@@ -133,10 +153,11 @@ h5.tagline {
 
 .name-title {
     color: #9ED9B0;
-    font-size: 4em;
+    font-size: 6em;
     font-weight: 700;
     text-align: center;
     padding: 0;
+    text-shadow: 4px 1px #888;
 }
 
 .methods {
@@ -178,11 +199,11 @@ h5.tagline {
 }
 
 .underline {
-    border-bottom: 2px solid #fff;    
+    border-bottom: 2px solid rgba(255,255,255,0.4);    
 }
 
 .overline {
-    border-top: 2px solid #fff;    
+    border-top: 2px solid rgba(255,255,255,0.4);  
 }
 
 .main-header {
@@ -301,10 +322,14 @@ a:hover {
 /*SECTIONS*/
 
 .social-icon {
-    width: 32px;
-    padding: 0 5px;
+    height: 20px;
+    padding: 0 2px 0 0;
     filter: grey;
     -webkit-filter: grayscale(100%);
+}
+
+.nav > li > a > .social-icon {
+    padding: 0;
 }
 
 .social-icon:hover {
@@ -329,15 +354,16 @@ a:hover {
 }
 
 #portfolio{
-    background-color: mintcream;
+    background-color: #eee;
 }
 
 #footer {
-    background-color: #f4f4f4;
-    color: #000;
-    max-height: 40px;
+   font-size: 0.6em;
+   min-height: 0;
+   max-height: 20px;
+   position: fixed;
+   bottom: 0;
 }
-
 
 .about-row, .graphics-row {
     display: table;
@@ -346,7 +372,6 @@ a:hover {
 
 .web-row, .resume-row {
     color: #1D2939;
-    display: table;
 }
 
 /*IMAGES*/
@@ -361,4 +386,16 @@ a:hover {
 .image:hover {
     background-color: #000;
     border-radius: 20%;
+}
+
+@media only screen and (max-width: 450px) {
+   html {
+    padding: 0;
+    margin: 0;
+   }
+   h5 { font-size: 2em; text-decoration: none; }
+   .tagline { font-size: 0.1em; }
+   
+   h2.name-title { font-size: 4em; }
+   .circle { margin: 5px; }
 }
