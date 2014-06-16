@@ -3,11 +3,9 @@
 	/*max-width: 1300px;*/
 	margin: 0 auto;
 	list-style: none;
-	text-align: center;
 }
 
 .grid li {
-	display: inline-block;
 	/*width: 440px;*/
 	max-width: 300px;
 	width: 100%;

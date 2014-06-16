@@ -37,6 +37,10 @@ hr {
     width: 25%;
 }
 
+.full {
+    height: 100%;
+}
+
 hr.inline {
     display: inline-block;
     width: 10%;
@@ -98,9 +102,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 a h3 {
-    font-size: 16px !important;
+    font-size: 2em !important;
     font-weight: 700;
-    padding: 10px;
     letter-spacing: normal;
     text-transform: none;
     text-align: left;
@@ -109,7 +112,6 @@ a h3 {
 h3 {
     font-size: 16px !important;
     font-weight: 700;
-    padding: 10px;
     letter-spacing: normal;
     text-transform: none;
     text-align: left;
@@ -118,11 +120,11 @@ h3 {
 h4 {
     color: #9ED9B0;
     font-size: 1.5em;
+    text-shadow: 1px 1px #888;
 }
 
 h5 {
     font-weight: 700;
-    text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 3em;
@@ -133,7 +135,6 @@ h5 {
 
 h5.tagline {
     font-weight: 700;
-    text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -155,15 +156,11 @@ h5.tagline {
     color: #9ED9B0;
     font-size: 6em;
     font-weight: 700;
-    text-align: center;
     padding: 0;
     text-shadow: 4px 1px #888;
 }
 
 .methods {
-    font-size: 0.6em;
-    line-height: 0.6em;
-    color: #f4f4f4;
     font-weight: 400;
     padding: 5px 0;
 }
@@ -175,7 +172,6 @@ h5.tagline {
     font-weight: 400;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .sub-cats p {
@@ -193,7 +189,6 @@ h5.tagline {
     color: #fff;
     font-weight: 700;
     display: table-cell;
-    text-align: center;
     vertical-align: middle;
     font-size: 2em;
 }
@@ -224,6 +219,22 @@ h5.tagline {
 }
 
 /*NAVBAR*/
+.about {
+    background-color: #9ED9B0;
+
+}
+
+.vertical-nav {
+    list-style: none;
+    background-color: #9ED9B0;
+    position: fixed;
+    width: 100%;
+}
+
+.vertical-nav a{
+    color: #fff;
+}
+
 .navbar-fixed-top {
     background-color: #9ED9B0;
     color: #fff;
@@ -268,10 +279,12 @@ ul.nav {
     color: #fff;
 }
 
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+
 .navbar-default .navbar-nav > li > a:hover, .header-text a:hover {
     color: #fff;
-    border-bottom: solid 2px #fff;
-    padding-bottom: 0;
 }
 
 li.dropdown {
@@ -289,12 +302,7 @@ li.dropdown {
     font-size: 14px;
     list-style: none;
     background-color: #9ED9B0;
-    /*border: 1px solid #cccccc;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    background-clip: padding-box;*/
+    border: none;
 }
 
 .dropdown-menu > li > a {
@@ -386,6 +394,11 @@ a:hover {
 .image:hover {
     background-color: #000;
     border-radius: 20%;
+}
+
+.preview-img {
+    width: 100%;
+    margin: 20px 0;
 }
 
 @media only screen and (max-width: 450px) {
