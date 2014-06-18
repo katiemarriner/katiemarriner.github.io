@@ -166,8 +166,7 @@ h5.tagline {
 }
 
 .sub-cats {
-    font-size: 0.6em;
-    line-height: 0.6em;
+    font-size: 0.8em;
     color: #f4f4f4;
     font-weight: 400;
     letter-spacing: 1.2px;
@@ -178,11 +177,20 @@ h5.tagline {
     
 }
 
+.sub-portfolio {
+    list-style: none;
+    padding-left: 10px;
+}
+
 .intro-text {
     font-size: 0.8em;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.vertical-nav li {
+    margin: 20px 0;
 }
 
 .box-text {
