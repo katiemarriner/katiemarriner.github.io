@@ -147,15 +147,15 @@
     </nav>
 </div><!--end-nav-mobile-->
 <div class="row full">
-<div class="col-md-2 full">
+<div class="col-md-2 hidden-sm hidden-xs full">
     <ul class="vertical-nav hidden-sm hidden-xs full">
-	<li><p class="katie">Katie Marriner</p></li>
+	<li><p class="katie">Katie</p> <p class="marriner">Marriner</p></li>
 	<li><a href="#portfolio">Portfolio</a></li>
-		<li class="sub-cats">World Cup Team Summaries</li>
-		<li class="sub-cats">Find N' Play</li>
-		<li class="sub-cats">Mental Health</li>
-		<li class="sub-cats">NYC Comedy</li>
-		<li class="sub-cats">UNC Baseball</li>
+	<li class="sub-cats">World Cup Team Summaries</li>
+	<li class="sub-cats">Find N' Play</li>
+	<li class="sub-cats">Mental Health</li>
+	<li class="sub-cats">NYC Comedy</li>
+	<li class="sub-cats">UNC Baseball</li>
 	<li><a href="index.html#about">About</a></li>
 	<li><a href="images/katiemarriner_resume.pdf">Resume</a></li>
 	<li>
@@ -175,32 +175,43 @@
     <a name="web"></a>
     <div class="row">
 	<div class="col-md-10 col-md-offset-1 col-sm-offset-1 col-sm-11 sub-header">
-	    <h2 class="name">Katie Marriner</h2>
-	    <h5 style="color: #EBB763">Interactive</h5>
+	    <h5>Interactive</h5>
 	</div>
     </div>
     <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="findnplay.herokuapp.com"><img src="images/findnplay.png" class="preview-img" alt="Find N' Play"></a></div>
+	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://graphics.wsj.com/wc-teams-2014"><img src="images/wcteams.png" class="preview-img" alt="Find N' Play"></a></div>
 	<div class="col-md-7 col-sm-7">
-	    <a href="findnplay.herokuapp.com"><h3>World Cup Team Summaries</h3></a>
+	    <a href="http://graphics.wsj.com/wc-teams-2014"><h3>World Cup Team Summaries</h3></a>
+	    <p class="tiny-text">The Wall Street Journal</p>
 	    <div class="methods">HTML, CSS, JavaScript/jQuery</div>
-	    <a href="graphics.wsj.com/wc-summaries-2014">Visit</a> | <a href="#r">Source</a>
+	    <p class="fancybox-text">
+		Built on a strict deadline, this interactive provides summaries of each of the teams participating
+		in the 2014 World Cup. I wrote the CSS for the interactive based on a design comp that was given to me
+		and data from a Google Spreadsheet.
+	    </p>
+	    <a href="http://graphics.wsj.com/wc-teams-2014">Visit</a>
 	</div>
     </div>
     <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="findnplay.herokuapp.com"><img src="images/findnplay.png" class="preview-img" alt="Find N' Play"></a></div>
+	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://findnplay.herokuapp.com"><img src="images/findnplay.png" class="preview-img" alt="Find N' Play"></a></div>
 	<div class="col-md-7 col-sm-7">
-	    <a href="findnplay.herokuapp.com"><h3>Find N' Play</h3></a>
+	    <a href="http://findnplay.herokuapp.com"><h3>Find N' Play</h3></a>
 	    <div class="methods">Python, Django</div>
-	    <a href="findnplay.herokuapp.com">Visit</a> | <a href="https://github.com/josieh/playground-finder">Source</a>
+	    <p class="fancybox-text">
+		Built with a team of computer programmers and journalists, Find 'N Play is a Django application that
+		allows users to search playgrounds in their area and filter based on features. I was responsible for
+		all design direction and styling in addition to laying out template pages. I implemented dropdowns and
+		user signup/log-in features on the front end.
+	    </p>
+	    <a href="http://findnplay.herokuapp.com">Visit</a> | <a href="https://github.com/josieh/playground-finder">Source</a>
 	</div>
     </div>
     <div class="row">
 	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://katiemarriner.com/static/mentalhealth"><img src="images/mental-health-nc.png" class="preview-img" alt="Mental Health NC"></a></div>
 	<div class="col-md-7 col-sm-7">
 	    <a href="http://katiemarriner.com/static/mentalhealth"><h3>Mental Health in North Carolina</h3></a>
-	    <div class="">HighCharts, DataTables, Tabletop.js, GoogleMaps</div>
-	    <div class=""><p class="fancybox-text">
+	    <div class="methods">HighCharts, DataTables, Tabletop.js, GoogleMaps</div>
+	    <p class="fancybox-text">
 		This data visualization was created using <a href="http://www.highcharts.com" class="frame-links">Highcharts</a>,
 		<a href="https://github.com/jsoma/tabletop" class="frame-links">Tabletop.js</a> with GoogleMaps and
 		<a href="http://datatables.net/" class="frame-links">DataTables</a> with data from <a href=""http://www.datahub.io" class="frame-links">datahub.io</a>.
@@ -213,7 +224,6 @@
 	    to get a better picture of the care available by region, I used
 	    the drilldown Highchart to divide the regions into the types of facilities in each.
 	    </p>
-	    </div>
 	    <a href="http://www.katiemarriner.com/static/mentalhealth">Visit</a> | <a href="https://github.com/katiemarriner/mental-health-nc-data">Source</a>
 	</div>
     </div>
@@ -221,7 +231,7 @@
 	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://katiemarriner.com/static/comedynyc"><img src="images/comedy-nyc.png" class="preview-img" alt="Comedy in NYC"></a></div>
 	<div class="col-md-7 col-sm-7">
 	    <a href="http://katiemarriner.com/static/comedynyc"><h3>Comedy in NYC</h3></a>
-	    <div class="">APIs: Twitter, GoogleMaps, Instagram, Yelp</div>
+	    <div class="methods">APIs: Twitter, GoogleMaps, Instagram, Yelp</div>
 	    <div><p class="fancybox-text">This API Mashup was created using the Twitter, Instagram, Yelp and Google Maps APIs.
     I love stand-up comedy, but comedy clubs are often hole-in-the-wall places that are difficult to find. Using
     an article by <a href="http://www.nycgo.com/comedycalendar" class="frame-links">NYC Go</a>,
@@ -236,7 +246,7 @@
 	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://uncbaseball.herokuapp.com/player/"><img src="images/uncbaseball.png" class="preview-img" alt="UNC Baseball 2014"></a></div>
 	<div class="col-md-7 col-sm-7">
 	    <a href="http://uncbaseball.herokuapp.com/player/"><h3>UNC Baseball</h3></a>
-	    <div class="">Python, Django</div>
+	    <div class="methods">Python, Django</div>
 	    <div>
 		<p class="fancybox-text">
 	The UNC Baseball Roster was built using Python with the Django framework. I focused on usability and the ease
@@ -255,7 +265,7 @@
     
     <div class="row">
 	<div class="col-md-10 col-md-offset-1 col-sm-offset-1 col-sm-11 sub-header">
-	    <h5 style="color: #96B5CE">Static</h5></a>
+	    <h5>Static</h5></a>
 	</div>
     </div>
     <div class="row">
@@ -265,7 +275,7 @@
 	    </a>
 	</div>
 	<div class="col-md-7 col-sm-7">
-	    <h3>Pulling the Perfect Espresso Shot</h3>
+	    <a href="images/espresso.png"><h3>Pulling the Perfect Espresso Shot</h3></a>
 	    <div class="">Infographic</div>
 	</div>
     </div>
@@ -276,7 +286,7 @@
 	    </a>
 	</div>
 	<div class="col-md-7 col-sm-7">
-	    <h3>Running the Point</h3>
+	    <a href="images/runningthepoint.png"><h3>Running the Point</h3></a>
 	    <div class="">Infographic</div>
 	</div>
     </div>
@@ -287,7 +297,7 @@
 	    </a>
 	</div>
 	<div class="col-md-7 col-sm-7">
-	    <h3>The Empire State Building Glows Green</h3>
+	    <a href="images/esbinfo.png"><h3>The Empire State Building Glows Green</h3></a>
 	    <div class="">Infographic</div>
 	</div>
     </div>   
