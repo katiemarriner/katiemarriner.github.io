@@ -43,6 +43,7 @@
     <link rel="stylesheet" type="text/css" href="css/caption.css" />
     <script src="js/caption.custom.js"></script>
     <script src="js/toucheffects.js"></script>
+    <script src="js/tendina.min.js"></script>
     
     <script type="text/javascript" src="js/lazyload.js"></script>
     
@@ -119,7 +120,21 @@
       }
     }
   });
-}); //end smooth scroll	
+}); //end smooth scroll
+   
+   $('#menu').tendina();
+   $('.dropdown').tendina({
+        animate: true,
+        speed: 500,
+        onHover: true,
+        hoverDelay: 300,
+        openCallback: function($clickedEl) {
+          console.log($clickedEl);
+        },
+        closeCallback: function($clickedEl) {
+          console.log($clickedEl);
+        }
+      });
     
 </script>
 
@@ -133,7 +148,7 @@
 <div id="nav-mobile" class="hidden-md hidden-lg">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <li class="dropdown">
-	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-align-justify" style="z-index: 10; color: #f4f4f4; font-size: 2em; padding: 20% 0;"></span></b></a>
+	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list" style="z-index: 10; color: #f4f4f4; font-size: 2em; padding: 20% 0;"></span></b></a>
 	<ul class="dropdown-menu">
 	    <li class="underline"><a href="#about">About</a></li>
 	    <li><a href="#portfolio">Portfolio</a></li>
@@ -149,21 +164,15 @@
 <div class="row full">
 <div class="col-md-2 hidden-sm hidden-xs full">
     <ul class="vertical-nav hidden-sm hidden-xs full">
-	<li><p class="katie">Katie</p> <p class="marriner">Marriner</p></li>
+	<li><p class="katie">Katie Marriner</p>
 	<li><a href="#portfolio">Portfolio</a></li>
-	<li class="sub-cats">World Cup Team Summaries</li>
-	<li class="sub-cats">Find N' Play</li>
-	<li class="sub-cats">Mental Health</li>
-	<li class="sub-cats">NYC Comedy</li>
-	<li class="sub-cats">UNC Baseball</li>
-	<li><a href="index.html#about">About</a></li>
 	<li><a href="images/katiemarriner_resume.pdf">Resume</a></li>
 	<li>
 	    <a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a>
 	    <a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"/></a>
-	    <a href="http://www.vimeo.com/katiemarriner"><img src="images/social/vimeo.png" alt="Vimeo" class="social-icon"/></a>
 	    <a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
 	</li>
+	<li class="bio">I am a data/visual journalist and recent graduate of the University of North Carolina's journalism school. I am currently the interactive graphics intern at the Wall Street Journal.</li>
     </ul>
 </div>
 
