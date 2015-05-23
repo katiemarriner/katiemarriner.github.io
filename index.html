@@ -1,56 +1,30 @@
 <!DOCTYPE html>
-
 <html>
 <head>
     <title>Katie Marriner</title>
-    <meta name="description" content="Katie Marriner is a UNC Chapel Hill journalism student studying web design and development.">
-    <meta name="keywords" content="Katie Marriner, Marriner, UNC, journalism, North Carolina">
+    <meta name="description" content="Katie Marriner is a news applications developer at the Wall Street Journal.">
+    <meta name="keywords" content="Katie Marriner, Marriner, wsj, wall street journal, journalism">
     <meta name="author" content="Katie Marriner">
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--jQUERY-->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     
     <!--BOOTSTRAP CSS-->
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/app.css" rel="stylesheet" media="screen">
     
     <!--BOOTSTRAP JS-->
-    <script language="javascript" type="text/javascript" src="js/bootstrap.js"></script>
     
     <!--FONT-->
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-    
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-    
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-    
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
-    
-    <!--CAPTIONS-->
-    <link rel="shortcut icon" href="../favicon.ico"> 
-    <link rel="stylesheet" type="text/css" href="css/default.css" />
-    <link rel="stylesheet" type="text/css" href="css/caption.css" />
-    <script src="js/caption.custom.js"></script>
-    <script src="js/toucheffects.js"></script>
-    <script src="js/tendina.min.js"></script>
-    
-    <script type="text/javascript" src="js/lazyload.js"></script>
-    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> 
+        
     <base target="_blank">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+ <!--    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
     
+
+
     <!--TRACKING-->	
     <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -62,261 +36,81 @@
 	ga('send', 'pageview');
     </script>
 	
-    <style>
-	#dvLoading
-	    {
-	       background: url(images/logo.svg) center 40% no-repeat,
-			    url(images/load.gif) center center no-repeat;
-	       background-color: #f4f4f4;
-	       height: 100%;
-	       width: 100%;
-	       position: fixed;
-	       z-index: 1000;
-	    }
-    </style>
+ 
     
-<script>
-    //full divs and nav hide
-    var width = $(window).width();
-    var height = $(window).height();
-    
-    
-    $(window).load(function(){
-      $('#dvLoading').fadeOut(2000);
-    });
 
-    /*$(document).ready(function divSize() {
-        $('.full').height(height);
-	$('nav').hide();
-    });*/ //end function divSize
+<script id="template" type="text/x-handlebars-template">
+	{{#each this}}
+		<div class="row portfolio-entry">
+			<div class="col-md-3 col-sm-4">				
+				<img src="http://katiemarriner.com/static/images/{{ image }}" class="img-preview"/>
+			</div>
+			<div class="col-md-7 col-sm-8">
+			
+				<h4>
+					{{#if this.link}}
+					<a href="{{ link }}">
+					{{/if}}
+				{{ title }}
+					{{#if this.link}}
+					</a>
+					{{/if}}
+				</h4>
 
-    
-    //show nav on scroll
-    /*$(window).scroll(function(){
-	var pagePosition = window.pageYOffset;
-        var windowHeight = window.innerHeight;
-	
-	
-	
-	if (pagePosition > windowHeight - 10) {
-	    $("nav").fadeIn("slow");
-	} else {
-	    $("nav").fadeOut(100);
-	};
-	
-    });*/
-    
-    //smooth scroll to anchor links
-   $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-}); //end smooth scroll
-   
-   $('#menu').tendina();
-   $('.dropdown').tendina({
-        animate: true,
-        speed: 500,
-        onHover: true,
-        hoverDelay: 300,
-        openCallback: function($clickedEl) {
-          console.log($clickedEl);
-        },
-        closeCallback: function($clickedEl) {
-          console.log($clickedEl);
-        }
-      });
-    
+				<p class="tools">{{tools}}</p>
+				<p class="description">{{description}}</p>
+			</div>
+		</div>
+	{{/each}}
+
 </script>
-
     
 </head>
-<div id="dvLoading"></div>
     
     
-
+<body>
 <!--MOBILE NAV-->
-<div id="nav-mobile" class="hidden-md hidden-lg">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <li class="dropdown">
-	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list" style="z-index: 10; color: #f4f4f4; font-size: 2em; padding: 20% 0;"></span></b></a>
-	<ul class="dropdown-menu">
-	    <li class="underline"><a href="#about">About</a></li>
-	    <li><a href="#portfolio">Portfolio</a></li>
-		<li class="sub-cats"><a href="#web">Interactive</a></li>
-		<li class="sub-cats"><a href="#info">Static</a></li>
-		<!--<li class="sub-cats"><a href="#logos">Logos</a></li>
-		<li class="sub-cats"><a href="#gen">General Design</a></li>-->
-	    <li class="underline overline"><a href="images/katiemarriner_resume.pdf">Resume</a></li>
-	</ul>
-	</li>
-    </nav>
+<div id="nav-mobile" class="hidden-md hidden-lg hidden-sm col-xs-12">
+	<h1 class="col-xs-12"><p class="katie-mobile">Katie Marriner</p></h1>
+	<div class="col-xs-12">
+		<p class="sub-mobile">News Apps Developer at The Wall Street Journal</p>
+	
+		<div>
+		    <a href="http://www.github.com/katiemarriner"><img src="http://katiemarriner.com/images/social/github32.png" alt="GitHub" class="social-icon"></a>
+		    <a href="http://www.twitter.com/kemarriner"><img src="http://katiemarriner.com/images/social/twitter.png" alt="Twitter" class="social-icon"/></a>
+		    <a href="http://www.linkedin.com/in/kemarriner"><img src="http://katiemarriner.com/images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
+		    <a href="http://katiemarriner.com/images/katiemarriner_resume.pdf" class="sub-cats">Resume</a>
+		</div>
+	</div>
+	
 </div><!--end-nav-mobile-->
+
 <div class="row full">
-<div class="col-md-2 hidden-sm hidden-xs full">
-    <ul class="vertical-nav hidden-sm hidden-xs full">
-	<li><p class="katie">Katie Marriner</p>
-	<li><a href="#portfolio">Portfolio</a></li>
-	<li><a href="images/katiemarriner_resume.pdf">Resume</a></li>
+<div class="col-md-2 col-sm-3 hidden-xs full">
+    <ul class="vertical-nav hidden-xs full">
+	<li class=""><p class="katie">Katie Marriner</p>
+	<li class="bio">I am a news apps developer at the Wall Street Journal. I build interactive graphics and data visualizations, and I develop tools to allow editors to create their own interactive content. I am keen on rethinking journalism and different ways to tell stories.</li>
+	<li><a href="http://katiemarriner.com/images/katiemarriner_resume.pdf" class="sub-cats">Resume</a></li>
 	<li>
-	    <a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a>
-	    <a href="http://www.twitter.com/kemarriner"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"/></a>
-	    <a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
+	    <a href="http://www.github.com/katiemarriner"><img src="http://katiemarriner.com/images/social/github32.png" alt="GitHub" class="social-icon"></a>
+	    <a href="http://www.twitter.com/kemarriner"><img src="http://katiemarriner.com/images/social/twitter.png" alt="Twitter" class="social-icon"/></a>
+	    <a href="http://www.linkedin.com/in/kemarriner"><img src="http://katiemarriner.com/images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
 	</li>
-	<li class="bio">I am a data/visual journalist and recent graduate of the University of North Carolina's journalism school. I am currently the interactive graphics intern at the Wall Street Journal.</li>
     </ul>
 </div>
 
-<div class="col-md-10">
 
 
-<a name="portfolio"></a>
-<div id="portfolio" class="web-row">
-    <a name="web"></a>
-    <div class="row">
-	<div class="col-md-10 col-md-offset-1 col-sm-offset-1 col-sm-11 sub-header">
-	    <h5>Interactive</h5>
-	</div>
-    </div>
-    <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://graphics.wsj.com/wc-teams-2014"><img src="images/wcteams.png" class="preview-img" alt="Find N' Play"></a></div>
-	<div class="col-md-7 col-sm-7">
-	    <a href="http://graphics.wsj.com/wc-teams-2014"><h3>World Cup Team Summaries</h3></a>
-	    <p class="tiny-text">The Wall Street Journal</p>
-	    <div class="methods">HTML, CSS, JavaScript/jQuery</div>
-	    <p class="fancybox-text">
-		Built on a strict deadline, this interactive provides summaries of each of the teams participating
-		in the 2014 World Cup. I wrote the CSS for the interactive based on a design comp that was given to me
-		and data from a Google Spreadsheet.
-	    </p>
-	    <a href="http://graphics.wsj.com/wc-teams-2014">Visit</a>
-	</div>
-    </div>
-    <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://findnplay.herokuapp.com"><img src="images/findnplay.png" class="preview-img" alt="Find N' Play"></a></div>
-	<div class="col-md-7 col-sm-7">
-	    <a href="http://findnplay.herokuapp.com"><h3>Find N' Play</h3></a>
-	    <div class="methods">Python, Django</div>
-	    <p class="fancybox-text">
-		Built with a team of computer programmers and journalists, Find 'N Play is a Django application that
-		allows users to search playgrounds in their area and filter based on features. I was responsible for
-		all design direction and styling in addition to laying out template pages. I implemented dropdowns and
-		user signup/log-in features on the front end.
-	    </p>
-	    <a href="http://findnplay.herokuapp.com">Visit</a> | <a href="https://github.com/josieh/playground-finder">Source</a>
-	</div>
-    </div>
-    <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://katiemarriner.com/static/mentalhealth"><img src="images/mental-health-nc.png" class="preview-img" alt="Mental Health NC"></a></div>
-	<div class="col-md-7 col-sm-7">
-	    <a href="http://katiemarriner.com/static/mentalhealth"><h3>Mental Health in North Carolina</h3></a>
-	    <div class="methods">HighCharts, DataTables, Tabletop.js, GoogleMaps</div>
-	    <p class="fancybox-text">
-		This data visualization was created using <a href="http://www.highcharts.com" class="frame-links">Highcharts</a>,
-		<a href="https://github.com/jsoma/tabletop" class="frame-links">Tabletop.js</a> with GoogleMaps and
-		<a href="http://datatables.net/" class="frame-links">DataTables</a> with data from <a href=""http://www.datahub.io" class="frame-links">datahub.io</a>.
-	    It was important that I let the data tell the story. North Carolina has been in the news recently for its lack of mental health facilities,
-	    as is the rest of the United States. The state is divided into three regions, the Piedmont holds
-	    the Research Triange Park and the largest city of Charlotte. Outside of the piedmont region, to the east is the eastern region and
-	    to the west, the mountain region. Both are predominantly rural. The American Psychological Association (APA) released
-	    <a href="http://www.apa.org/about/gr/education/rural-need.aspx" class="frame-links">a statement</a> about the need for psychologists in rural
-	    regions of the United States. The data I presented shows just that. I divided the data between facilities in the three regions. In order
-	    to get a better picture of the care available by region, I used
-	    the drilldown Highchart to divide the regions into the types of facilities in each.
-	    </p>
-	    <a href="http://www.katiemarriner.com/static/mentalhealth">Visit</a> | <a href="https://github.com/katiemarriner/mental-health-nc-data">Source</a>
-	</div>
-    </div>
-    <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://katiemarriner.com/static/comedynyc"><img src="images/comedy-nyc.png" class="preview-img" alt="Comedy in NYC"></a></div>
-	<div class="col-md-7 col-sm-7">
-	    <a href="http://katiemarriner.com/static/comedynyc"><h3>Comedy in NYC</h3></a>
-	    <div class="methods">APIs: Twitter, GoogleMaps, Instagram, Yelp</div>
-	    <div><p class="fancybox-text">This API Mashup was created using the Twitter, Instagram, Yelp and Google Maps APIs.
-    I love stand-up comedy, but comedy clubs are often hole-in-the-wall places that are difficult to find. Using
-    an article by <a href="http://www.nycgo.com/comedycalendar" class="frame-links">NYC Go</a>,
-    I identified the top comedy clubs in New York City and geotagged each one. I made the geotagged locations correspond to their
-    Twitter accounts and Instagram tags to gather information and capture the atmosphere of the club.
-    The Yelp API is used to get a longer list of clubs to visit.</p>
-	    </div>
-    <a href="http://katiemarriner.com/static/comedynyc">Visit</a> | <a href="https://github.com/katiemarriner/nycf">Source</a>
-	</div>
-    </div>
-    <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3"><a href="http://uncbaseball.herokuapp.com/player/"><img src="images/uncbaseball.png" class="preview-img" alt="UNC Baseball 2014"></a></div>
-	<div class="col-md-7 col-sm-7">
-	    <a href="http://uncbaseball.herokuapp.com/player/"><h3>UNC Baseball</h3></a>
-	    <div class="methods">Python, Django</div>
-	    <div>
-		<p class="fancybox-text">
-	The UNC Baseball Roster was built using Python with the Django framework. I focused on usability and the ease
-	at which the roster could be read. Often times, rosters for sports teams are clunky and hard to read. My goal was
-	to recreate a roster that is clean and readable. There were many challenges I had to overcome when creating the
-	application. I had to decide what information to add when there was none available. The freshmen on the baseball
-	team do not have a summary of previous years or images on file. I had to design the application in a way
-	that would indicate information would be forthcoming as soon as their first season ended. The absense of images
-	left pages feeling blank. That is one of the many reasons I included Twitter feeds to each of the player's pages.
-		</p>
-	    </div>
-	    <a href="http://uncbaseball.herokuapp.com/player/">Visit</a> | <a href="https://github.com/katiemarriner/uncbaseball">Source</a>
-	</div>
-    </div>
-    
-    
-    <div class="row">
-	<div class="col-md-10 col-md-offset-1 col-sm-offset-1 col-sm-11 sub-header">
-	    <h5>Static</h5></a>
-	</div>
-    </div>
-    <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3">
-	    <a class="fancybox" rel="gallery1" href="images/espresso.png" title="Pulling the Perfect Espresso Shot">
-		<img src="images/espressothumb.png" class="preview-img" alt="Pulling the Perfect Espresso Shot">
-	    </a>
-	</div>
-	<div class="col-md-7 col-sm-7">
-	    <a href="images/espresso.png"><h3>Pulling the Perfect Espresso Shot</h3></a>
-	    <div class="">Infographic</div>
-	</div>
-    </div>
-    <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3">
-	    <a class="fancybox" rel="gallery1" href="images/runningthepoint.png" title="Running the Point" alt="caption">
-		<img src="images/pointthumb.png" class="preview-img" alt="Running the Point">
-	    </a>
-	</div>
-	<div class="col-md-7 col-sm-7">
-	    <a href="images/runningthepoint.png"><h3>Running the Point</h3></a>
-	    <div class="">Infographic</div>
-	</div>
-    </div>
-    <div class="row">
-	<div class="col-md-3 col-md-offset-1 col-sm-offset-1 col-sm-3">
-	    <a class="fancybox" rel="gallery1" href="images/esbinfo.png" title="The Empire State Building Glows Green">
-		<img src="images/esbthumb.png" class="preview-img" alt="Running the Point">
-	    </a>
-	</div>
-	<div class="col-md-7 col-sm-7">
-	    <a href="images/esbinfo.png"><h3>The Empire State Building Glows Green</h3></a>
-	    <div class="">Infographic</div>
-	</div>
-    </div>   
-	
-    </div><!--end-portfolio-row-->
-    
-</div><!--about-id-->
+<div class="col-md-10 col-sm-9 col-xs-12" id="portfolio">
 
-</div><!--col-md-10-->
+</div>
 </div><!--row-->
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<script src="js/handlebars.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>

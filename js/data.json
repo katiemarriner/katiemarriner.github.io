@@ -1,0 +1,50 @@
+[
+  {
+    "title":"2016 Candidate Tracker",
+    "tools":"Backbone.js, Handlebars.js",
+    "link":"http://graphics.wsj.com/2016-candidate-tracker/",
+    "image":"candidates.png",
+    "description":"Built with Backbone.js, this project keeps a record of who has declared a run for the presidency. It's built so editors can insert individual profiles into stories based on that candidate. The full view exists as a way to see which candidates are likely to run, those that might run and those who have formally announced.",
+    "source":""
+  },
+  {
+    "title":"Annotation Tool",
+    "tools":"Handlebars.js, PHP, mySQL",
+    "link":"http://graphics.wsj.com/annotation/?slug=high-res-music-gear",
+    "image":"annotation-admin.png",
+    "description":"I designed and, with the help of our tools developer, developed a tool that lets editors easily annotate images, charts or illustrations on deadline. The design for the tool was based off a previous project (WSJ's First Front Page.) In addition to the front-end design, I designed the admin interface with the goal in model it after the final product.In terms of development, I used handlebars for templating and pulled in data using a PHP script used for most of WSJ's internal tools.",
+    "source":""
+  },
+  {
+    "title":"NFL Power Rankings",
+    "tools":"D3",
+    "link":"http://graphics.wsj.com/documents/nfl-power-rankings/",
+    "image":"nfl.png",
+    "description":"The NFL Power Rankings are determined through an analytics model developer by Cade Massey and Rufus Peabody. The rankings determine how a team would fare against the average team in a neutral location. I used D3 to plot the points and transition from week-to-week to show how teams spread further across the x-axis as the season goes on.",
+    "source":""
+  },
+  {
+    "title":"How Meb Won the 2014 Boston Marathon",
+    "tools":"D3",
+    "link":"http://graphics.wsj.com/documents/meb-keflezighi-full/",
+    "image":"marathon.png",
+    "description":"",
+    "source":""
+  },
+  {
+    "title":"WSJ 125 Annotated Front Page",
+    "tools":"D3, Handlebars.js",
+    "link":"http://wsj.com/125/wsj-first-edition",
+    "image":"wsjfirst.png",
+    "description":"",
+    "source":""
+  },
+  {
+    "title":"Capitol Quest",
+    "tools":"Prototype and Pitch for Reese News Lab",
+    "link":"http://katiemarriner.com/capitolquest/prototype/index.html",
+    "image":"capquest.svg",
+    "description":"Capitol Quest is a mobile RPG where you create a character that participates in the legislative process in North Carolina. Create alliances and make backdoor deals with other players to make your way to the top. In addition to designing the logo and prototype, I researched the feasibility, viability and desirability of this potential product.",
+    "source":""
+  }
+]

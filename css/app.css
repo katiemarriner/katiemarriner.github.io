@@ -5,6 +5,28 @@
 #9ED9B0 mint
 */
 
+.img-preview {
+    max-width: 100%;
+}
+
+.portfolio-entry {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.portfolio-entry a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.tools {
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 5px;
+    letter-spacing: 1.25px;
+    font-size: 0.9em;
+}
+
 /*GENERAL CLASSES*/
 
 #dvLoading
@@ -39,6 +61,7 @@ hr {
 
 .full {
     height: 100%;
+    padding-left: 0;
 }
 
 hr.inline {
@@ -61,7 +84,7 @@ li.inline-block {
     margin: auto;
     text-align: center;
 }
-
+/*
 .col-md-3 {
     padding: 0;
 }
@@ -69,29 +92,7 @@ li.inline-block {
 .col-md-12 {
     padding: 0;
     margin: 0;
-}
-
-.circle {
-   border: dashed 1px #9ED9B0;
-   border-radius: 50%;
-   background-color: #000;
-   width: 100px;
-   height: 100px;
-   padding: 47px 0;
-   text-align: center;
-   display: inline-block;
-   margin: 15px;
-   color: #fff;
-   background: url('../images/noisy.png');
-   max-width: 100%;
-   filter: gray !important; /* IE6-9 */
-    -webkit-filter: grayscale(100%) !important;
-}
-
-a:hover .circle {
-    filter: none !important; /* IE6-9 */
-    -webkit-filter: grayscale(0) !important;
-}
+}*/
 
 /*TEXT*/
 
@@ -99,7 +100,9 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Lato', sans-serif;
 }
 
-
+h4 {
+    margin: 0;
+}
 
 a h3 {
     font-size: 2em !important;
@@ -197,7 +200,7 @@ h5.tagline {
 }
 
 .vertical-nav li {
-    margin: 20px 0;
+    margin: 0;
 }
 
 .box-text {
@@ -234,6 +237,11 @@ h5.tagline {
 }
 
 /*NAVBAR*/
+#nav-mobile {
+    background-color: #9ED9B0;
+    padding: 10px;
+}
+
 .about {
     background-color: #9ED9B0;
 }
@@ -242,13 +250,24 @@ h5.tagline {
     color: #fff;
 }
 
-.katie {
-    font-size: 2em;
-    margin-bottom: 0;
-    width: 100px;
+p.katie, p.katie-mobile {
+    color: #fff;
+    width: 100%;
     line-height: 1em;
     text-shadow: 4px 1px #888;
     font-weight: bold;
+    text-transform: none !important;
+}
+
+.sub-mobile {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+p.katie {
+    font-size: 2em;
 }
 
 .marriner {
@@ -260,11 +279,18 @@ h5.tagline {
     background-color: #9ED9B0;
     position: fixed;
     width: 100%;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.vertical-nav li {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .bio {
-    width: 140px;
-    font-size: 0.8em;
+    width: 15%;
+    font-size: 0.9em;
     color: #fff;
 }
 
@@ -275,10 +301,6 @@ h5.tagline {
 .navbar-fixed-top {
     background-color: #9ED9B0;
     color: #fff;
-}
-
-.navbar-brand a:hover {
-    color: #1CAF9A;
 }
 
 ul.nav {
@@ -355,7 +377,6 @@ a {
 }
 
 a:hover {
-    color: #9ED9B0;
     text-decoration: none;
 }
 
@@ -436,17 +457,47 @@ a:hover {
 .preview-img {
     width: 100%;
     margin: 20px 0;
-    box-shadow: 0 0 5px #9ED9B0;
 }
 
-@media only screen and (max-width: 450px) {
+@media (max-width: 450px) {
    html {
     padding: 0;
     margin: 0;
    }
-   h5 { font-size: 2em; text-decoration: none; }
+   h5 { font-size: 2em; text-decoration: none; margin-top: 50px;}
    .tagline { font-size: 0.1em; }
    
    h2.name-title { font-size: 4em; }
    .circle { margin: 5px; }
+   .preview-img {
+    max-width: 100% !important;
+   }
+}
+
+@media(max-width: 767px) {
+    h5 {
+        margin-top: 30px;
+    }
+    .preview-img {
+        max-width: 100%;
+    }
+    #portfolio {
+        padding-top: 55px;
+    }
+    p.katie {
+        width: 100% !important;
+    }
+    .bio {
+        width: 100% !important;
+    }
+
+}
+
+@media(max-width: 992px) {
+    h5 {
+        margin-top: 50px;
+    }
+    .preview-img {
+        max-width: 100%;
+    }
 }
