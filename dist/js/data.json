@@ -1,0 +1,82 @@
+[
+  {
+    "title":"Here’s what every S&P 500 company actually pays in taxes",
+    "tools":"Vue.js",
+    "link":"https://www.marketwatch.com/story/does-corporate-america-need-a-tax-cut-heres-what-every-sp-500-company-actually-pays-in-taxes-2017-12-04/",
+    "image":"corptax.png",
+    "description":"Amid talk of a 20% corporate tax rate, I built a tool you can use to search the effective tax rate of S&P 500 companies and sectors. It's a single-page application built with Vue.",
+    "source":""
+  },
+  {
+    "title":"The Trump Tax Calculator",
+    "tools":"Vue.js",
+    "link":"https://www.marketwatch.com/story/the-new-trump-tax-calculator-what-do-you-owe-2017-10-26/",
+    "image":"taxcalc.png",
+    "description":"First built for the initial outline of the tax plan in April, this calculator was updated at each step in the tax reform process, including the \"Big Six\" outline from the House, the House's first bill, a combination of the House and Senate bills and the reconciled version between both chambers. Our goal was to get the project out quickly, which was made possible by taking advantage of state management in Vue.",
+    "source":""
+  },
+  {
+    "title":"The State of the American Wallet",
+    "tools":"Preact",
+    "link":"https://www.marketwatch.com/graphics/2017/the-state-of-the-american-wallet/",
+    "image":"wallet.png",
+    "description":"With increased talk of a disappearing middle class, this offers a look at different indicators that illustrate this point – stagnant net worth and a growing cost of living.",
+    "source":""
+  },
+  {
+    "title":"The SEC is cracking down on made-up earnings numbers. We crunched the numbers — it hasn't helped",
+    "tools":"Python/pandas",
+    "link":"http://projects.marketwatch.com/2017/gaap-nongaap-earnings-2016q3/",
+    "image":"2017gaap.png",
+    "description":"After our initial graphic on unaudited earnings metrics, MarketWatch partnered with Audit Analytics to get data on all S&P 500 companies. We found that after the SEC's crackdown in May of 2016, companies have failed to change how they report earnings. Because the data must be entered by hand as there is no defined category by the SEC to identify a company's non-GAAP metrics, I looked at the data extensively by cross-checking numbers from different sources to verify.",
+    "source":""
+  },
+  {
+    "title":"How the biggest companies in the S&P 500 use made-up earnings numbers",
+    "tools":"Python/pandas, D3.js",
+    "link":"http://projects.marketwatch.com/2016/gaap-nongaap-eps-2016q1/",
+    "image":"2016gaap.png",
+    "description":"The SEC began cracking down on companies whose quarterly financial earnings reports use unaudited numbers that can make their results look better than they actually are. For this project, reports, editors and I gathered and fact-checked GAAP (audited metrics, which follow generally accepted accounting principles) and non-GAAP (unaudited) earnings per share of the top 50 companies by market cap to identify how common the reporting of non-GAAP metrics is and the discrepancies between metrics.",
+    "source":""
+  },
+  {
+    "title":"How Central Banks are Moving Rates Around the World",
+    "tools":"D3.js, Handlebars.js, Python",
+    "link":"http://www.wsj.com/pro/centralbanking/graphics/central-bank-interest-rates/",
+    "image":"fedglobal.png",
+    "description":"I designed, developed and formatted the data to create an interactive that groups countries based on market type and shows the interest rates of each central bank.",
+    "source":""
+  },
+  {
+    "title":"Beat the Fed",
+    "tools":"Python",
+    "link":"http://graphics.wsj.com/beat-the-fed/",
+    "image":"beatfed.png",
+    "description":"I parsed the data for a simulation that lets users move the inflation rate of different sub-categories of PCE inflation. Moving these sub-categories shows how much impact each has on the overall inflation rate and what it would take for the Fed to reach its target rate of 2%.",
+    "source":""
+  },
+  {
+    "title":"Hillary Clinton Emails",
+    "tools":"Bootstrap Tables, Handlebars.js",
+    "link":"http://graphics.wsj.com/hillary-clinton-email-documents/",
+    "image":"clinton.png",
+    "description":"The State Department released Hillary Clinton's emails from the time when she was secretary of state on a monthly schedule. I implemented Bootstrap Tables and server-side pagination to improve load time. Features include the ability to search by certain senders/recipients and popular search terms to guide users on what to search for.",
+    "source":""
+  },
+  {
+    "title":"Annotation Tool",
+    "tools":"Handlebars.js, PHP, mySQL",
+    "link":"http://graphics.wsj.com/annotation/?slug=high-res-music-gear",
+    "image":"annotation-admin.png",
+    "description":"I designed and developed the front-end UI, admin interface and template for a tool that lets editors easily annotate images, charts or illustrations on deadline.",
+    "source":""
+  },
+  {
+    "title":"Capitol Quest",
+    "tools":"Prototype and Pitch for Reese News Lab",
+    "link":"http://katiemarriner.com/capitolquest/prototype/index.html",
+    "image":"capquest.svg",
+    "description":"Capitol Quest is a mobile RPG where you create a character that participates in the legislative process in North Carolina. In addition to designing the logo and prototype, I researched the feasibility, viability and desirability of this potential news product as a researcher at <a href=\"https://www.reesenewslab.org/about/\">Reese News Lab</a>.",
+    "source":""
+  }
+]

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Katie Marriner</title>
+    <meta name="description" content="Katie Marriner is an interactive graphics editor at MarketWatch.">
+    <meta name="author" content="Katie Marriner">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="katie marriner, marriner, marketwatch, wsj, wall street journal, graphics journalist, journalism, unc, university of north carolina">
+        
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="dist/css/app.min.css" rel="stylesheet" media="screen">
+        
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> 
+        
+    <base target="_blank">
+ <!--    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+
+    <!--TRACKING-->	
+    <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-37362223-3', 'katiemarriner.com');
+		ga('send', 'pageview');
+    </script>
+	
+		<script id="template" type="text/x-handlebars-template">
+			{{#each this}}
+				<div class="row portfolio-entry">
+					<div class="col-md-3 col-sm-4">				
+						<a href="{{ link }}"><img src="http://katiemarriner.com/static/images/{{ image }}" class="img-preview"/></a>
+					</div>
+					<div class="col-md-7 col-sm-8">
+					
+						<h4>
+							{{#if this.link}}
+							<a href="{{ link }}">
+							{{/if}}
+						{{ title }}
+							{{#if this.link}}
+							</a>
+							{{/if}}
+						</h4>
+
+						<p class="tools">{{tools}}</p>
+						
+						<p class="description">{{{description}}}</p>
+						{{#if this.source}}
+							<a href="{{ source }}">Source
+							</a>
+						{{/if}}
+					</div>
+				</div>
+			{{/each}}
+
+		</script>
+    
+</head>
+    
+    
+<body>
+<!--MOBILE NAV-->
+<div id="nav-mobile" class="hidden-md hidden-lg hidden-sm col-xs-12">
+	<h1 class="col-xs-12"><p class="katie-mobile">Katie Marriner</p></h1>
+	<div class="col-xs-12">
+		<p class="sub-mobile">Graphics editor at MarketWatch</p>
+	
+		<div>
+				<a href="https://twitter.com/kemarriner" class="twitter-follow-button" data-show-count="false">Follow @kemarriner</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		    <a href="http://www.github.com/katiemarriner"><img src="http://katiemarriner.com/static/images/social/github32.png" alt="GitHub" class="social-icon"></a>
+		    <a href="http://www.linkedin.com/in/kemarriner"><img src="http://katiemarriner.com/static/images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
+		    <a href="http://katiemarriner.com/static/images/katiemarriner_resume.pdf" class="sub-cats">Resume</a>
+		</div>
+	</div>
+	
+</div><!--end-nav-mobile-->
+<div class="full row row-portfolio">
+	<div class="col-md-3 col-sm-3 hidden-xs">
+	    <ul class="vertical-nav hidden-xs full">
+		<li class=""><p class="katie">Katie Marriner</p>
+		<li class="bio">I am a graphics editor at MarketWatch. I design and develop data visualizations and presentations.</li>
+		<li>
+			<a href="https://twitter.com/kemarriner" class="" data-show-count="false"><img src="http://katiemarriner.com/static/images/social/twitter.png" alt="Twitter" class="social-icon"></a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		    <a href="http://www.github.com/katiemarriner"><img src="http://katiemarriner.com/static/images/social/github32.png" alt="GitHub" class="social-icon"></a>
+		    <a href="http://www.linkedin.com/in/kemarriner"><img src="http://katiemarriner.com/static/images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
+		    <a href="http://katiemarriner.com/static/images/katiemarriner_resume.pdf" class="sub-cats">Resume</a>
+		</li>
+	    </ul>
+	</div>
+<div class="col-md-9 col-sm-9 col-xs-12" id="portfolio"></div>
+</div><!--row-->
+<script src="dist/js/handlebars.min.js"></script>
+<script src="dist/js/script.min.js"></script>
+
+</body>
+</html>
+
