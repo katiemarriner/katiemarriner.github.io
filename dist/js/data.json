@@ -1,5 +1,13 @@
 [
   {
+    "title":"Historical Subway Performance",
+    "tools":"IN-PROGRESS",
+    "link":"http://www.katiemarriner.com/subway-status-history-app",
+    "image":"subway.png",
+    "description":"A dashboard that looks at various performance metrics of the NYC Subway.",
+    "source":""
+  },
+  {
     "title":"Here’s what every S&P 500 company actually pays in taxes",
     "tools":"Vue.js",
     "link":"https://www.marketwatch.com/story/does-corporate-america-need-a-tax-cut-heres-what-every-sp-500-company-actually-pays-in-taxes-2017-12-04/",
