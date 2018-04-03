@@ -11,8 +11,8 @@
     "title":"How ICOs are getting off the ground without SEC vetting",
     "tools":"Python/BeautifulSoup",
     "link":"https://www.marketwatch.com/story/number-of-icos-getting-regulation-lite-treatment-is-growing-2018-02-21",
-    "image":"noimage.png",
-    "description":"I searched SEC filings using Python and BeautifulSoup to find mentions of crypto-related words in Form Ds, which is where some companies are initiating ICOs",
+    "image":"",
+    "description":"I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs",
     "source":""
   },
   {
