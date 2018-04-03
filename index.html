@@ -29,10 +29,14 @@
     <script id="template" type="text/x-handlebars-template">
       {{#each this}}
         <div class="row portfolio-entry">
-          <div class="col-md-3 col-sm-4">				
-            <a href="{{ link }}"><img src="images/{{ image }}" class="img-preview"/></a>
-          </div>
-          <div class="col-md-7 col-sm-8">
+          {{#if this.image}}
+            <div class="col-md-3 col-sm-4">				
+              <a href="{{ link }}"><img src="images/{{ image }}" class="img-preview"/></a>
+            </div>
+            <div class="col-md-7 col-sm-8">
+          {{else}}
+          <div class="col-md-12">
+          {{/if}}
             <h4>
               {{#if this.link}}<a href="{{ link }}">{{/if}}
               {{ title }}
