@@ -24,6 +24,14 @@
     "source":""
   },
   {
+    "title":"The 5 market warning signs every investor should be watching now",
+    "tools":"Vue.js, D3",
+    "link":"https://www.marketwatch.com/graphics/market-warning-signs/",
+    "image":"warningsigns.png",
+    "description":"A dashboard the identifies common market stressors that could signal bumpy roads ahead",
+    "source":""
+  },
+  {
     "title":"Here’s what every S&P 500 company actually pays in taxes",
     "tools":"Vue.js",
     "link":"https://www.marketwatch.com/story/does-corporate-america-need-a-tax-cut-heres-what-every-sp-500-company-actually-pays-in-taxes-2017-12-04/",
