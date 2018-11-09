@@ -8,6 +8,14 @@
     "source":""
   },
   {
+    "title":"Election Night Coverage",
+    "tools":"Vue.js",
+    "link":"https://www.marketwatch.com/story/election-results-2018-track-midterm-races-and-the-battle-for-control-of-congress-2018-11-06",
+    "image":"election2018",
+    "description":"",
+    "source":""
+  },
+  {
     "title":"How ICOs are getting off the ground without SEC vetting",
     "tools":"Python/BeautifulSoup",
     "link":"https://www.marketwatch.com/story/number-of-icos-getting-regulation-lite-treatment-is-growing-2018-02-21",
