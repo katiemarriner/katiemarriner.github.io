@@ -11,7 +11,7 @@
     "title":"Election Night Coverage",
     "tools":"Vue.js",
     "link":"https://www.marketwatch.com/story/election-results-2018-track-midterm-races-and-the-battle-for-control-of-congress-2018-11-06",
-    "image":"election2018",
+    "image":"election2018.png",
     "description":"",
     "source":""
   },
@@ -24,9 +24,9 @@
     "source":""
   },
   {
-    "title":"CryptoWatch",
+    "title":"Crypto Tracker",
     "tools":"Vue.js, php",
-    "link":"https://www.marketwatch.com/graphics/cryptowatch/",
+    "link":"https://www.marketwatch.com/graphics/cryptocurrency-tracker/",
     "image":"cryptowatch.png",
     "description":"A dashboard that puts commonly watched metrics of the cryptocurrency markets in one place. Each piece can exist on its own to embed within articles.",
     "source":""
@@ -80,14 +80,6 @@
     "source":""
   },
   {
-    "title":"How the biggest companies in the S&P 500 use made-up earnings numbers",
-    "tools":"Python/pandas, D3.js",
-    "link":"http://projects.marketwatch.com/2016/gaap-nongaap-eps-2016q1/",
-    "image":"2016gaap.png",
-    "description":"The SEC began cracking down on companies whose quarterly financial earnings reports use unaudited numbers that can make their results look better than they actually are. For this project, reports, editors and I gathered and fact-checked GAAP (audited metrics, which follow generally accepted accounting principles) and non-GAAP (unaudited) earnings per share of the top 50 companies by market cap to identify how common the reporting of non-GAAP metrics is and the discrepancies between metrics.",
-    "source":""
-  },
-  {
     "title":"How Central Banks are Moving Rates Around the World",
     "tools":"D3.js, Handlebars.js, Python",
     "link":"http://www.wsj.com/pro/centralbanking/graphics/central-bank-interest-rates/",
@@ -117,14 +109,6 @@
     "link":"http://graphics.wsj.com/annotation/?slug=high-res-music-gear",
     "image":"annotation-admin.png",
     "description":"I designed and developed the front-end UI, admin interface and template for a tool that lets editors easily annotate images, charts or illustrations on deadline.",
-    "source":""
-  },
-  {
-    "title":"Capitol Quest",
-    "tools":"Prototype and Pitch for Reese News Lab",
-    "link":"http://katiemarriner.com/capitolquest/prototype/index.html",
-    "image":"capquest.svg",
-    "description":"Capitol Quest is a mobile RPG where you create a character that participates in the legislative process in North Carolina. In addition to designing the logo and prototype, I researched the feasibility, viability and desirability of this potential news product as a researcher at <a href=\"https://www.reesenewslab.org/about/\">Reese News Lab</a>.",
     "source":""
   }
 ]
