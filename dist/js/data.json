@@ -33,7 +33,7 @@
   },
   {
     "title":"Historical Subway Performance",
-    "tools":"IN-PROGRESS",
+    "tools":"Vue.js, D3",
     "link":"http://www.katiemarriner.com/subway-status-history-app",
     "image":"subway.png",
     "description":"A dashboard that looks at various performance metrics of the NYC Subway.",
