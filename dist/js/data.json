@@ -1,5 +1,13 @@
 [
   {
+    "title":"ICOs continue to raise money via SEC back door",
+    "tools":"Python/BeautifulSoup",
+    "link":"https://www.marketwatch.com/story/icos-continue-to-raise-money-via-sec-back-door-2019-01-11",
+    "image":"",
+    "description":"I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs",
+    "source":""
+  },
+  {
     "title":"What S&P 500 CEOs spent on midterms",
     "tools":"Python/pandas, Excel, OpenRefine, Vue.js",
     "link":"https://www.marketwatch.com/story/ceos-are-spending-their-own-money-on-the-midterm-elections-heres-how-2018-10-18",
@@ -8,19 +16,11 @@
     "source":""
   },
   {
-    "title":"Election Night Coverage",
+    "title":"Election night coverage 2018",
     "tools":"Vue.js",
     "link":"https://www.marketwatch.com/story/election-results-2018-track-midterm-races-and-the-battle-for-control-of-congress-2018-11-06",
     "image":"election2018.png",
     "description":"",
-    "source":""
-  },
-  {
-    "title":"How ICOs are getting off the ground without SEC vetting",
-    "tools":"Python/BeautifulSoup",
-    "link":"https://www.marketwatch.com/story/number-of-icos-getting-regulation-lite-treatment-is-growing-2018-02-21",
-    "image":"",
-    "description":"I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs",
     "source":""
   },
   {
@@ -32,7 +32,7 @@
     "source":""
   },
   {
-    "title":"Historical Subway Performance",
+    "title":"Historical subway performance",
     "tools":"Vue.js, D3",
     "link":"http://www.katiemarriner.com/subway-status-history-app",
     "image":"subway.png",
@@ -80,7 +80,7 @@
     "source":""
   },
   {
-    "title":"How Central Banks are Moving Rates Around the World",
+    "title":"How central banks are moving rates around the world",
     "tools":"D3.js, Handlebars.js, Python",
     "link":"http://www.wsj.com/pro/centralbanking/graphics/central-bank-interest-rates/",
     "image":"fedglobal.png",
@@ -96,7 +96,7 @@
     "source":""
   },
   {
-    "title":"Hillary Clinton Emails",
+    "title":"Search Hillary Clinton's emails",
     "tools":"Bootstrap Tables, Handlebars.js",
     "link":"http://graphics.wsj.com/hillary-clinton-email-documents/",
     "image":"clinton.png",
