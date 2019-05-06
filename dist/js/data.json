@@ -3,7 +3,7 @@
     "title":"Where should I retire?",
     "tools":"Vue.js, D3-geo (command-line interface), Excel",
     "link":"https://www.marketwatch.com/graphics/best-place-to-retire/",
-    "image":"",
+    "image":"retirement.png",
     "description":"The idea for this quiz came from a hackathon. Census data, among other data that characterizes a location, is used to find metropolitan areas that match your needs and wants in retirement.",
     "source":""
   },
