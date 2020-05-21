@@ -1,5 +1,14 @@
 [
   {
+    "title":"Coronavirus Recovery Tracker",
+    "tools":"Python/pandas, Excel, Vue.js, D3, Google Sheets and Gmail API",
+    "link":"https://www.marketwatch.com/graphics/coronavirus-economic-recovery-tracker/",
+    "image":"coronavirus.png",
+    "description":"I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cronjob that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.",
+    "source":"",
+    "image_alt": "coronavirus recovery tracker promo image"
+  },
+  {
     "title":"Where should I retire?",
     "tools":"Vue.js, D3-geo (command-line interface), Excel",
     "link":"https://www.marketwatch.com/graphics/best-place-to-retire/",
