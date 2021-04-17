@@ -1,7 +1,8 @@
 var fs = require('fs');
 var Handlebars = require('handlebars');
 
-var source = `{{#each this}}
+var source = `<div class="col-md-8 col-sm-8 col-xs-12">
+{{#each this}}
 <div class="row portfolio-entry">
   {{#if this.image}}
     <div class="col-md-3 col-sm-4">				
@@ -21,7 +22,8 @@ var source = `{{#each this}}
     {{#if this.source}}<a href="{{ source }}">Source</a>{{/if}}
   </div>
 </div>
-{{/each}}`
+{{/each}}
+</div>`
 
 var meta = `<title>Katie Marriner, data journalist and developer</title>
 <meta name="description" content="Katie Marriner is data journalist and developer at MarketWatch in New York.">
@@ -54,9 +56,9 @@ var nav = `<div class="col-md-4 col-sm-4 col-xs-12">
   <li><h2 class="content-title">Data journalist and developer for MarketWatch</h2></li>
   <li><h3 class="content-bio">Gathering and analyzing data for visualizations and interactives.</h3></li>
     <li>
-      <a href="https://twitter.com/kemarriner" class="" data-show-count="false"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"></a>
-      <a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a>
-      <a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
+      <a href="https://twitter.com/kemarriner" class="sub-cats">Twitter | </a>
+      <a href="http://www.github.com/katiemarriner" class="sub-cats">Github | </a>
+      <a href="http://www.linkedin.com/in/kemarriner" class="sub-cats">Linkedin | </a>
       <a href="images/katiemarriner_resume.pdf" class="sub-cats">Resume</a>
     </li>
   </ul>
@@ -68,6 +70,7 @@ data = JSON.parse(data);
 var portfolio = template(data);
 
 const full_page = `<!DOCTYPE html>
+<html lang="en">
 <head>${meta}</head>
 <body>
 <div class="full row row-portfolio">
