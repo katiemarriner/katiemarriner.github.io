@@ -1,76 +1,265 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <title>Katie Marriner, data journalist and developer</title>
-    <meta name="description" content="Katie Marriner is data journalist and developer at MarketWatch in New York.">
-    <meta name="author" content="Katie Marriner">
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index,follow">
-    <meta name="keywords" content="katie marriner, new york, data journalist, developer, data visualization, data viz, marriner, marketwatch, wsj, wall street journal, graphics journalist, journalism, unc, university of north carolina">
+<head><title>Katie Marriner, data journalist and developer</title>
+<meta name="description" content="Katie Marriner is data journalist and developer at MarketWatch in New York.">
+<meta name="author" content="Katie Marriner">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="katie marriner, new york, data journalist, developer, data visualization, data viz, marriner, marketwatch, wsj, wall street journal, graphics journalist, journalism, unc, university of north carolina">
+
+<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+<link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="dist/css/app.min.css" rel="stylesheet" media="screen">
     
-    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="dist/css/app.min.css" rel="stylesheet" media="screen">
-        
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> 
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'> 
 
-    <!--TRACKING-->	
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!--TRACKING-->	
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-37362223-3', 'katiemarriner.com');
-    ga('send', 'pageview');
-    </script>
+ga('create', 'UA-37362223-3', 'katiemarriner.com');
+ga('send', 'pageview');
+</script></head>
+<body>
+<div class="full row row-portfolio">
+<div class="col-md-4 col-sm-4 col-xs-12">
+  <ul class="vertical-nav full">
+  <li><h1 class="content-name">Katie Marriner</h1></li>
+  <li><h2 class="content-title">Data journalist and developer for MarketWatch</h2></li>
+  <li><h3 class="content-bio">Gathering and analyzing data for visualizations and interactives.</h3></li>
+    <li>
+      <a href="https://twitter.com/kemarriner" class="" data-show-count="false"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"></a>
+      <a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a>
+      <a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
+      <a href="images/katiemarriner_resume.pdf" class="sub-cats">Resume</a>
+    </li>
+  </ul>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="https://www.marketwatch.com/graphics/coronavirus-economic-recovery-tracker/"><img alt="coronavirus recovery tracker promo image" src="images/coronavirus.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="https://www.marketwatch.com/graphics/coronavirus-economic-recovery-tracker/">
+      Coronavirus Recovery Tracker
+      </a>
+    </h4>
+    <p class="tools">Python/pandas, Excel, Vue.js, D3, Google Sheets and Gmail API</p>
+    <p class="description">I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cronjob that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.</p>
     
-    <script id="template" type="text/x-handlebars-template">
-      {{#each this}}
-        <div class="row portfolio-entry">
-          {{#if this.image}}
-            <div class="col-md-3 col-sm-4">				
-              <a href="{{ link }}"><img alt="{{ image_alt }}" src="images/{{ image }}" class="img-preview"/></a>
-            </div>
-            <div class="col-md-7 col-sm-8">
-          {{else}}
-          <div class="col-md-12">
-          {{/if}}
-            <h4>
-              {{#if this.link}}<a href="{{ link }}">{{/if}}
-              {{ title }}
-              {{#if this.link}}</a>{{/if}}
-            </h4>
-            <p class="tools">{{tools}}</p>
-            <p class="description">{{{description}}}</p>
-            {{#if this.source}}<a href="{{ source }}">Source</a>{{/if}}
-          </div>
-        </div>
-      {{/each}}
-    </script>
-  </head>
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="https://www.marketwatch.com/graphics/best-place-to-retire/"><img alt="where should I retire promo image" src="images/retirement.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="https://www.marketwatch.com/graphics/best-place-to-retire/">
+      Where should I retire?
+      </a>
+    </h4>
+    <p class="tools">Vue.js, D3-geo (command-line interface), Excel</p>
+    <p class="description">The idea for this quiz came from a hackathon. Census data, among other data that characterizes a location, is used to find metropolitan areas that match your needs and wants in retirement.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+  <div class="col-md-12">
+    <h4>
+      <a href="https://www.marketwatch.com/story/icos-continue-to-raise-money-via-sec-back-door-2019-01-11">
+      ICOs continue to raise money via SEC back door
+      </a>
+    </h4>
+    <p class="tools">Python/BeautifulSoup</p>
+    <p class="description">I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="https://www.marketwatch.com/graphics/market-warning-signs/"><img alt="market warning signs promo image" src="images/warningsigns.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="https://www.marketwatch.com/graphics/market-warning-signs/">
+      The 5 market warning signs every investor should be watching now
+      </a>
+    </h4>
+    <p class="tools">Vue.js, D3</p>
+    <p class="description"></p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="https://www.marketwatch.com/story/ceos-are-spending-their-own-money-on-the-midterm-elections-heres-how-2018-10-18"><img alt="s and p 500 ceo campaign finance donations promo image" src="images/midtermspend.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="https://www.marketwatch.com/story/ceos-are-spending-their-own-money-on-the-midterm-elections-heres-how-2018-10-18">
+      What S&amp;P 500 CEOs spent on midterms
+      </a>
+    </h4>
+    <p class="tools">Python/pandas, Excel, OpenRefine, Vue.js</p>
+    <p class="description">Looking at FEC data, I identified CEOs of S&P 500 companies for the 2018 reporting cycle using Python to fetch and format the data, OpenRefine to standardize last names and employers and Excel to analyze the data. I built the interactive with Vue.js.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="https://www.marketwatch.com/story/election-results-2018-track-midterm-races-and-the-battle-for-control-of-congress-2018-11-06"><img alt="election night 2018 promo image" src="images/election2018.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="https://www.marketwatch.com/story/election-results-2018-track-midterm-races-and-the-battle-for-control-of-congress-2018-11-06">
+      Election night coverage 2018
+      </a>
+    </h4>
+    <p class="tools">Vue.js</p>
+    <p class="description"></p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="https://www.marketwatch.com/graphics/cryptocurrency-tracker/"><img alt="cryptocurrency tracker promo image" src="images/cryptowatch.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="https://www.marketwatch.com/graphics/cryptocurrency-tracker/">
+      Crypto Tracker
+      </a>
+    </h4>
+    <p class="tools">Vue.js, php</p>
+    <p class="description">A dashboard that puts commonly watched metrics of the cryptocurrency markets in one place. Each piece can exist on its own to embed within articles.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="http://www.katiemarriner.com/subway-status-history-app"><img alt="subway performance promo image" src="images/subway.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="http://www.katiemarriner.com/subway-status-history-app">
+      Historical subway performance
+      </a>
+    </h4>
+    <p class="tools">Vue.js, D3</p>
+    <p class="description">A dashboard that looks at various performance metrics of the NYC Subway.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="https://www.marketwatch.com/story/does-corporate-america-need-a-tax-cut-heres-what-every-sp-500-company-actually-pays-in-taxes-2017-12-04/"><img alt="s and p 500 taxes promo image" src="images/corptax.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="https://www.marketwatch.com/story/does-corporate-america-need-a-tax-cut-heres-what-every-sp-500-company-actually-pays-in-taxes-2017-12-04/">
+      Here’s what every S&amp;P 500 company actually pays in taxes
+      </a>
+    </h4>
+    <p class="tools">Vue.js</p>
+    <p class="description">Amid talk of a 20% corporate tax rate, I built a tool you can use to search the effective tax rate of S&P 500 companies and sectors. It's a single-page application built with Vue.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="https://www.marketwatch.com/story/the-new-trump-tax-calculator-what-do-you-owe-2017-10-26/"><img alt="trump tax calculator promo image" src="images/taxcalc.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="https://www.marketwatch.com/story/the-new-trump-tax-calculator-what-do-you-owe-2017-10-26/">
+      The Trump Tax Calculator
+      </a>
+    </h4>
+    <p class="tools">Vue.js</p>
+    <p class="description">First built for the initial outline of the tax plan in April, this calculator was updated at each step in the tax reform process, including the "Big Six" outline from the House, the House's first bill, a combination of the House and Senate bills and the reconciled version between both chambers. Our goal was to get the project out quickly, which was made possible by taking advantage of state management in Vue.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="https://www.marketwatch.com/graphics/2017/the-state-of-the-american-wallet/"><img alt="state of the american wallet promo image" src="images/wallet.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="https://www.marketwatch.com/graphics/2017/the-state-of-the-american-wallet/">
+      The State of the American Wallet
+      </a>
+    </h4>
+    <p class="tools">Preact</p>
+    <p class="description">With increased talk of a disappearing middle class, this offers a look at different indicators that illustrate this point – stagnant net worth and a growing cost of living.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="http://projects.marketwatch.com/2017/gaap-nongaap-earnings-2016q3/"><img alt="non-gaap earnings promo image" src="images/2017gaap.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="http://projects.marketwatch.com/2017/gaap-nongaap-earnings-2016q3/">
+      The SEC is cracking down on made-up earnings numbers. We crunched the numbers — it hasn&#x27;t helped
+      </a>
+    </h4>
+    <p class="tools">Python/pandas</p>
+    <p class="description">After our initial graphic on unaudited earnings metrics, MarketWatch partnered with Audit Analytics to get data on all S&P 500 companies. We found that after the SEC's crackdown in May of 2016, companies have failed to change how they report earnings. Because the data must be entered by hand as there is no defined category by the SEC to identify a company's non-GAAP metrics, I looked at the data extensively by cross-checking numbers from different sources to verify.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="http://graphics.wsj.com/beat-the-fed/"><img alt="beat the fed promo image" src="images/beatfed.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="http://graphics.wsj.com/beat-the-fed/">
+      Beat the Fed
+      </a>
+    </h4>
+    <p class="tools">Python</p>
+    <p class="description">I parsed the data for a simulation that lets users move the inflation rate of different sub-categories of PCE inflation. Moving these sub-categories shows how much impact each has on the overall inflation rate and what it would take for the Fed to reach its target rate of 2%.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="http://graphics.wsj.com/hillary-clinton-email-documents/"><img alt="clinton email table promo image" src="images/clinton.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="http://graphics.wsj.com/hillary-clinton-email-documents/">
+      Search Hillary Clinton&#x27;s emails
+      </a>
+    </h4>
+    <p class="tools">Bootstrap Tables, Handlebars.js</p>
+    <p class="description">The State Department released Hillary Clinton's emails from the time when she was secretary of state on a monthly schedule. I implemented Bootstrap Tables and server-side pagination to improve load time. Features include the ability to search by certain senders/recipients and popular search terms to guide users on what to search for.</p>
+    
+  </div>
+</div>
+<div class="row portfolio-entry">
+    <div class="col-md-3 col-sm-4">				
+      <a href="http://graphics.wsj.com/annotation/?slug&#x3D;high-res-music-gear"><img alt="annotation tool promo image" src="images/annotation-admin.png" class="img-preview"/></a>
+    </div>
+    <div class="col-md-7 col-sm-8">
+    <h4>
+      <a href="http://graphics.wsj.com/annotation/?slug&#x3D;high-res-music-gear">
+      Annotation Tool
+      </a>
+    </h4>
+    <p class="tools">Handlebars.js, PHP, mySQL</p>
+    <p class="description">I designed and developed the front-end UI, admin interface and template for a tool that lets editors easily annotate images, charts or illustrations on deadline.</p>
+    
+  </div>
+</div>
 
-  <body>
-  <div class="full row row-portfolio">
-	  <div class="col-md-4 col-sm-4 col-xs-12">
-      <ul class="vertical-nav full">
-      <li><h1 class="content-name">Katie Marriner</h1></li>
-      <li><h2 class="content-title">Data journalist and developer for MarketWatch</h2></li>
-      <li><h3 class="content-bio">Gathering and analyzing data for visualizations and interactives.</h3></li>
-        <li>
-	  <a href="https://twitter.com/kemarriner" class="" data-show-count="false"><img src="images/social/twitter.png" alt="Twitter" class="social-icon"></a>
-          <a href="http://www.github.com/katiemarriner"><img src="images/social/github32.png" alt="GitHub" class="social-icon"></a>
-          <a href="http://www.linkedin.com/in/kemarriner"><img src="images/social/linkedin.png" alt="LinkedIn" class="social-icon"/></a>
-          <a href="images/katiemarriner_resume.pdf" class="sub-cats">Resume</a>
-	</li>
-	    </ul>
-	  </div>
-    <div class="col-md-8 col-sm-8 col-xs-12" id="portfolio"></div>
-  </div><!--row-->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.min.js"></script>
-  <script src="dist/js/script.min.js"></script>
-
-  </body>
-</html>
+</div>
+</body></html>
