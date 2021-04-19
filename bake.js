@@ -6,7 +6,7 @@ var source = `<div class="col-md-8 col-sm-8 col-xs-12">
 <div class="row portfolio-entry">
   {{#if this.image}}
     <div class="col-md-3 col-sm-4">				
-      <a href="{{ link }}"><img alt="{{ image_alt }}" src="images/{{ image }}" class="img-preview"/></a>
+      <a href="{{ link }}"><img alt="{{ image_alt }}" src="images-optimized/{{ image }}" class="img-preview"/></a>
     </div>
     <div class="col-md-7 col-sm-8">
   {{else}}

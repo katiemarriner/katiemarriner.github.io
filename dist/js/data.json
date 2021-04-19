@@ -3,7 +3,7 @@
     "title":"Coronavirus Recovery Tracker",
     "tools":"Python/pandas, Excel, Vue.js, D3, Google Sheets and Gmail API",
     "link":"https://www.marketwatch.com/graphics/coronavirus-economic-recovery-tracker/",
-    "image":"coronavirus.png",
+    "image":"coronavirus.webp",
     "description":"I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cronjob that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.",
     "source":"",
     "image_alt": "coronavirus recovery tracker promo image"
@@ -12,7 +12,7 @@
     "title":"Where should I retire?",
     "tools":"Vue.js, D3-geo (command-line interface), Excel",
     "link":"https://www.marketwatch.com/graphics/best-place-to-retire/",
-    "image":"retirement.png",
+    "image":"retirement.webp",
     "description":"The idea for this quiz came from a hackathon. Census data, among other data that characterizes a location, is used to find metropolitan areas that match your needs and wants in retirement.",
     "source":"",
     "image_alt": "where should I retire promo image"
@@ -30,7 +30,7 @@
     "title":"The 5 market warning signs every investor should be watching now",
     "tools":"Vue.js, D3",
     "link":"https://www.marketwatch.com/graphics/market-warning-signs/",
-    "image":"warningsigns.png",
+    "image":"warningsigns.webp",
     "description":"",
     "source":"",
     "image_alt": "market warning signs promo image"
@@ -39,34 +39,16 @@
     "title":"What S&P 500 CEOs spent on midterms",
     "tools":"Python/pandas, Excel, OpenRefine, Vue.js",
     "link":"https://www.marketwatch.com/story/ceos-are-spending-their-own-money-on-the-midterm-elections-heres-how-2018-10-18",
-    "image":"midtermspend.png",
+    "image":"midtermspend.webp",
     "description":"Looking at FEC data, I identified CEOs of S&P 500 companies for the 2018 reporting cycle using Python to fetch and format the data, OpenRefine to standardize last names and employers and Excel to analyze the data. I built the interactive with Vue.js.",
     "source":"",
     "image_alt": "s and p 500 ceo campaign finance donations promo image"
   },
   {
-    "title":"Election night coverage 2018",
-    "tools":"Vue.js",
-    "link":"https://www.marketwatch.com/story/election-results-2018-track-midterm-races-and-the-battle-for-control-of-congress-2018-11-06",
-    "image":"election2018.png",
-    "description":"",
-    "source":"",
-    "image_alt": "election night 2018 promo image"
-  },
-  {
-    "title":"Crypto Tracker",
-    "tools":"Vue.js, php",
-    "link":"https://www.marketwatch.com/graphics/cryptocurrency-tracker/",
-    "image":"cryptowatch.png",
-    "description":"A dashboard that puts commonly watched metrics of the cryptocurrency markets in one place. Each piece can exist on its own to embed within articles.",
-    "source":"",
-    "image_alt": "cryptocurrency tracker promo image"
-  },
-  {
     "title":"Historical subway performance",
     "tools":"Vue.js, D3",
     "link":"http://www.katiemarriner.com/subway-status-history-app",
-    "image":"subway.png",
+    "image":"subway.webp",
     "description":"A dashboard that looks at various performance metrics of the NYC Subway.",
     "source":"",
     "image_alt": "subway performance promo image"
@@ -75,43 +57,25 @@
     "title":"Here’s what every S&P 500 company actually pays in taxes",
     "tools":"Vue.js",
     "link":"https://www.marketwatch.com/story/does-corporate-america-need-a-tax-cut-heres-what-every-sp-500-company-actually-pays-in-taxes-2017-12-04/",
-    "image":"corptax.png",
+    "image":"corptax.webp",
     "description":"Amid talk of a 20% corporate tax rate, I built a tool you can use to search the effective tax rate of S&P 500 companies and sectors. It's a single-page application built with Vue.",
     "source":"",
     "image_alt": "s and p 500 taxes promo image"
   },
   {
-    "title":"The Trump Tax Calculator",
-    "tools":"Vue.js",
-    "link":"https://www.marketwatch.com/story/the-new-trump-tax-calculator-what-do-you-owe-2017-10-26/",
-    "image":"taxcalc.png",
-    "description":"First built for the initial outline of the tax plan in April, this calculator was updated at each step in the tax reform process, including the \"Big Six\" outline from the House, the House's first bill, a combination of the House and Senate bills and the reconciled version between both chambers. Our goal was to get the project out quickly, which was made possible by taking advantage of state management in Vue.",
-    "source":"",
-    "image_alt": "trump tax calculator promo image"
-  },
-  {
     "title":"The State of the American Wallet",
     "tools":"Preact",
     "link":"https://www.marketwatch.com/graphics/2017/the-state-of-the-american-wallet/",
-    "image":"wallet.png",
+    "image":"wallet.webp",
     "description":"With increased talk of a disappearing middle class, this offers a look at different indicators that illustrate this point – stagnant net worth and a growing cost of living.",
     "source":"",
     "image_alt": "state of the american wallet promo image"
   },
   {
-    "title":"The SEC is cracking down on made-up earnings numbers. We crunched the numbers — it hasn't helped",
-    "tools":"Python/pandas",
-    "link":"http://projects.marketwatch.com/2017/gaap-nongaap-earnings-2016q3/",
-    "image":"2017gaap.png",
-    "description":"After our initial graphic on unaudited earnings metrics, MarketWatch partnered with Audit Analytics to get data on all S&P 500 companies. We found that after the SEC's crackdown in May of 2016, companies have failed to change how they report earnings. Because the data must be entered by hand as there is no defined category by the SEC to identify a company's non-GAAP metrics, I looked at the data extensively by cross-checking numbers from different sources to verify.",
-    "source":"",
-    "image_alt": "non-gaap earnings promo image"
-  },
-  {
     "title":"Beat the Fed",
     "tools":"Python",
     "link":"http://graphics.wsj.com/beat-the-fed/",
-    "image":"beatfed.png",
+    "image":"beatfed.webp",
     "description":"I parsed the data for a simulation that lets users move the inflation rate of different sub-categories of PCE inflation. Moving these sub-categories shows how much impact each has on the overall inflation rate and what it would take for the Fed to reach its target rate of 2%.",
     "source":"",
     "image_alt": "beat the fed promo image"
@@ -120,18 +84,9 @@
     "title":"Search Hillary Clinton's emails",
     "tools":"Bootstrap Tables, Handlebars.js",
     "link":"http://graphics.wsj.com/hillary-clinton-email-documents/",
-    "image":"clinton.png",
+    "image":"clinton.webp",
     "description":"The State Department released Hillary Clinton's emails from the time when she was secretary of state on a monthly schedule. I implemented Bootstrap Tables and server-side pagination to improve load time. Features include the ability to search by certain senders/recipients and popular search terms to guide users on what to search for.",
     "source":"",
     "image_alt": "clinton email table promo image"
-  },
-  {
-    "title":"Annotation Tool",
-    "tools":"Handlebars.js, PHP, mySQL",
-    "link":"http://graphics.wsj.com/annotation/?slug=high-res-music-gear",
-    "image":"annotation-admin.png",
-    "description":"I designed and developed the front-end UI, admin interface and template for a tool that lets editors easily annotate images, charts or illustrations on deadline.",
-    "source":"",
-    "image_alt": "annotation tool promo image"
   }
 ]
