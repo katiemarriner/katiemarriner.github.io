@@ -1,16 +1,16 @@
 var fs = require('fs');
 var Handlebars = require('handlebars');
 
-var source = `<div class="col-md-8 col-sm-8 col-xs-12">
+var source = `<div class="col-sm-8 col-12">
 {{#each this}}
 <div class="row portfolio-entry">
   {{#if this.image}}
-    <div class="col-md-3 col-sm-4">				
-      <a href="{{ link }}"><img alt="{{ image_alt }}" src="images-optimized/{{ image }}" class="img-preview"/></a>
+    <div class="col-auto">				
+      <a href="{{ link }}"><img width="250px" height="250px" alt="{{ image_alt }}" src="images-optimized/{{ image }}" class="img-preview"/></a>
     </div>
-    <div class="col-md-7 col-sm-8">
+    <div class="col">
   {{else}}
-  <div class="col-md-12">
+  <div class="col-12">
   {{/if}}
     <h4>
       {{#if this.link}}<a href="{{ link }}">{{/if}}
@@ -48,7 +48,7 @@ ga('create', 'UA-37362223-3', 'katiemarriner.com');
 ga('send', 'pageview');
 </script>`
 
-var nav = `<div class="col-md-4 col-sm-4 col-xs-12">
+var nav = `<div class="col-sm-4 col-12">
   <ul class="vertical-nav full">
   <li><h1 class="content-name">Katie Marriner</h1></li>
   <li><h2 class="content-title">Data journalist and developer for MarketWatch</h2></li>
@@ -71,9 +71,11 @@ const full_page = `<!DOCTYPE html>
 <html lang="en">
 <head>${meta}</head>
 <body>
-<div class="full row row-portfolio">
+<div class="full container-fluid row-portfolio">
+<div class="row">
 ${nav}
 ${portfolio}
+</div>
 </div>
 </body></html>`
 
