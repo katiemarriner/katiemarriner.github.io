@@ -25,9 +25,7 @@ var source = `<div class="col-sm-8 col-12">
 {{/each}}
 </div>`
 
-var meta = `<title>Katie Marriner, data journalist and developer</title>
-<!--TRACKING-->	
-<!-- Global site tag (gtag.js) - Google Analytics -->
+var meta = `<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-37362223-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -36,6 +34,7 @@ var meta = `<title>Katie Marriner, data journalist and developer</title>
 
   gtag('config', 'UA-37362223-3');
 </script>
+<title>Katie Marriner, data journalist and developer</title>
 <meta name="description" content="Katie Marriner is data journalist and developer at MarketWatch in New York.">
 <meta name="author" content="Katie Marriner">
 <meta charset="UTF-8"/>
