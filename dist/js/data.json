@@ -1,10 +1,28 @@
 [
   {
+    "title":"These public pension systems used to have too much money. Now they’re in crisis. What happened?",
+    "tools":"D3, Vue, Google Sheets",
+    "link":"https://www.marketwatch.com/story/these-public-pension-systems-used-to-have-too-much-money-now-theyre-in-crisis-what-happened-11624472487",
+    "image":"pensions.webp",
+    "description":"I analyzed data from over 200 public pension systems, identified outliers in funding ratios and put these data points into context of market conditions and legislation.",
+    "source":"",
+    "image_alt": "public pensions crisis promo image"
+  },
+  {
+    "title":"The K-shaped Recovery: The coronavirus pandemic has remade our working lives, and it's been anything but fair.",
+    "tools":"D3, Vue, Google Sheets",
+    "link":"https://www.marketwatch.com/graphics/k-shaped-recovery/",
+    "image":"kshaped.webp",
+    "description":"",
+    "source":"",
+    "image_alt": "k-shaped recovery promo image"
+  },
+  {
     "title":"Coronavirus Recovery Tracker",
     "tools":"Python/pandas, Excel, Vue.js, D3, Google Sheets and Gmail API",
     "link":"https://www.marketwatch.com/graphics/coronavirus-economic-recovery-tracker/",
     "image":"coronavirus.webp",
-    "description":"I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cronjob that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.",
+    "description":"I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cron that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.",
     "source":"",
     "image_alt": "coronavirus recovery tracker promo image"
   },
@@ -25,15 +43,6 @@
     "description":"I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs",
     "source":"",
     "image_alt": "icos promo image"
-  },
-  {
-    "title":"The 5 market warning signs every investor should be watching now",
-    "tools":"Vue.js, D3",
-    "link":"https://www.marketwatch.com/graphics/market-warning-signs/",
-    "image":"warningsigns.webp",
-    "description":"",
-    "source":"",
-    "image_alt": "market warning signs promo image"
   },
   {
     "title":"What S&P 500 CEOs spent on midterms",
@@ -61,15 +70,6 @@
     "description":"Amid talk of a 20% corporate tax rate, I built a tool you can use to search the effective tax rate of S&P 500 companies and sectors. It's a single-page application built with Vue.",
     "source":"",
     "image_alt": "s and p 500 taxes promo image"
-  },
-  {
-    "title":"The State of the American Wallet",
-    "tools":"Preact",
-    "link":"https://www.marketwatch.com/graphics/2017/the-state-of-the-american-wallet/",
-    "image":"wallet.webp",
-    "description":"With increased talk of a disappearing middle class, this offers a look at different indicators that illustrate this point – stagnant net worth and a growing cost of living.",
-    "source":"",
-    "image_alt": "state of the american wallet promo image"
   },
   {
     "title":"Beat the Fed",
