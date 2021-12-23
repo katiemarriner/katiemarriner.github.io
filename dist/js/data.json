@@ -1,5 +1,14 @@
 [
   {
+    "title":"This is how America’s booming demand for goods shattered the supply chain.",
+    "tools":"D3, Vue, Google Sheets",
+    "link":"https://www.marketwatch.com/story/this-is-how-americas-booming-demand-for-goods-shattered-the-supply-chain-11637242353?mod=katie-marriner",
+    "image":"supplychain.webp",
+    "description":"By collecting data from each of the nine largest container ports in the U.S., I created a unique dataset that tells the story of how the supply chain is being affected by the changing economy, particularly from the increased demand for goods.",
+    "source":"",
+    "image_alt": "supply chain promo image"
+  },
+  {
     "title":"These public pension systems used to have too much money. Now they’re in crisis. What happened?",
     "tools":"D3, Vue, Google Sheets",
     "link":"https://www.marketwatch.com/story/these-public-pension-systems-used-to-have-too-much-money-now-theyre-in-crisis-what-happened-11624472487",
