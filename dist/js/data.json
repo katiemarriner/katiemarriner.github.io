@@ -1,8 +1,17 @@
 [
   {
+    "title":" Potential homebuyers may start to feel some relief: Use our interactive to see how housing inventory changed in your county.",
+    "tools":"D3, Svelte",
+    "link":"https://www.marketwatch.com/story/potential-homebuyers-may-start-to-feel-some-relief-use-our-interactive-to-see-how-housing-inventory-changed-in-your-county-11660406314",
+    "image":"housing.webp",
+    "description":"I analyzed data on total listings of single-family homes collected by Realtor.com to organize and present data in a personalized way.",
+    "source":"",
+    "image_alt": "housing inventory promo image"
+  },
+  {
     "title":"This is how America’s booming demand for goods shattered the supply chain.",
     "tools":"D3, Vue, Google Sheets",
-    "link":"https://www.marketwatch.com/story/this-is-how-americas-booming-demand-for-goods-shattered-the-supply-chain-11637242353?mod=katie-marriner",
+    "link":"https://www.marketwatch.com/story/this-is-how-americas-booming-demand-for-goods-shattered-the-supply-chain-11637242353",
     "image":"supplychain.webp",
     "description":"By collecting data from each of the nine largest container ports in the U.S., I created a unique dataset that tells the story of how the supply chain is being affected by the changing economy, particularly from the increased demand for goods.",
     "source":"",
