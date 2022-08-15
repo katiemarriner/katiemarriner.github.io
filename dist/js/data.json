@@ -1,7 +1,7 @@
 [
   {
     "title":" Potential homebuyers may start to feel some relief: Use our interactive to see how housing inventory changed in your county.",
-    "tools":"D3, Svelte",
+    "tools":"D3, Svelte, Python, GitHub Actions",
     "link":"https://www.marketwatch.com/story/potential-homebuyers-may-start-to-feel-some-relief-use-our-interactive-to-see-how-housing-inventory-changed-in-your-county-11660406314",
     "image":"housing.webp",
     "description":"I analyzed data on total listings of single-family homes collected by Realtor.com to organize and present data in a personalized way.",
