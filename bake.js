@@ -1,5 +1,15 @@
-var fs = require('fs');
-var Handlebars = require('handlebars');
+const fs = require('fs');
+const Handlebars = require('handlebars');
+
+const minify = require('@node-minify/core');
+const cleanCSS = require('@node-minify/clean-css');
+
+minify({
+  compressor: cleanCSS,
+  input: 'src/app.css',
+  output: 'dist/css/app.min.css',
+  callback: function (err, min) {}
+});
 
 var source = `<div class="col-sm-8 col-12">
 {{#each this}}
@@ -20,6 +30,21 @@ var source = `<div class="col-sm-8 col-12">
     <p class="tools">{{tools}}</p>
     <p class="description">{{{description}}}</p>
     {{#if this.source}}<a href="{{ source }}">Source</a>{{/if}}
+    {{#if this.additional_links}}
+      <div class="row">
+        <div class="col-12">
+        <ul class="">
+          {{#each this.additional_links as | l |}}
+              <li>
+                {{#if l.link}}<a href="{{ l.link }}">{{/if}}
+                {{ l.title }}
+                {{#if l.link}}</a>{{/if}}
+              </li>
+          {{/each}}
+          </ul>
+        </div>
+      </div>
+    {{/if}}
   </div>
 </div>
 {{/each}}
@@ -49,8 +74,8 @@ var meta = `<!-- Global site tag (gtag.js) - Google Analytics -->
 var nav = `<div class="col-sm-4 col-12">
   <ul class="vertical-nav full">
   <li><h1 class="content-name">Katie Marriner</h1></li>
-  <li><h2 class="content-title">Data journalist and developer for MarketWatch</h2></li>
-  <li><h3 class="content-bio">I gather and analyze data to create visualizations and interactives about economic and financial news.</h3></li>
+  <li><h2 class="content-title">Data journalist and developer</h2></li>
+  <li><h3 class="content-bio">I gather and analyze data to create visualizations and interactives about economic and financial news for MarketWatch.</h3></li>
     <li>
       <a href="https://twitter.com/kemarriner" class="sub-cats">Twitter | </a>
       <a href="http://www.github.com/katiemarriner" class="sub-cats">Github | </a>
@@ -61,7 +86,7 @@ var nav = `<div class="col-sm-4 col-12">
 </div>`
 
 var template = Handlebars.compile(source);
-var data = fs.readFileSync('dist/js/data.json');
+var data = fs.readFileSync('data/projects-current.json');
 data = JSON.parse(data);
 var portfolio = template(data);
 
