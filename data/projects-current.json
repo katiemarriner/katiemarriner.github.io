@@ -1,5 +1,28 @@
 [
     {
+      "title": "Search for the latest PCE inflation trends of almost 400 items",
+      "tools": "Svelte.js, D3.js, GitHub Actions, Python",
+      "link": "",
+      "image": "",
+      "description": "A series of interactives where I breakdown top-line economic indicators and make it searchable.",
+      "source": "",
+      "image_alt": "",
+      "additional_links": [
+          {
+            "title": "Search for the latest PCE inflation trends of almost 400 items",
+            "link": "https://www.marketwatch.com/story/interactive-search-for-the-latest-pce-inflation-trends-of-almost-400-items-a12016b6",
+            "image": "",
+            "image_alt": ""
+          },
+           {
+            "title": "Search for the latest CPI inflation trends of almost 200 items",
+            "link": "https://www.marketwatch.com/story/egg-prices-just-plunged-use-our-tool-to-search-for-the-inflation-figures-of-almost-200-items-d511f832",
+            "image": "",
+            "image_alt": ""
+          },
+      ]
+    },
+    {
       "title":"MarketWatch Metrics",
       "tools":"",
       "link":"https://www.marketwatch.com/column/marketwatch-metrics",
@@ -7,27 +30,29 @@
       "description":"A column where I regularly take a deep dive into one data point that is meaningful to the financial world and your money. There are so many metrics that can help us make informed financial decisions. I explain how they are derived and what we can learn from them.",
       "source":"",
       "image_alt": "",
-      "additional_links": [{
-        "title": " This little-known metric tells you how a mortgage-rate move impacts your ability to buy a home",
-        "link": "https://www.marketwatch.com/story/this-little-known-metric-tells-you-how-a-mortgage-rate-move-impacts-your-ability-to-buy-a-home-11674502896",
-        "image":"",
-        "image_alt": ""
-      },{
-        "title": "The metric that shows why the world's three biggest economies could be in serious trouble ",
-        "link": "https://www.marketwatch.com/story/the-metric-that-shows-why-the-worlds-three-biggest-economies-could-be-in-serious-trouble-9e84b2f1",
-        "image":"",
-        "image_alt": ""
-      },{
-        "title": "Confused about what's causing inflation? This metric shows what's driving the price rise.",
-        "link": "https://www.marketwatch.com/story/confused-about-whats-causing-inflation-this-metric-shows-whats-driving-the-price-rise-dabc48e4",
-        "image":"",
-        "image_alt": ""
-      },{
-        "title": "India is now the world’s most populous country. But this demographic metric is more important for its economy.",
-        "link": "https://www.marketwatch.com/story/india-is-now-the-most-populous-nation-but-this-demographic-metric-is-more-important-for-its-economy-af3e4543",
-        "image":"",
-        "image_alt": ""
-      }]
+      "additional_links": [
+          {
+            "title": "This little-known metric tells you how a mortgage-rate move impacts your ability to buy a home",
+            "link": "https://www.marketwatch.com/story/this-little-known-metric-tells-you-how-a-mortgage-rate-move-impacts-your-ability-to-buy-a-home-11674502896",
+            "image":"",
+            "image_alt": ""
+          },{
+            "title": "The metric that shows why the world's three biggest economies could be in serious trouble ",
+            "link": "https://www.marketwatch.com/story/the-metric-that-shows-why-the-worlds-three-biggest-economies-could-be-in-serious-trouble-9e84b2f1",
+            "image":"",
+            "image_alt": ""
+          },{
+            "title": "Confused about what's causing inflation? This metric shows what's driving the price rise.",
+            "link": "https://www.marketwatch.com/story/confused-about-whats-causing-inflation-this-metric-shows-whats-driving-the-price-rise-dabc48e4",
+            "image":"",
+            "image_alt": ""
+          },{
+            "title": "India is now the world’s most populous country. But this demographic metric is more important for its economy.",
+            "link": "https://www.marketwatch.com/story/india-is-now-the-most-populous-nation-but-this-demographic-metric-is-more-important-for-its-economy-af3e4543",
+            "image":"",
+            "image_alt": ""
+          }
+      ]
     },
     {
       "title":" Potential homebuyers may start to feel some relief: Use our interactive to see how housing inventory changed in your county.",
