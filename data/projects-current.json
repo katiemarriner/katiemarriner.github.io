@@ -1,9 +1,9 @@
 [
     {
-      "title": "Search for the latest PCE inflation trends of almost 400 items",
+      "title": "Economic indicator breakdown series",
       "tools": "Svelte.js, D3.js, GitHub Actions, Python",
       "link": "",
-      "image": "",
+      "image": "inflation.webp",
       "description": "A series of interactives where I breakdown top-line economic indicators and make it searchable.",
       "source": "",
       "image_alt": "",
@@ -19,7 +19,7 @@
             "link": "https://www.marketwatch.com/story/egg-prices-just-plunged-use-our-tool-to-search-for-the-inflation-figures-of-almost-200-items-d511f832",
             "image": "",
             "image_alt": ""
-          },
+          }
       ]
     },
     {
@@ -47,7 +47,7 @@
             "image":"",
             "image_alt": ""
           },{
-            "title": "India is now the world’s most populous country. But this demographic metric is more important for its economy.",
+            "title": "India is now the world's most populous country. But this demographic metric is more important for its economy.",
             "link": "https://www.marketwatch.com/story/india-is-now-the-most-populous-nation-but-this-demographic-metric-is-more-important-for-its-economy-af3e4543",
             "image":"",
             "image_alt": ""
