@@ -30,6 +30,8 @@ var source = `<div class="col-sm-8 col-12">
     <p class="tools">{{tools}}</p>
     <p class="description">{{{description}}}</p>
     {{#if this.source}}<a href="{{ source }}">Source</a>{{/if}}
+  </div>
+  <div class="col-12">
     {{#if this.additional_links}}
       <div class="row">
         <div class="col-12">
