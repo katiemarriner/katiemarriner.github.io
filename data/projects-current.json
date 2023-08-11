@@ -10,7 +10,7 @@
   },
   {
     "title": "Economic indicator breakdown series",
-    "tools": "Svelte.js, D3.js, GitHub Actions, Python",
+    "tools": "Svelte, D3.js, GitHub Actions, Python",
     "link": "",
     "image": "inflation.webp",
     "description": "A series of interactives where I breakdown and visualize top-line economic indicators and make its components searchable.",
