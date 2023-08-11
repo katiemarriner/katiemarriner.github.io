@@ -1,178 +1,186 @@
 [
-    {
-      "title": "Economic indicator breakdown series",
-      "tools": "Svelte.js, D3.js, GitHub Actions, Python",
-      "link": "",
-      "image": "inflation.webp",
-      "description": "A series of interactives where I breakdown and visualize top-line economic indicators and make its components searchable.",
-      "source": "",
-      "image_alt": "",
-      "additional_links": [
+  {
+    "title": "The rising cost of childcare is making life impossible for parents. Use our calculator to track the expense where you live.",
+    "tools":"D3.js, Svelte, Python, Pandas",
+    "link":"https://www.marketwatch.com/story/the-rising-cost-of-childcare-is-making-life-impossible-for-parents-use-our-calculator-to-track-the-expense-where-you-live-355801c5",
+    "image":"childcare.webp",
+    "description": "Using the National Database of Childcare Prices, I created a tool for readers to search for childcare prices by county and see how that compares to their income and the median income of that county.",
+    "source":"",
+    "image_alt": "childcare-promo-image"
+  },
+  {
+    "title": "Economic indicator breakdown series",
+    "tools": "Svelte.js, D3.js, GitHub Actions, Python",
+    "link": "",
+    "image": "inflation.webp",
+    "description": "A series of interactives where I breakdown and visualize top-line economic indicators and make its components searchable.",
+    "source": "",
+    "image_alt": "",
+    "additional_links": [
+      {
+        "title": "Florida has the highest inflation in the U.S. Here are some other hot spots.",
+        "link": "https://www.marketwatch.com/story/wheres-the-highest-inflation-in-u-s-florida-and-the-far-west-2fce978a",
+        "image": "",
+        "image_alt": ""
+      },
+      {
+        "title": "The U.S. economy added 209,000 jobs in June. Use our interactive to see a breakdown of these numbers by industry",
+        "link": "https://www.marketwatch.com/story/the-u-s-economy-added-209-000-jobs-in-june-use-our-interactive-to-see-a-breakdown-of-these-numbers-by-industry-fb28ffe4",
+        "image": "",
+        "image_alt": ""
+      },
+      {
+        "title": "Search for the latest PCE inflation trends of almost 400 items",
+        "link": "https://www.marketwatch.com/story/interactive-search-for-the-latest-pce-inflation-trends-of-almost-400-items-a12016b6",
+        "image": "",
+        "image_alt": ""
+      },
+      {
+        "title": "Search for the latest CPI inflation trends of almost 200 items",
+        "link": "https://www.marketwatch.com/story/see-how-much-inflation-has-raised-your-cost-of-living-using-marketwatchs-guide-74bd866b",
+        "image": "",
+        "image_alt": ""
+      }
+    ]
+  },
+  {
+    "title":"MarketWatch Metrics",
+    "tools":"",
+    "link":"https://www.marketwatch.com/column/marketwatch-metrics",
+    "image":"",
+    "description":"A column where I regularly take a deep dive into one data point that is meaningful to the financial world and your money. There are so many metrics that can help us make informed financial decisions. I explain how they are derived and what we can learn from them.",
+    "source":"",
+    "image_alt": "",
+    "additional_links": [
         {
-          "title": "Florida has the highest inflation in the U.S. Here are some other hot spots.",
-          "link": "https://www.marketwatch.com/story/wheres-the-highest-inflation-in-u-s-florida-and-the-far-west-2fce978a",
-          "image": "",
+          "title": "This little-known metric tells you how a mortgage-rate move impacts your ability to buy a home",
+          "link": "https://www.marketwatch.com/story/this-little-known-metric-tells-you-how-a-mortgage-rate-move-impacts-your-ability-to-buy-a-home-11674502896",
+          "image":"",
           "image_alt": ""
-        },
-        {
-          "title": "The U.S. economy added 209,000 jobs in June. Use our interactive to see a breakdown of these numbers by industry",
-          "link": "https://www.marketwatch.com/story/the-u-s-economy-added-209-000-jobs-in-june-use-our-interactive-to-see-a-breakdown-of-these-numbers-by-industry-fb28ffe4",
-          "image": "",
+        },{
+          "title": "The metric that shows why the world's three biggest economies could be in serious trouble ",
+          "link": "https://www.marketwatch.com/story/the-metric-that-shows-why-the-worlds-three-biggest-economies-could-be-in-serious-trouble-9e84b2f1",
+          "image":"",
           "image_alt": ""
-        },
-        {
-          "title": "Search for the latest PCE inflation trends of almost 400 items",
-          "link": "https://www.marketwatch.com/story/interactive-search-for-the-latest-pce-inflation-trends-of-almost-400-items-a12016b6",
-          "image": "",
+        },{
+          "title": "Confused about what's causing inflation? This metric shows what's driving the price rise.",
+          "link": "https://www.marketwatch.com/story/confused-about-whats-causing-inflation-this-metric-shows-whats-driving-the-price-rise-dabc48e4",
+          "image":"",
           "image_alt": ""
-        },
-        {
-          "title": "Search for the latest CPI inflation trends of almost 200 items",
-          "link": "https://www.marketwatch.com/story/see-how-much-inflation-has-raised-your-cost-of-living-using-marketwatchs-guide-74bd866b",
-          "image": "",
+        },{
+          "title": "India is now the world's most populous country. But this demographic metric is more important for its economy.",
+          "link": "https://www.marketwatch.com/story/india-is-now-the-most-populous-nation-but-this-demographic-metric-is-more-important-for-its-economy-af3e4543",
+          "image":"",
           "image_alt": ""
         }
-      ]
-    },
-    {
-      "title":"MarketWatch Metrics",
-      "tools":"",
-      "link":"https://www.marketwatch.com/column/marketwatch-metrics",
-      "image":"",
-      "description":"A column where I regularly take a deep dive into one data point that is meaningful to the financial world and your money. There are so many metrics that can help us make informed financial decisions. I explain how they are derived and what we can learn from them.",
-      "source":"",
-      "image_alt": "",
-      "additional_links": [
-          {
-            "title": "This little-known metric tells you how a mortgage-rate move impacts your ability to buy a home",
-            "link": "https://www.marketwatch.com/story/this-little-known-metric-tells-you-how-a-mortgage-rate-move-impacts-your-ability-to-buy-a-home-11674502896",
-            "image":"",
-            "image_alt": ""
-          },{
-            "title": "The metric that shows why the world's three biggest economies could be in serious trouble ",
-            "link": "https://www.marketwatch.com/story/the-metric-that-shows-why-the-worlds-three-biggest-economies-could-be-in-serious-trouble-9e84b2f1",
-            "image":"",
-            "image_alt": ""
-          },{
-            "title": "Confused about what's causing inflation? This metric shows what's driving the price rise.",
-            "link": "https://www.marketwatch.com/story/confused-about-whats-causing-inflation-this-metric-shows-whats-driving-the-price-rise-dabc48e4",
-            "image":"",
-            "image_alt": ""
-          },{
-            "title": "India is now the world's most populous country. But this demographic metric is more important for its economy.",
-            "link": "https://www.marketwatch.com/story/india-is-now-the-most-populous-nation-but-this-demographic-metric-is-more-important-for-its-economy-af3e4543",
-            "image":"",
-            "image_alt": ""
-          }
-      ]
-    },
-    {
-      "title":" Potential homebuyers may start to feel some relief: Use our interactive to see how housing inventory changed in your county.",
-      "tools":"D3, Svelte, Python, GitHub Actions",
-      "link":"https://www.marketwatch.com/story/potential-homebuyers-may-start-to-feel-some-relief-use-our-interactive-to-see-how-housing-inventory-changed-in-your-county-11660406314",
-      "image":"housing.webp",
-      "description":"I analyzed data on total listings of single-family homes collected by Realtor.com to organize and present data in a personalized way.",
-      "source":"",
-      "image_alt": "housing inventory promo image"
-    },
-    {
-      "title":"This is how America's booming demand for goods shattered the supply chain.",
-      "tools":"D3, Vue, Google Sheets",
-      "link":"https://www.marketwatch.com/story/this-is-how-americas-booming-demand-for-goods-shattered-the-supply-chain-11637242353",
-      "image":"supplychain.webp",
-      "description":"By collecting data from each of the nine largest container ports in the U.S., I created a unique dataset that tells the story of how the supply chain is being affected by the changing economy, particularly from the increased demand for goods.",
-      "source":"",
-      "image_alt": "supply chain promo image"
-    },
-    {
-      "title":"These public pension systems used to have too much money. Now they're in crisis. What happened?",
-      "tools":"D3, Vue, Google Sheets",
-      "link":"https://www.marketwatch.com/story/these-public-pension-systems-used-to-have-too-much-money-now-theyre-in-crisis-what-happened-11624472487",
-      "image":"pensions.webp",
-      "description":"I analyzed data from over 200 public pension systems, identified outliers in funding ratios and put these data points into context of market conditions and legislation.",
-      "source":"",
-      "image_alt": "public pensions crisis promo image"
-    },
-    {
-      "title":"The K-shaped Recovery: The coronavirus pandemic has remade our working lives, and it's been anything but fair.",
-      "tools":"D3, Vue, Google Sheets",
-      "link":"https://www.marketwatch.com/graphics/k-shaped-recovery/",
-      "image":"kshaped.webp",
-      "description":"",
-      "source":"",
-      "image_alt": "k-shaped recovery promo image"
-    },
-    {
-      "title":"Coronavirus Recovery Tracker",
-      "tools":"Python/pandas, Excel, Vue.js, D3, Google Sheets and Gmail API",
-      "link":"https://www.marketwatch.com/graphics/coronavirus-economic-recovery-tracker/",
-      "image":"coronavirus.webp",
-      "description":"I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cron that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.",
-      "source":"",
-      "image_alt": "coronavirus recovery tracker promo image"
-    },
-    {
-      "title":"Where should I retire?",
-      "tools":"Vue.js, D3-geo (command-line interface), Excel",
-      "link":"https://www.marketwatch.com/graphics/best-place-to-retire/",
-      "image":"retirement.webp",
-      "description":"The idea for this quiz came from a hackathon. Census data, among other data that characterizes a location, is used to find metropolitan areas that match your needs and wants in retirement.",
-      "source":"",
-      "image_alt": "where should I retire promo image"
-    },
-    {
-      "title":"ICOs continue to raise money via SEC back door",
-      "tools":"Python/BeautifulSoup",
-      "link":"https://www.marketwatch.com/story/icos-continue-to-raise-money-via-sec-back-door-2019-01-11",
-      "image":"",
-      "description":"I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs",
-      "source":"",
-      "image_alt": "icos promo image"
-    },
-    {
-      "title":"What S&P 500 CEOs spent on midterms",
-      "tools":"Python/pandas, Excel, OpenRefine, Vue.js",
-      "link":"https://www.marketwatch.com/story/ceos-are-spending-their-own-money-on-the-midterm-elections-heres-how-2018-10-18",
-      "image":"midtermspend.webp",
-      "description":"Looking at FEC data, I identified CEOs of S&P 500 companies for the 2018 reporting cycle using Python to fetch and format the data, OpenRefine to standardize last names and employers and Excel to analyze the data. I built the interactive with Vue.js.",
-      "source":"",
-      "image_alt": "s and p 500 ceo campaign finance donations promo image"
-    },
-    {
-      "title":"Historical subway performance",
-      "tools":"Vue.js, D3",
-      "link":"http://www.katiemarriner.com/subway-status-history-app",
-      "image":"subway.webp",
-      "description":"A dashboard that looks at various performance metrics of the NYC Subway.",
-      "source":"",
-      "image_alt": "subway performance promo image"
-    },
-    {
-      "title":"Here's what every S&P 500 company actually pays in taxes",
-      "tools":"Vue.js",
-      "link":"https://www.marketwatch.com/story/does-corporate-america-need-a-tax-cut-heres-what-every-sp-500-company-actually-pays-in-taxes-2017-12-04/",
-      "image":"corptax.webp",
-      "description":"Amid talk of a 20% corporate tax rate, I built a tool you can use to search the effective tax rate of S&P 500 companies and sectors. It's a single-page application built with Vue.",
-      "source":"",
-      "image_alt": "s and p 500 taxes promo image"
-    },
-    {
-      "title":"Beat the Fed",
-      "tools":"Python",
-      "link":"http://graphics.wsj.com/beat-the-fed/",
-      "image":"beatfed.webp",
-      "description":"I parsed the data for a simulation that lets users move the inflation rate of different sub-categories of PCE inflation. Moving these sub-categories shows how much impact each has on the overall inflation rate and what it would take for the Fed to reach its target rate of 2%.",
-      "source":"",
-      "image_alt": "beat the fed promo image"
-    },
-    {
-      "title":"Search Hillary Clinton's emails",
-      "tools":"Bootstrap Tables, Handlebars.js",
-      "link":"http://graphics.wsj.com/hillary-clinton-email-documents/",
-      "image":"clinton.webp",
-      "description":"The State Department released Hillary Clinton's emails from the time when she was secretary of state on a monthly schedule. I implemented Bootstrap Tables and server-side pagination to improve load time. Features include the ability to search by certain senders/recipients and popular search terms to guide users on what to search for.",
-      "source":"",
-      "image_alt": "clinton email table promo image"
-    }
-  ]
-  
+    ]
+  },
+  {
+    "title":" Potential homebuyers may start to feel some relief: Use our interactive to see how housing inventory changed in your county.",
+    "tools":"D3.js, Svelte, Python, GitHub Actions",
+    "link":"https://www.marketwatch.com/story/potential-homebuyers-may-start-to-feel-some-relief-use-our-interactive-to-see-how-housing-inventory-changed-in-your-county-11660406314",
+    "image":"housing.webp",
+    "description":"I analyzed data on total listings of single-family homes collected by Realtor.com to organize and present data in a personalized way.",
+    "source":"",
+    "image_alt": "housing inventory promo image"
+  },
+  {
+    "title":"This is how America's booming demand for goods shattered the supply chain.",
+    "tools":"D3.js, Vue, Google Sheets",
+    "link":"https://www.marketwatch.com/story/this-is-how-americas-booming-demand-for-goods-shattered-the-supply-chain-11637242353",
+    "image":"supplychain.webp",
+    "description":"By collecting data from each of the nine largest container ports in the U.S., I created a unique dataset that tells the story of how the supply chain is being affected by the changing economy, particularly from the increased demand for goods.",
+    "source":"",
+    "image_alt": "supply chain promo image"
+  },
+  {
+    "title":"These public pension systems used to have too much money. Now they're in crisis. What happened?",
+    "tools":"D3.js, Vue, Google Sheets",
+    "link":"https://www.marketwatch.com/story/these-public-pension-systems-used-to-have-too-much-money-now-theyre-in-crisis-what-happened-11624472487",
+    "image":"pensions.webp",
+    "description":"I analyzed data from over 200 public pension systems, identified outliers in funding ratios and put these data points into context of market conditions and legislation.",
+    "source":"",
+    "image_alt": "public pensions crisis promo image"
+  },
+  {
+    "title":"The K-shaped Recovery: The coronavirus pandemic has remade our working lives, and it's been anything but fair.",
+    "tools":"D3.js, Vue, Google Sheets",
+    "link":"https://www.marketwatch.com/graphics/k-shaped-recovery/",
+    "image":"kshaped.webp",
+    "description":"",
+    "source":"",
+    "image_alt": "k-shaped recovery promo image"
+  },
+  {
+    "title":"Coronavirus Recovery Tracker",
+    "tools":"Python/pandas, Excel, Vue.js, D3.js, Google Sheets and Gmail API",
+    "link":"https://www.marketwatch.com/graphics/coronavirus-economic-recovery-tracker/",
+    "image":"coronavirus.webp",
+    "description":"I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cron that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.",
+    "source":"",
+    "image_alt": "coronavirus recovery tracker promo image"
+  },
+  {
+    "title":"Where should I retire?",
+    "tools":"Vue.js, D3-geo (command-line interface), Excel",
+    "link":"https://www.marketwatch.com/graphics/best-place-to-retire/",
+    "image":"retirement.webp",
+    "description":"The idea for this quiz came from a hackathon. Census data, among other data that characterizes a location, is used to find metropolitan areas that match your needs and wants in retirement.",
+    "source":"",
+    "image_alt": "where should I retire promo image"
+  },
+  {
+    "title":"ICOs continue to raise money via SEC back door",
+    "tools":"Python/BeautifulSoup",
+    "link":"https://www.marketwatch.com/story/icos-continue-to-raise-money-via-sec-back-door-2019-01-11",
+    "image":"",
+    "description":"I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs",
+    "source":"",
+    "image_alt": "icos promo image"
+  },
+  {
+    "title":"What S&P 500 CEOs spent on midterms",
+    "tools":"Python/pandas, Excel, OpenRefine, Vue.js",
+    "link":"https://www.marketwatch.com/story/ceos-are-spending-their-own-money-on-the-midterm-elections-heres-how-2018-10-18",
+    "image":"midtermspend.webp",
+    "description":"Looking at FEC data, I identified CEOs of S&P 500 companies for the 2018 reporting cycle using Python to fetch and format the data, OpenRefine to standardize last names and employers and Excel to analyze the data. I built the interactive with Vue.js.",
+    "source":"",
+    "image_alt": "s and p 500 ceo campaign finance donations promo image"
+  },
+  {
+    "title":"Historical subway performance",
+    "tools":"Vue.js, D3",
+    "link":"http://www.katiemarriner.com/subway-status-history-app",
+    "image":"subway.webp",
+    "description":"A dashboard that looks at various performance metrics of the NYC Subway.",
+    "source":"",
+    "image_alt": "subway performance promo image"
+  },
+  {
+    "title":"Here's what every S&P 500 company actually pays in taxes",
+    "tools":"Vue.js",
+    "link":"https://www.marketwatch.com/story/does-corporate-america-need-a-tax-cut-heres-what-every-sp-500-company-actually-pays-in-taxes-2017-12-04/",
+    "image":"corptax.webp",
+    "description":"Amid talk of a 20% corporate tax rate, I built a tool you can use to search the effective tax rate of S&P 500 companies and sectors. It's a single-page application built with Vue.",
+    "source":"",
+    "image_alt": "s and p 500 taxes promo image"
+  },
+  {
+    "title":"Beat the Fed",
+    "tools":"Python",
+    "link":"http://graphics.wsj.com/beat-the-fed/",
+    "image":"beatfed.webp",
+    "description":"I parsed the data for a simulation that lets users move the inflation rate of different sub-categories of PCE inflation. Moving these sub-categories shows how much impact each has on the overall inflation rate and what it would take for the Fed to reach its target rate of 2%.",
+    "source":"",
+    "image_alt": "beat the fed promo image"
+  },
+  {
+    "title":"Search Hillary Clinton's emails",
+    "tools":"Bootstrap Tables, Handlebars.js",
+    "link":"http://graphics.wsj.com/hillary-clinton-email-documents/",
+    "image":"clinton.webp",
+    "description":"The State Department released Hillary Clinton's emails from the time when she was secretary of state on a monthly schedule. I implemented Bootstrap Tables and server-side pagination to improve load time. Features include the ability to search by certain senders/recipients and popular search terms to guide users on what to search for.",
+    "source":"",
+    "image_alt": "clinton email table promo image"
+  }
+]
