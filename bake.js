@@ -52,14 +52,13 @@ var source = `<div class="col-sm-8 col-12">
 {{/each}}
 </div>`
 
-var meta = `<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37362223-3"></script>
+var meta = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERZCVHH4R2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-37362223-3');
+  gtag('config', 'G-ERZCVHH4R2');
 </script>
 <title>Katie Marriner, data journalist and developer</title>
 <meta name="description" content="Katie Marriner is data journalist and interactives developer at MarketWatch, and a data journalism instructor.">
