@@ -76,7 +76,7 @@ var nav = `<div class="col-sm-4 col-12">
   <ul class="vertical-nav full">
   <li><h1 class="content-name">Katie Marriner</h1></li>
   <li><h2 class="content-title">Data journalist and developer</h2></li>
-  <li><h3 class="content-bio">I gather and analyze data to create visualizations and interactives about economic and financial news for MarketWatch.</h3></li>
+  <li><h3 class="content-bio">I'm a Senior Visual Journalist at FiveThirtyEight where I design and develop visualizations using political data.</h3></li>
     <li>
       <a href="https://twitter.com/kemarriner" class="sub-cats">Twitter | </a>
       <a href="http://www.github.com/katiemarriner" class="sub-cats">Github | </a>
