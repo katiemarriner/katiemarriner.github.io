@@ -1,5 +1,14 @@
 [
   {
+    "title": "Who's On Track For The GOP Nomination?",
+    "tools":"D3.js",
+    "link":"https://projects.fivethirtyeight.com/2024-republican-delegate-benchmarks/",
+    "image":"benchmarks.webp",
+    "description": "",
+    "source":"",
+    "image_alt": ""
+  },
+  {
     "title": "The rising cost of childcare is making life impossible for parents. Use our calculator to track the expense where you live.",
     "tools":"D3.js, Svelte, Python, Pandas",
     "link":"https://www.marketwatch.com/story/the-rising-cost-of-childcare-is-making-life-impossible-for-parents-use-our-calculator-to-track-the-expense-where-you-live-355801c5",
@@ -42,7 +51,7 @@
         "image_alt": ""
       },
       {
-        "title": "Use MarketWatch’s tool to search for the producer price index of almost 600 products",
+        "title": "Use MarketWatch's tool to search for the producer price index of almost 600 products",
         "link": "https://www.marketwatch.com/story/use-marketwatchs-tool-to-search-for-the-producer-price-index-of-almost-600-products-c9889418",
         "image": "",
         "image_alt": ""
