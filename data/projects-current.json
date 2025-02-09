@@ -1,5 +1,32 @@
 [
   {
+    "title": "The 8 Types Of Democrats And Republicans In The House",
+    "tools":"D3.js",
+    "link":"https://projects.fivethirtyeight.com/types-democrats-republicans-house-2024/",
+    "image":"quiet-caucus.webp",
+    "description": "",
+    "source":"",
+    "image_alt": ""
+  },  
+  {
+    "title": "Who Is Favored To Win The 2024 Presidential Election?",
+    "tools":"D3.js",
+    "link":"https://projects.fivethirtyeight.com/2024-election-forecast/",
+    "image":"forecast-2024.webp",
+    "description": "",
+    "source":"",
+    "image_alt": ""
+  },
+  {
+    "title": "How To Tell Who's On Track To Win On Election Night",
+    "tools":"D3.js, Python",
+    "link":"https://projects.fivethirtyeight.com/2024-election-benchmarks/",
+    "image":"benchmarks-general.webp",
+    "description": "",
+    "source":"",
+    "image_alt": ""
+  },
+  {
     "title": "Who's On Track For The GOP Nomination?",
     "tools":"D3.js",
     "link":"https://projects.fivethirtyeight.com/2024-republican-delegate-benchmarks/",
@@ -170,24 +197,6 @@
     "description":"A dashboard that looks at various performance metrics of the NYC Subway.",
     "source":"",
     "image_alt": "subway performance promo image"
-  },
-  {
-    "title":"Here's what every S&P 500 company actually pays in taxes",
-    "tools":"Vue.js",
-    "link":"https://www.marketwatch.com/story/does-corporate-america-need-a-tax-cut-heres-what-every-sp-500-company-actually-pays-in-taxes-2017-12-04/",
-    "image":"corptax.webp",
-    "description":"Amid talk of a 20% corporate tax rate, I built a tool you can use to search the effective tax rate of S&P 500 companies and sectors. It's a single-page application built with Vue.",
-    "source":"",
-    "image_alt": "s and p 500 taxes promo image"
-  },
-  {
-    "title":"Beat the Fed",
-    "tools":"Python",
-    "link":"http://graphics.wsj.com/beat-the-fed/",
-    "image":"beatfed.webp",
-    "description":"I parsed the data for a simulation that lets users move the inflation rate of different sub-categories of PCE inflation. Moving these sub-categories shows how much impact each has on the overall inflation rate and what it would take for the Fed to reach its target rate of 2%.",
-    "source":"",
-    "image_alt": "beat the fed promo image"
   },
   {
     "title":"Search Hillary Clinton's emails",
