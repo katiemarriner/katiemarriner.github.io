@@ -29,6 +29,14 @@ var source = `<div class="col-sm-8 col-12">
     </h4>
     <p class="tools">{{tools}}</p>
     <p class="description">{{{description}}}</p>
+    {{#if this.awards_link}}
+      <h6>Awards</h6>
+        {{#each this.awards_link as | a |}}
+          <div>
+            <a href="{{{a.link}}}">{{{a.title}}}</a>
+          </div>
+        {{/each}}
+    {{/if}}
     {{#if this.source}}<a href="{{ source }}">Source</a>{{/if}}
   </div>
   <div class="col-12">

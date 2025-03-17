@@ -6,7 +6,13 @@
     "image":"quiet-caucus.webp",
     "description": "",
     "source":"",
-    "image_alt": ""
+    "image_alt": "",
+    "awards_link": [
+      {
+        "link": "https://www.informationisbeautifulawards.com/showcase/7430-quiet-caucuses-congressperson-typology",
+        "title": "Information is Beautiful Longlist 2024"
+      }
+    ]
   },  
   {
     "title": "Who Is Favored To Win The 2024 Presidential Election?",
@@ -15,7 +21,13 @@
     "image":"forecast-2024.webp",
     "description": "",
     "source":"",
-    "image_alt": ""
+    "image_alt": "",
+    "awards_link": [
+      {
+        "link": "https://www.informationisbeautifulawards.com/showcase/7427-2024-u-s-federal-elections-forecast",
+        "title": "Information is Beautiful Longlist 2024"
+      }
+    ]
   },
   {
     "title": "How To Tell Who's On Track To Win On Election Night",
@@ -34,6 +46,16 @@
     "description": "",
     "source":"",
     "image_alt": ""
+  },
+  {
+    "title":"Where should I retire?",
+    "tools":"Vue.js, D3-geo (command-line interface), Excel",
+    "link":"https://www.marketwatch.com/graphics/best-place-to-retire/",
+    "image":"retirement.webp",
+    "description":"The idea for this quiz came from a hackathon. Census data, among other data that characterizes a location, is used to find metropolitan areas that match your needs and wants in retirement.",
+    "source":"",
+    "image_alt": "where should I retire promo image",
+    "web_archive_link": "https://web.archive.org/web/20231114221000/https://www.marketwatch.com/graphics/best-place-to-retire/"
   },
   {
     "title": "The rising cost of childcare is making life impossible for parents. Use our calculator to track the expense where you live.",
@@ -161,15 +183,6 @@
     "description":"I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cron that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.",
     "source":"",
     "image_alt": "coronavirus recovery tracker promo image"
-  },
-  {
-    "title":"Where should I retire?",
-    "tools":"Vue.js, D3-geo (command-line interface), Excel",
-    "link":"https://www.marketwatch.com/graphics/best-place-to-retire/",
-    "image":"retirement.webp",
-    "description":"The idea for this quiz came from a hackathon. Census data, among other data that characterizes a location, is used to find metropolitan areas that match your needs and wants in retirement.",
-    "source":"",
-    "image_alt": "where should I retire promo image"
   },
   {
     "title":"ICOs continue to raise money via SEC back door",
