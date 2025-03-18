@@ -84,7 +84,7 @@ var nav = `<div class="col-sm-4 col-12">
   <ul class="vertical-nav full">
   <li><h1 class="content-name">Katie Marriner</h1></li>
   <li><h2 class="content-title">Data journalist and developer</h2></li>
-  <li><h3 class="content-bio">I'm a Senior Visual Journalist at FiveThirtyEight where I design and develop visualizations using political data.</h3></li>
+  <li><h3 class="content-bio">I'm a data and visual journalist, and my goal to inform and empower audiences through clear, engaging visuals and interactive presentations. I am driven by the belief that open access to information is essential for an informed public. This principle guides my approach to developing visuals and tools that uphold the highest standards of accuracy and journalistic integrity. Former Senior Visual Journalist at FiveThirtyEight. Former data and interactives journalist at MarketWatch.</h3></li>
     <li>
       <a href="https://bsky.app/profile/katiemarriner.bsky.social" class="sub-cats">Bluesky | </a>
       <a href="http://www.github.com/katiemarriner" class="sub-cats">Github | </a>
