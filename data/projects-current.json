@@ -4,7 +4,7 @@
     "tools":"D3.js",
     "link":"https://web.archive.org/web/20250306053545/https://projects.fivethirtyeight.com/types-democrats-republicans-house-2024/",
     "image":"quiet-caucus.webp",
-    "description": "",
+    "description": "I led the design and development for FiveThirtyEight's new \"Quiet Caucuses\" interactive. I was responsible for illustrating a representative's state caucus affiliation and how that differs from how they vote, which was determined from an analysis of House votes in 2023.",
     "source":"",
     "image_alt": "",
     "awards_link": [
@@ -19,7 +19,7 @@
     "tools":"D3.js",
     "link":"https://web.archive.org/web/20250305145054/https://projects.fivethirtyeight.com/2024-election-forecast/",
     "image":"forecast-2024.webp",
-    "description": "",
+    "description": "I led the design for FiveThirtyEight's 2024 election forecast and contributed to the frontend development of the interactive. My goal was to visualize uncertainty in polling data and clearly communicate the importance of the seven swing states and why they matter.",
     "source":"",
     "image_alt": "",
     "awards_link": [
@@ -214,7 +214,7 @@
   {
     "title":"Search Hillary Clinton's emails",
     "tools":"Bootstrap Tables, Handlebars.js",
-    "link":"http://graphics.wsj.com/hillary-clinton-email-documents/",
+    "link":"https://web.archive.org/web/20160229032332/http://graphics.wsj.com/hillary-clinton-email-documents/",
     "image":"clinton.webp",
     "description":"The State Department released Hillary Clinton's emails from the time when she was secretary of state on a monthly schedule. I implemented Bootstrap Tables and server-side pagination to improve load time. Features include the ability to search by certain senders/recipients and popular search terms to guide users on what to search for.",
     "source":"",
