@@ -4,8 +4,8 @@
     "tools":"D3.js",
     "link":"https://web.archive.org/web/20250306053545/https://projects.fivethirtyeight.com/types-democrats-republicans-house-2024/",
     "image":"quiet-caucus.webp",
-    "description": "I led the design and development for FiveThirtyEight's new \"Quiet Caucuses\" interactive. I was responsible for illustrating a representative's state caucus affiliation and how that differs from how they vote, which was determined from an analysis of House votes in 2023.",
-    "source":"",
+    "description": "I led the design and development of FiveThirtyEight's \"Quiet Caucuses\" interactive, showing how each representative's caucus affiliation compares to their voting behavior. The visualization was based on an analysis of House votes from 2023.",
+    "source":"538",
     "image_alt": "",
     "awards_link": [
       {
@@ -19,8 +19,8 @@
     "tools":"D3.js",
     "link":"https://web.archive.org/web/20250305145054/https://projects.fivethirtyeight.com/2024-election-forecast/",
     "image":"forecast-2024.webp",
-    "description": "I led the design for FiveThirtyEight's 2024 election forecast and contributed to the frontend development of the interactive. My goal was to visualize uncertainty in polling data and clearly communicate the importance of the seven swing states and why they matter.",
-    "source":"",
+    "description": "I led the design of FiveThirtyEight's 2024 election forecast and helped develop the frontend, visualizing polling uncertainty and highlighting the significance of seven swing states.",
+    "source":"538",
     "image_alt": "",
     "awards_link": [
       {
@@ -35,7 +35,7 @@
     "link":"http://web.archive.org/web/20250113134103/https://projects.fivethirtyeight.com/2024-election-benchmarks/georgia/",
     "image":"benchmarks-general.webp",
     "description": "",
-    "source":"",
+    "source":"538",
     "image_alt": ""
   },
   {
@@ -44,7 +44,7 @@
     "link":"https://web.archive.org/web/20250306093307/https://projects.fivethirtyeight.com/2024-republican-delegate-benchmarks/",
     "image":"benchmarks.webp",
     "description": "",
-    "source":"",
+    "source":"538",
     "image_alt": ""
   },
   {
@@ -53,7 +53,7 @@
     "link":"https://www.marketwatch.com/graphics/best-place-to-retire/",
     "image":"retirement.webp",
     "description":"The idea for this quiz came from a hackathon. Census data, among other data that characterizes a location, is used to find metropolitan areas that match your needs and wants in retirement.",
-    "source":"",
+    "source":"MarketWatch",
     "image_alt": "where should I retire promo image",
     "web_archive_link": "https://web.archive.org/web/20231114221000/https://www.marketwatch.com/graphics/best-place-to-retire/"
   },
@@ -63,7 +63,7 @@
     "link":"https://www.marketwatch.com/story/the-rising-cost-of-childcare-is-making-life-impossible-for-parents-use-our-calculator-to-track-the-expense-where-you-live-355801c5",
     "image":"childcare.webp",
     "description": "Using the National Database of Childcare Prices, I created a tool for readers to search for childcare prices by county and see how that compares to their income and the median income of that county.",
-    "source":"",
+    "source":"MarketWatch",
     "image_alt": "childcare-promo-image"
   },
   {
@@ -72,7 +72,7 @@
     "link": "",
     "image": "inflation.webp",
     "description": "A series of interactives where I breakdown and visualize top-line economic indicators and make its components searchable.",
-    "source": "",
+    "source":"MarketWatch",
     "image_alt": "",
     "additional_links": [
       {
@@ -145,7 +145,7 @@
     "link":"https://www.marketwatch.com/story/potential-homebuyers-may-start-to-feel-some-relief-use-our-interactive-to-see-how-housing-inventory-changed-in-your-county-11660406314",
     "image":"housing.webp",
     "description":"I analyzed data on total listings of single-family homes collected by Realtor.com to organize and present data in a personalized way.",
-    "source":"",
+    "source":"MarketWatch",
     "image_alt": "housing inventory promo image"
   },
   {
@@ -154,7 +154,7 @@
     "link":"https://www.marketwatch.com/story/this-is-how-americas-booming-demand-for-goods-shattered-the-supply-chain-11637242353",
     "image":"supplychain.webp",
     "description":"By collecting data from each of the nine largest container ports in the U.S., I created a unique dataset that tells the story of how the supply chain is being affected by the changing economy, particularly from the increased demand for goods.",
-    "source":"",
+    "source":"MarketWatch",
     "image_alt": "supply chain promo image"
   },
   {
@@ -163,7 +163,7 @@
     "link":"https://www.marketwatch.com/story/these-public-pension-systems-used-to-have-too-much-money-now-theyre-in-crisis-what-happened-11624472487",
     "image":"pensions.webp",
     "description":"I analyzed data from over 200 public pension systems, identified outliers in funding ratios and put these data points into context of market conditions and legislation.",
-    "source":"",
+    "source":"MarketWatch",
     "image_alt": "public pensions crisis promo image"
   },
   {
@@ -172,7 +172,7 @@
     "link":"https://www.marketwatch.com/graphics/k-shaped-recovery/",
     "image":"kshaped.webp",
     "description":"",
-    "source":"",
+    "source":"MarketWatch",
     "image_alt": "k-shaped recovery promo image"
   },
   {
@@ -181,7 +181,7 @@
     "link":"https://www.marketwatch.com/graphics/coronavirus-economic-recovery-tracker/",
     "image":"coronavirus.webp",
     "description":"I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cron that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.",
-    "source":"",
+    "source":"MarketWatch",
     "image_alt": "coronavirus recovery tracker promo image"
   },
   {
@@ -190,7 +190,7 @@
     "link":"https://www.marketwatch.com/story/icos-continue-to-raise-money-via-sec-back-door-2019-01-11",
     "image":"",
     "description":"I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs",
-    "source":"",
+    "source":"MarketWatch",
     "image_alt": "icos promo image"
   },
   {
@@ -199,7 +199,7 @@
     "link":"https://www.marketwatch.com/story/ceos-are-spending-their-own-money-on-the-midterm-elections-heres-how-2018-10-18",
     "image":"midtermspend.webp",
     "description":"Looking at FEC data, I identified CEOs of S&P 500 companies for the 2018 reporting cycle using Python to fetch and format the data, OpenRefine to standardize last names and employers and Excel to analyze the data. I built the interactive with Vue.js.",
-    "source":"",
+    "source":"MarketWatch",
     "image_alt": "s and p 500 ceo campaign finance donations promo image"
   },
   {
@@ -208,17 +208,8 @@
     "link":"https://web.archive.org/web/20151121182102/https://graphics.wsj.com/beat-the-fed/",
     "image":"beatfed.webp",
     "description":"I wrote a script that calculated the make-up of PCE inflation and could be run every month after the Commerce Department's release of the figures. I also contributed to the frontend design and development of the tool.",
-    "source":"",
+    "source":"WSJ",
     "image_alt": "beat the fed promo image"
-  },
-  {
-    "title":"Historical subway performance",
-    "tools":"Vue.js, D3",
-    "link":"http://www.katiemarriner.com/subway-status-history-app",
-    "image":"subway.webp",
-    "description":"A dashboard that looks at various performance metrics of the NYC Subway.",
-    "source":"",
-    "image_alt": "subway performance promo image"
   },
   {
     "title":"Search Hillary Clinton's emails",
@@ -226,7 +217,7 @@
     "link":"https://web.archive.org/web/20160229032332/http://graphics.wsj.com/hillary-clinton-email-documents/",
     "image":"clinton.webp",
     "description":"The State Department released Hillary Clinton's emails from the time when she was secretary of state on a monthly schedule. I implemented Bootstrap Tables and server-side pagination to improve load time. Features include the ability to search by certain senders/recipients and popular search terms to guide users on what to search for.",
-    "source":"",
+    "source":"WSJ",
     "image_alt": "clinton email table promo image"
   }
 ]

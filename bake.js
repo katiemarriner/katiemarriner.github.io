@@ -11,17 +11,18 @@ minify({
   callback: function (err, min) {}
 });
 
-var source = `<div class="col-sm-8 col-12">
+var source = `<div class="col-lg-8 col-12">
 {{#each this}}
 <div class="row portfolio-entry">
   {{#if this.image}}
-    <div class="col-auto">				
+    <div class="col-md-auto col-12">				
       <a href="{{ link }}"><img width="250px" height="250px" alt="{{ image_alt }}" src="images-optimized/{{ image }}" class="img-preview"/></a>
     </div>
     <div class="col">
   {{else}}
-  <div class="col-12">
+  <div class="col-md-auto col-12">
   {{/if}}
+    {{#if this.source}}<div class="source">{{ source }}</div>{{/if}}
     <h4>
       {{#if this.link}}<a href="{{ link }}">{{/if}}
       {{ title }}
@@ -30,14 +31,12 @@ var source = `<div class="col-sm-8 col-12">
     <p class="tools">{{tools}}</p>
     <p class="description">{{{description}}}</p>
     {{#if this.awards_link}}
-      <h6>Awards</h6>
         {{#each this.awards_link as | a |}}
           <div>
             <a href="{{{a.link}}}">{{{a.title}}}</a>
           </div>
         {{/each}}
     {{/if}}
-    {{#if this.source}}<a href="{{ source }}">Source</a>{{/if}}
   </div>
   <div class="col-12">
     {{#if this.additional_links}}
@@ -80,11 +79,11 @@ var meta = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERZ
 <link href="dist/css/bootstrap-grid.min.css" rel="stylesheet" media="screen">
 <link href="dist/css/app.min.css" rel="stylesheet" media="screen">`
 
-var nav = `<div class="col-sm-4 col-12">
+var nav = `<div class="col-lg-4 col-12">
   <ul class="vertical-nav full">
   <li><h1 class="content-name">Katie Marriner</h1></li>
-  <li><h2 class="content-title">Data journalist and developer</h2></li>
-  <li><h3 class="content-bio">I'm a data and visual journalist, and my goal to inform and empower audiences through clear, engaging visuals and interactive presentations. I am driven by the belief that open access to information is essential for an informed public. This principle guides my approach to developing visuals and tools that uphold the highest standards of accuracy and journalistic integrity. Former Senior Visual Journalist at FiveThirtyEight. Former data and interactives journalist at MarketWatch.</h3></li>
+  <li><h2 class="content-title">Data journalist, designer and developer</h2></li>
+  <li><h3 class="content-bio">My goal to inform and empower audiences through clear, engaging visuals and interactive presentations. I am driven by the belief that open access to information is essential for an informed public. This principle guides my approach to developing visuals and tools that uphold the highest standards of accuracy and journalistic ethics.</h3></li>
     <li>
       <a href="https://bsky.app/profile/katiemarriner.bsky.social" class="sub-cats">Bluesky | </a>
       <a href="http://www.github.com/katiemarriner" class="sub-cats">Github | </a>

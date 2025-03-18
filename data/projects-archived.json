@@ -58,4 +58,12 @@
     "description":"With increased talk of a disappearing middle class, this offers a look at different indicators that illustrate this point – stagnant net worth and a growing cost of living.",
     "source":"",
     "image_alt": "state of the american wallet promo image"
+  },{
+    "title":"Historical subway performance",
+    "tools":"Vue.js, D3",
+    "link":"http://www.katiemarriner.com/subway-status-history-app",
+    "image":"subway.webp",
+    "description":"A dashboard that looks at various performance metrics of the NYC Subway.",
+    "source":"",
+    "image_alt": "subway performance promo image"
   }]
