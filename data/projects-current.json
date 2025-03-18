@@ -203,6 +203,15 @@
     "image_alt": "s and p 500 ceo campaign finance donations promo image"
   },
   {
+    "title":"Beat the Fed",
+    "tools":"Python, D3.js, JavaScript",
+    "link":"https://web.archive.org/web/20151121182102/https://graphics.wsj.com/beat-the-fed/",
+    "image":"beatfed.webp",
+    "description":"I wrote a script that calculated the make-up of PCE inflation and could be run every month after the Commerce Department's release of the figures. I also contributed to the frontend design and development of the tool.",
+    "source":"",
+    "image_alt": "beat the fed promo image"
+  },
+  {
     "title":"Historical subway performance",
     "tools":"Vue.js, D3",
     "link":"http://www.katiemarriner.com/subway-status-history-app",
