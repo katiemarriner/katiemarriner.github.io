@@ -5,7 +5,7 @@
     "link":"https://web.archive.org/web/20250306053545/https://projects.fivethirtyeight.com/types-democrats-republicans-house-2024/",
     "image":"quiet-caucus.webp",
     "description": "I led the design and development of FiveThirtyEight's \"Quiet Caucuses\" interactive, showing how each representative's caucus affiliation compares to their voting behavior. The visualization was based on an analysis of House votes from 2023.",
-    "source":"538",
+    "source":"FiveThirtyEight",
     "image_alt": "",
     "awards_link": [
       {
@@ -20,7 +20,7 @@
     "link":"https://web.archive.org/web/20250305145054/https://projects.fivethirtyeight.com/2024-election-forecast/",
     "image":"forecast-2024.webp",
     "description": "I led the design of FiveThirtyEight's 2024 election forecast and helped develop the frontend, visualizing polling uncertainty and highlighting the significance of seven swing states.",
-    "source":"538",
+    "source":"FiveThirtyEight",
     "image_alt": "",
     "awards_link": [
       {
@@ -35,7 +35,7 @@
     "link":"http://web.archive.org/web/20250113134103/https://projects.fivethirtyeight.com/2024-election-benchmarks/georgia/",
     "image":"benchmarks-general.webp",
     "description": "",
-    "source":"538",
+    "source":"FiveThirtyEight",
     "image_alt": ""
   },
   {
@@ -44,7 +44,7 @@
     "link":"https://web.archive.org/web/20250306093307/https://projects.fivethirtyeight.com/2024-republican-delegate-benchmarks/",
     "image":"benchmarks.webp",
     "description": "",
-    "source":"538",
+    "source":"FiveThirtyEight",
     "image_alt": ""
   },
   {
