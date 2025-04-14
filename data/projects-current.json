@@ -176,15 +176,6 @@
     "image_alt": "k-shaped recovery promo image"
   },
   {
-    "title":"Coronavirus Recovery Tracker",
-    "tools":"Python/pandas, Excel, Vue.js, D3.js, Google Sheets and Gmail API",
-    "link":"https://www.marketwatch.com/graphics/coronavirus-economic-recovery-tracker/",
-    "image":"coronavirus.webp",
-    "description":"I helped identify six daily or weekly metrics that offer near realtime updates on the state of the US economy throughout the pandemic. I set up a cron that gathers information from emailed weekly reports, FRED, and government agencies. I designed and built the interface.",
-    "source":"MarketWatch",
-    "image_alt": "coronavirus recovery tracker promo image"
-  },
-  {
     "title":"ICOs continue to raise money via SEC back door",
     "tools":"Python/BeautifulSoup",
     "link":"https://www.marketwatch.com/story/icos-continue-to-raise-money-via-sec-back-door-2019-01-11",
