@@ -1,7 +1,7 @@
 [
   {
     "title": "The State of American Housing",
-    "tools":"D3.js, Python, Jupyter Notebooks",
+    "tools":"D3.js, Svelte, Jupyter Notebooks with iPython",
     "link":"https://katiemarriner.com/the-state-of-housing/#/",
     "image":"",
     "description": "In-progress project that allows users to search for a county to see median home prices and inventory trends as they compare to national averages.",
