@@ -1,5 +1,14 @@
 [
   {
+    "title": "The State of American Housing",
+    "tools":"D3.js, Python, Jupyter Notebooks",
+    "link":"https://katiemarriner.com/the-state-of-housing/#/",
+    "image":"",
+    "description": "In-progress project that allows users to search for a county to see median home prices and inventory trends as they compare to national averages.",
+    "source":"Personal Project",
+    "image_alt": ""
+  },
+  {
     "title": "The 8 Types Of Democrats And Republicans In The House",
     "tools":"D3.js",
     "link":"https://web.archive.org/web/20250306053545/https://projects.fivethirtyeight.com/types-democrats-republicans-house-2024/",
