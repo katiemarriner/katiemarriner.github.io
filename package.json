@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/katiemarriner/katiemarriner.github.io#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.3.5",
     "handlebars": "^4.7.7"
   },
   "devDependencies": {

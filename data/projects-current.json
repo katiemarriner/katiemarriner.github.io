@@ -6,7 +6,13 @@
     "image":"",
     "description": "In-progress project that allows users to search for a county to see median home prices and inventory trends as they compare to national averages.",
     "source":"Personal Project",
-    "image_alt": ""
+    "image_alt": "",
+    "awards_link": [
+      {
+        "link": "https://github.com/katiemarriner/the-state-of-housing/",
+        "title": "See the code"
+      }
+    ]
   },
   {
     "title": "The 8 Types Of Democrats And Republicans In The House",
