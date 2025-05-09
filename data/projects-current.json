@@ -4,7 +4,7 @@
     "tools":"D3.js, Svelte, Jupyter Notebooks with iPython",
     "link":"https://katiemarriner.com/the-state-of-housing/#/",
     "image":"",
-    "description": "In-progress project that allows users to search for a county to see median home prices and inventory trends as they compare to national averages.",
+    "description": "An in-progress data dashboard that allows users to search for a county to see median home prices and inventory trends as they compare to national averages.",
     "source":"Personal Project",
     "image_alt": "",
     "awards_link": [
