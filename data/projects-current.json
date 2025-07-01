@@ -1,12 +1,11 @@
 [
   {
     "title": "The State of American Housing",
-    "tools":"D3.js, Svelte, Jupyter Notebooks with iPython",
-    "link":"https://katiemarriner.com/the-state-of-housing/#/",
-    "image":"",
-    "description": "An in-progress data dashboard that allows users to search for a county to see median home prices and inventory trends as they compare to national averages.",
-    "source":"Personal Project",
-    "image_alt": "",
+    "tools": "D3.js, Svelte, Jupyter Notebooks with iPython",
+    "link": "https://katiemarriner.com/the-state-of-housing/#/",
+    "image": "",
+    "description": "A  data dashboard built to surface county-level housing trends, enabling users to search for U.S. counties and compare median home prices and inventory levels against national baselines. Designed with modular components using Svelte and JSON data fetching for scalable geographic coverage.",
+    "source": "Personal Project",
     "awards_link": [
       {
         "link": "https://github.com/katiemarriner/the-state-of-housing/",
@@ -16,27 +15,27 @@
   },
   {
     "title": "The 8 Types Of Democrats And Republicans In The House",
-    "tools":"D3.js",
-    "link":"https://web.archive.org/web/20250306053545/https://projects.fivethirtyeight.com/types-democrats-republicans-house-2024/",
-    "image":"quiet-caucus.webp",
-    "description": "I led the design and development of FiveThirtyEight's \"Quiet Caucuses\" interactive, showing how each representative's caucus affiliation compares to their voting behavior. The visualization was based on an analysis of House votes from 2023.",
-    "source":"FiveThirtyEight",
-    "image_alt": "",
+    "tools": "D3.js",
+    "link": "https://web.archive.org/web/20250306053545/https://projects.fivethirtyeight.com/types-democrats-republicans-house-2024/",
+    "image": "quiet-caucus.webp",
+    "description": "I led the design and development of Quiet Caucuses, an interactive for FiveThirtyEight that maps the alignment between House members' caucus affiliations and their 2023 voting behavior. I built a custom scroll-driven interface using D3.js and JavaScript to reveal patterns in a high-dimensional dataset, translating vote similarity scores into an interpretable and responsive layout. The project required close coordination with reporters to iterate on data structure, visual encoding, and user flow.",
+    "source": "FiveThirtyEight",
+    "image_alt": "the 8 types of democrats and republicans in the house promo image",
     "awards_link": [
       {
         "link": "https://www.informationisbeautifulawards.com/showcase/7430-quiet-caucuses-congressperson-typology",
         "title": "Information is Beautiful Longlist 2024"
       }
     ]
-  },  
+  },
   {
     "title": "Who Is Favored To Win The 2024 Presidential Election?",
-    "tools":"D3.js",
-    "link":"https://web.archive.org/web/20250305145054/https://projects.fivethirtyeight.com/2024-election-forecast/",
-    "image":"forecast-2024.webp",
+    "tools": "D3.js",
+    "link": "https://web.archive.org/web/20250305145054/https://projects.fivethirtyeight.com/2024-election-forecast/",
+    "image": "forecast-2024.webp",
     "description": "I led the design of FiveThirtyEight's 2024 election forecast and helped develop the frontend, visualizing polling uncertainty and highlighting the significance of seven swing states.",
-    "source":"FiveThirtyEight",
-    "image_alt": "",
+    "source": "FiveThirtyEight",
+    "image_alt": "who is favored to win the 2024 presidential election promo image",
     "awards_link": [
       {
         "link": "https://www.informationisbeautifulawards.com/showcase/7427-2024-u-s-federal-elections-forecast",
@@ -46,39 +45,39 @@
   },
   {
     "title": "How To Tell Who's On Track To Win On Election Night",
-    "tools":"D3.js, Python",
-    "link":"http://web.archive.org/web/20250113134103/https://projects.fivethirtyeight.com/2024-election-benchmarks/georgia/",
-    "image":"benchmarks-general.webp",
-    "description": "",
-    "source":"FiveThirtyEight",
+    "tools": "D3.js, Python",
+    "link": "http://web.archive.org/web/20250113134103/https://projects.fivethirtyeight.com/2024-election-benchmarks/georgia/",
+    "image": "benchmarks-general.webp",
+    "description": "I built a 50-page interactive combining custom-rendered county-level maps and data tables to guide readers and ABC reporters through live election results. I processed and simplified shapefiles into optimized TopoJSON for each state, then dynamically rendered maps with D3 to minimize load and maximize clarity. The interface paired spatial and tabular components to help users interpret partial vote returns in real time.",
+    "source": "FiveThirtyEight",
     "image_alt": ""
   },
   {
     "title": "Who's On Track For The GOP Nomination?",
-    "tools":"D3.js",
-    "link":"https://web.archive.org/web/20250306093307/https://projects.fivethirtyeight.com/2024-republican-delegate-benchmarks/",
-    "image":"benchmarks.webp",
-    "description": "",
-    "source":"FiveThirtyEight",
-    "image_alt": ""
+    "tools": "D3.js",
+    "link": "https://web.archive.org/web/20250306093307/https://projects.fivethirtyeight.com/2024-republican-delegate-benchmarks/",
+    "image": "benchmarks.webp",
+    "description": "I designed and developed a three-part interactive for that visualizes the delegate race across the 2024 Republican primaries. The centerpiece was a set of five synchronized D3 line charts with a custom hover system that let users compare candidate trajectories without jitter or overlap. I also condensed a dense delegate calendar and benchmark data into a responsive, scrollable layout to balance clarity with depth.",
+    "source": "FiveThirtyEight",
+    "image_alt": "who's on track for the GOP nomination promo image"
   },
   {
-    "title":"Where should I retire?",
-    "tools":"Vue.js, D3-geo (command-line interface), Excel",
-    "link":"https://www.marketwatch.com/graphics/best-place-to-retire/",
-    "image":"retirement.webp",
-    "description":"The idea for this quiz came from a hackathon. Census data, among other data that characterizes a location, is used to find metropolitan areas that match your needs and wants in retirement.",
-    "source":"MarketWatch",
+    "title": "Where should I retire?",
+    "tools": "Vue.js, D3-geo (command-line interface), Excel",
+    "link": "https://www.marketwatch.com/graphics/best-place-to-retire/",
+    "image": "retirement.webp",
+    "description": "I built an interactive retirement quiz for MarketWatch using Vue.js and JavaScript's Web Workers to deliver a smooth, responsive experience even with a large JSON file. The tool guided users through a series of questions about lifestyle, climate and cost preferences, then matched them to potential retirement locations based on a weighted scoring algorithm created by myself. I used a Web Worker to handle filtering and ranking logic off the main thread, ensuring fast, fluid updates and maintaining performance.",
+    "source": "MarketWatch",
     "image_alt": "where should I retire promo image",
     "web_archive_link": "https://web.archive.org/web/20231114221000/https://www.marketwatch.com/graphics/best-place-to-retire/"
   },
   {
     "title": "The rising cost of childcare is making life impossible for parents. Use our calculator to track the expense where you live.",
-    "tools":"D3.js, Svelte, Python, Pandas",
-    "link":"https://www.marketwatch.com/story/the-rising-cost-of-childcare-is-making-life-impossible-for-parents-use-our-calculator-to-track-the-expense-where-you-live-355801c5",
-    "image":"childcare.webp",
-    "description": "Using the National Database of Childcare Prices, I created a tool for readers to search for childcare prices by county and see how that compares to their income and the median income of that county.",
-    "source":"MarketWatch",
+    "tools": "D3.js, Svelte, Python, Pandas",
+    "link": "https://www.marketwatch.com/story/the-rising-cost-of-childcare-is-making-life-impossible-for-parents-use-our-calculator-to-track-the-expense-where-you-live-355801c5",
+    "image": "childcare.webp",
+    "description": "Built with Svelte, this interactive lets readers explore childcare costs in their county using data from the National Database of Childcare Prices. Users can input their income to see how local childcare expenses compare to both their household earnings and the county median—making abstract cost burdens tangible at a personal level.",
+    "source": "MarketWatch",
     "image_alt": "childcare-promo-image"
   },
   {
@@ -87,7 +86,7 @@
     "link": "",
     "image": "inflation.webp",
     "description": "A series of interactives where I breakdown and visualize top-line economic indicators and make its components searchable.",
-    "source":"MarketWatch",
+    "source": "MarketWatch",
     "image_alt": "",
     "additional_links": [
       {
@@ -123,107 +122,110 @@
     ]
   },
   {
-    "title":"MarketWatch Metrics",
-    "tools":"",
-    "link":"https://www.marketwatch.com/column/marketwatch-metrics",
-    "image":"",
-    "description":"A column where I regularly take a deep dive into one data point that is meaningful to the financial world and your money. There are so many metrics that can help us make informed financial decisions. I explain how they are derived and what we can learn from them.",
-    "source":"",
+    "title": "MarketWatch Metrics",
+    "tools": "",
+    "link": "https://www.marketwatch.com/column/marketwatch-metrics",
+    "image": "",
+    "description": "A column where I regularly take a deep dive into one data point that is meaningful to the financial world and your money. There are so many metrics that can help us make informed financial decisions. I explain how they are derived and what we can learn from them.",
+    "source": "",
     "image_alt": "",
     "additional_links": [
-        {
-          "title": "This little-known metric tells you how a mortgage-rate move impacts your ability to buy a home",
-          "link": "https://www.marketwatch.com/story/this-little-known-metric-tells-you-how-a-mortgage-rate-move-impacts-your-ability-to-buy-a-home-11674502896",
-          "image":"",
-          "image_alt": ""
-        },{
-          "title": "The metric that shows why the world's three biggest economies could be in serious trouble ",
-          "link": "https://www.marketwatch.com/story/the-metric-that-shows-why-the-worlds-three-biggest-economies-could-be-in-serious-trouble-9e84b2f1",
-          "image":"",
-          "image_alt": ""
-        },{
-          "title": "Confused about what's causing inflation? This metric shows what's driving the price rise.",
-          "link": "https://www.marketwatch.com/story/confused-about-whats-causing-inflation-this-metric-shows-whats-driving-the-price-rise-dabc48e4",
-          "image":"",
-          "image_alt": ""
-        },{
-          "title": "India is now the world's most populous country. But this demographic metric is more important for its economy.",
-          "link": "https://www.marketwatch.com/story/india-is-now-the-most-populous-nation-but-this-demographic-metric-is-more-important-for-its-economy-af3e4543",
-          "image":"",
-          "image_alt": ""
-        }
+      {
+        "title": "This little-known metric tells you how a mortgage-rate move impacts your ability to buy a home",
+        "link": "https://www.marketwatch.com/story/this-little-known-metric-tells-you-how-a-mortgage-rate-move-impacts-your-ability-to-buy-a-home-11674502896",
+        "image": "",
+        "image_alt": ""
+      },
+      {
+        "title": "The metric that shows why the world's three biggest economies could be in serious trouble ",
+        "link": "https://www.marketwatch.com/story/the-metric-that-shows-why-the-worlds-three-biggest-economies-could-be-in-serious-trouble-9e84b2f1",
+        "image": "",
+        "image_alt": ""
+      },
+      {
+        "title": "Confused about what's causing inflation? This metric shows what's driving the price rise.",
+        "link": "https://www.marketwatch.com/story/confused-about-whats-causing-inflation-this-metric-shows-whats-driving-the-price-rise-dabc48e4",
+        "image": "",
+        "image_alt": ""
+      },
+      {
+        "title": "India is now the world's most populous country. But this demographic metric is more important for its economy.",
+        "link": "https://www.marketwatch.com/story/india-is-now-the-most-populous-nation-but-this-demographic-metric-is-more-important-for-its-economy-af3e4543",
+        "image": "",
+        "image_alt": ""
+      }
     ]
   },
   {
-    "title":" Potential homebuyers may start to feel some relief: Use our interactive to see how housing inventory changed in your county.",
-    "tools":"D3.js, Svelte, Python, GitHub Actions",
-    "link":"https://www.marketwatch.com/story/potential-homebuyers-may-start-to-feel-some-relief-use-our-interactive-to-see-how-housing-inventory-changed-in-your-county-11660406314",
-    "image":"housing.webp",
-    "description":"I analyzed data on total listings of single-family homes collected by Realtor.com to organize and present data in a personalized way.",
-    "source":"MarketWatch",
+    "title": " Potential homebuyers may start to feel some relief: Use our interactive to see how housing inventory changed in your county.",
+    "tools": "D3.js, Svelte, Python, GitHub Actions",
+    "link": "https://www.marketwatch.com/story/potential-homebuyers-may-start-to-feel-some-relief-use-our-interactive-to-see-how-housing-inventory-changed-in-your-county-11660406314",
+    "image": "housing.webp",
+    "description": "I analyzed data on total listings of single-family homes collected by Realtor.com to organize and present data in a personalized way.",
+    "source": "MarketWatch",
     "image_alt": "housing inventory promo image"
   },
   {
-    "title":"This is how America's booming demand for goods shattered the supply chain.",
-    "tools":"D3.js, Vue, Google Sheets",
-    "link":"https://www.marketwatch.com/story/this-is-how-americas-booming-demand-for-goods-shattered-the-supply-chain-11637242353",
-    "image":"supplychain.webp",
-    "description":"By collecting data from each of the nine largest container ports in the U.S., I created a unique dataset that tells the story of how the supply chain is being affected by the changing economy, particularly from the increased demand for goods.",
-    "source":"MarketWatch",
+    "title": "This is how America's booming demand for goods shattered the supply chain.",
+    "tools": "D3.js, Vue, Google Sheets",
+    "link": "https://www.marketwatch.com/story/this-is-how-americas-booming-demand-for-goods-shattered-the-supply-chain-11637242353",
+    "image": "supplychain.webp",
+    "description": "By collecting data from each of the nine largest container ports in the U.S., I created a unique dataset that tells the story of how the supply chain is being affected by the changing economy, particularly from the increased demand for goods.",
+    "source": "MarketWatch",
     "image_alt": "supply chain promo image"
   },
   {
-    "title":"These public pension systems used to have too much money. Now they're in crisis. What happened?",
-    "tools":"D3.js, Vue, Google Sheets",
-    "link":"https://www.marketwatch.com/story/these-public-pension-systems-used-to-have-too-much-money-now-theyre-in-crisis-what-happened-11624472487",
-    "image":"pensions.webp",
-    "description":"I analyzed data from over 200 public pension systems, identified outliers in funding ratios and put these data points into context of market conditions and legislation.",
-    "source":"MarketWatch",
+    "title": "These public pension systems used to have too much money. Now they're in crisis. What happened?",
+    "tools": "D3.js, Vue, Google Sheets",
+    "link": "https://www.marketwatch.com/story/these-public-pension-systems-used-to-have-too-much-money-now-theyre-in-crisis-what-happened-11624472487",
+    "image": "pensions.webp",
+    "description": "I analyzed data from over 200 public pension systems, identified outliers in funding ratios and put these data points into context of market conditions and legislation.",
+    "source": "MarketWatch",
     "image_alt": "public pensions crisis promo image"
   },
   {
-    "title":"The K-shaped Recovery: The coronavirus pandemic has remade our working lives, and it's been anything but fair.",
-    "tools":"D3.js, Vue, Google Sheets",
-    "link":"https://www.marketwatch.com/graphics/k-shaped-recovery/",
-    "image":"kshaped.webp",
-    "description":"",
-    "source":"MarketWatch",
+    "title": "The K-shaped Recovery: The coronavirus pandemic has remade our working lives, and it's been anything but fair.",
+    "tools": "D3.js, Vue, Google Sheets",
+    "link": "https://www.marketwatch.com/graphics/k-shaped-recovery/",
+    "image": "kshaped.webp",
+    "description": "",
+    "source": "MarketWatch",
     "image_alt": "k-shaped recovery promo image"
   },
   {
-    "title":"ICOs continue to raise money via SEC back door",
-    "tools":"Python/BeautifulSoup",
-    "link":"https://www.marketwatch.com/story/icos-continue-to-raise-money-via-sec-back-door-2019-01-11",
-    "image":"",
-    "description":"I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs",
-    "source":"MarketWatch",
+    "title": "ICOs continue to raise money via SEC back door",
+    "tools": "Python/BeautifulSoup",
+    "link": "https://www.marketwatch.com/story/icos-continue-to-raise-money-via-sec-back-door-2019-01-11",
+    "image": "",
+    "description": "I searched the SEC's EDGAR database using Python and BeautifulSoup to find mentions of crypto-related words in Form D filings with the SEC, which is where some companies are initiating ICOs",
+    "source": "MarketWatch",
     "image_alt": "icos promo image"
   },
   {
-    "title":"What S&P 500 CEOs spent on midterms",
-    "tools":"Python/pandas, Excel, OpenRefine, Vue.js",
-    "link":"https://www.marketwatch.com/story/ceos-are-spending-their-own-money-on-the-midterm-elections-heres-how-2018-10-18",
-    "image":"midtermspend.webp",
-    "description":"Looking at FEC data, I identified CEOs of S&P 500 companies for the 2018 reporting cycle using Python to fetch and format the data, OpenRefine to standardize last names and employers and Excel to analyze the data. I built the interactive with Vue.js.",
-    "source":"MarketWatch",
+    "title": "What S&P 500 CEOs spent on midterms",
+    "tools": "Python/pandas, Excel, OpenRefine, Vue.js",
+    "link": "https://www.marketwatch.com/story/ceos-are-spending-their-own-money-on-the-midterm-elections-heres-how-2018-10-18",
+    "image": "midtermspend.webp",
+    "description": "Looking at FEC data, I identified CEOs of S&P 500 companies for the 2018 reporting cycle using Python to fetch and format the data, OpenRefine to standardize last names and employers and Excel to analyze the data. I built the interactive with Vue.js.",
+    "source": "MarketWatch",
     "image_alt": "s and p 500 ceo campaign finance donations promo image"
   },
   {
-    "title":"Beat the Fed",
-    "tools":"Python, D3.js, JavaScript",
-    "link":"https://web.archive.org/web/20151121182102/https://graphics.wsj.com/beat-the-fed/",
-    "image":"beatfed.webp",
-    "description":"I wrote a script that calculated the make-up of PCE inflation and could be run every month after the Commerce Department's release of the figures. I also contributed to the frontend design and development of the tool.",
-    "source":"WSJ",
+    "title": "Beat the Fed",
+    "tools": "Python, D3.js, JavaScript",
+    "link": "https://web.archive.org/web/20151121182102/https://graphics.wsj.com/beat-the-fed/",
+    "image": "beatfed.webp",
+    "description": "I wrote a script that calculated the make-up of PCE inflation and could be run every month after the Commerce Department's release of the figures. I also contributed to the frontend design and development of the tool.",
+    "source": "WSJ",
     "image_alt": "beat the fed promo image"
   },
   {
-    "title":"Search Hillary Clinton's emails",
-    "tools":"Bootstrap Tables, Handlebars.js",
-    "link":"https://web.archive.org/web/20160229032332/http://graphics.wsj.com/hillary-clinton-email-documents/",
-    "image":"clinton.webp",
-    "description":"The State Department released Hillary Clinton's emails from the time when she was secretary of state on a monthly schedule. I implemented Bootstrap Tables and server-side pagination to improve load time. Features include the ability to search by certain senders/recipients and popular search terms to guide users on what to search for.",
-    "source":"WSJ",
+    "title": "Search Hillary Clinton's emails",
+    "tools": "Bootstrap Tables, Handlebars.js",
+    "link": "https://web.archive.org/web/20160229032332/http://graphics.wsj.com/hillary-clinton-email-documents/",
+    "image": "clinton.webp",
+    "description": "The State Department released Hillary Clinton's emails from the time when she was secretary of state on a monthly schedule. I implemented Bootstrap Tables and server-side pagination to improve load time. Features include the ability to search by certain senders/recipients and popular search terms to guide users on what to search for.",
+    "source": "WSJ",
     "image_alt": "clinton email table promo image"
   }
 ]
