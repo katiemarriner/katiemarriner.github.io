@@ -66,7 +66,7 @@
     "tools": "Vue.js, D3-geo (command-line interface), Excel",
     "link": "https://www.marketwatch.com/graphics/best-place-to-retire/",
     "image": "retirement.webp",
-    "description": "I built an interactive retirement quiz for MarketWatch using Vue.js and JavaScript's Web Workers to deliver a smooth, responsive experience even with a large JSON file. The tool guided users through a series of questions about lifestyle, climate and cost preferences, then matched them to potential retirement locations based on a weighted scoring algorithm created by myself. I used a Web Worker to handle filtering and ranking logic off the main thread, ensuring fast, fluid updates and maintaining performance.",
+    "description": "I built an interactive retirement quiz for MarketWatch using Vue.js and JavaScript's Web Workers to deliver a smooth, responsive experience even with a large JSON file. I improved performance by 98%. The tool guided users through a series of questions about lifestyle, climate and cost preferences, then matched them to potential retirement locations based on a weighted scoring algorithm created by myself. I used a Web Worker to handle filtering and ranking logic off the main thread, ensuring fast, fluid updates and maintaining performance.",
     "source": "MarketWatch",
     "image_alt": "where should I retire promo image",
     "web_archive_link": "https://web.archive.org/web/20231114221000/https://www.marketwatch.com/graphics/best-place-to-retire/"
