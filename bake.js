@@ -77,7 +77,17 @@ var meta = `<script async src="https://www.googletagmanager.com/gtag/js?id=G-ERZ
 
 <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
 <link href="dist/css/bootstrap-grid.min.css" rel="stylesheet" media="screen">
-<link href="dist/css/app.min.css" rel="stylesheet" media="screen">`
+<link href="dist/css/app.min.css" rel="stylesheet" media="screen">
+
+<meta property="og:image" content="images/marriner_preview.png" />
+<meta property="og:url" content="https://katiemarriner.com" />
+<meta property="og:type" content="website" />
+
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:image" content="images/marriner_preview.png" />
+`
 
 var nav = `<div class="col-lg-4 col-12">
   <ul class="vertical-nav full">
