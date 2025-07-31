@@ -72,6 +72,15 @@
     "web_archive_link": "https://web.archive.org/web/20231114221000/https://www.marketwatch.com/graphics/best-place-to-retire/"
   },
   {
+    "title": "Annotation Tool",
+    "tools": "Handlebars.js, PHP, mySQL",
+    "link": "https://web.archive.org/web/20150205133454/http://graphics.wsj.com:80/annotations/kobani-map",
+    "image": "annotation-admin.png",
+    "description": "I designed and developed the front-end UI, admin interface and template for a tool that lets editors easily annotate images, charts or illustrations on deadline.",
+    "source": "",
+    "image_alt": "annotation tool promo image"
+  },
+  {
     "title": "The rising cost of childcare is making life impossible for parents. Use our calculator to track the expense where you live.",
     "tools": "D3.js, Svelte, Python, Pandas",
     "link": "https://www.marketwatch.com/story/the-rising-cost-of-childcare-is-making-life-impossible-for-parents-use-our-calculator-to-track-the-expense-where-you-live-355801c5",
