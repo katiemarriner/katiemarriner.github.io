@@ -20,7 +20,7 @@
   "homepage": "https://github.com/katiemarriner/katiemarriner.github.io#readme",
   "dependencies": {
     "bootstrap": "^5.3.5",
-    "handlebars": "^4.7.7"
+    "handlebars": "^4.7.9"
   },
   "devDependencies": {
     "@node-minify/clean-css": "^8.0.5",
